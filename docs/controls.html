@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>鍵盤控制指南 - ATMon 尋星之夢</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Specific styles for controls.html */
+    .tabs-container {
+      background: var(--card-bg);
+      padding: 15px;
+      border: 1px solid var(--border-color);
+      border-radius: 12px 12px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    #mod-tabs {
+      background: var(--panel-bg);
+      border-radius: 0 0 12px 12px;
+      border: 1px solid var(--border-color);
+      border-top: none;
+      padding: 20px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .tab-btn {
+      padding: 10px 20px;
+      background: var(--card-bg);
+      color: var(--text-dim);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover { background: var(--hover-bg); color: #fff; }
+    .tab-btn.active {
+      background: var(--accent-primary);
+      color: #000;
+      border-color: transparent;
+      box-shadow: 0 0 15px rgba(255, 127, 80, 0.3);
+    }
+
+    /* Keyboard Layout Overrides */
+    .keyboard-wrapper {
+      background: #0d1117;
+      padding: 30px;
+      border: none;
+      border-radius: 24px;
+      margin-top: 30px;
+      position: relative;
+      overflow-x: auto;
+      max-width: 100%;
+    }
+
+    .keyboard {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      min-width: 900px; /* Ensure layout doesn't break on small screens */
+      margin: 0 auto;
+    }
+
+    #mod-bindings-list {
+      margin-top: 30px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 20px;
+    }
+
+    .binding-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px;
+      background: var(--hover-bg);
+      margin-bottom: 8px;
+      border-radius: 6px;
+      border-left: 3px solid var(--accent-primary);
+    }
+
+    .binding-key {
+      font-weight: bold;
+      color: var(--accent-secondary);
+      background: rgba(0,0,0,0.3);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    #module-info-container {
+      background: var(--panel-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    .mod-header {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .mod-icon-large {
+      width: 100px; height: 100px;
+      background: var(--card-bg);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid var(--border-color);
+      object-fit: contain;
+    }
+
+    .mod-title-main { font-size: 32px; margin: 0; color: #fff; }
+    .mod-tags { display: flex; gap: 10px; margin-top: 10px; }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
+    .feature-grid li {
+      background: var(--card-bg);
+      padding: 15px 20px;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent-primary);
+      color: var(--text-dim);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">尋星之夢 <span>ATMon</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-item">📖 冒險指南</a>
+        <a href="controls.html" class="nav-item active">⌨️ 按鍵對照</a>
+        <a href="mods.html" class="nav-item">📦 模組百科</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <h1 class="page-title">鍵盤控制指南</h1>
+      <p class="page-subtitle">掌握冒險所需的每一組快捷鍵</p>
+    </div>
+
+    <div class="tabs-container" id="category-tabs"></div>
+    <div id="mod-tabs" class="hidden"></div>
+
+    <div class="keyboard-wrapper">
+      <div id="keyboard-display" class="keyboard">
+        <!-- JS generates rows here -->
+      </div>
+      
+      <!-- Mod Bindings List (Shown when a specific mod is selected) -->
+      <div id="mod-bindings-list" class="hidden">
+        <h3 style="color: var(--text-main); margin-bottom: 15px;">按鍵功能列表</h3>
+        <div id="binding-items-container"></div>
+      </div>
+    </div>
+
+    <div id="module-info-container">
+      <div class="mod-header">
+        <img id="mod-icon" class="mod-icon-large" src="" alt="">
+        <div>
+          <h2 id="mod-title" class="mod-title-main">請選擇模組</h2>
+          <div id="mod-author" style="color: var(--text-dim); margin-top: 5px;"></div>
+          <div id="mod-tags" class="mod-tags"></div>
+        </div>
+      </div>
+      <div id="mod-description" class="mod-desc" style="font-size: 16px; margin-bottom: 30px;"></div>
+      <div id="mod-features-area">
+        <h3 style="color: var(--accent-primary); margin-bottom: 15px;">核心功能特性</h3>
+        <ul id="feature-list" class="feature-grid"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Keyboard layout definition
+    const KB_LAYOUT = [
+      ['Escape', '', 'F1', 'F2', 'F3', 'F4', '', 'F5', 'F6', 'F7', 'F8', '', 'F9', 'F10', 'F11', 'F12'],
+      ['Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Backspace|w-2_25'],
+      ['Tab|w-1_5', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight', 'Backslash|w-1_5'],
+      ['CapsLock|w-1_75', 'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote', 'Enter|w-2_25'],
+      ['ShiftLeft|w-2_25', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Comma', 'Period', 'Slash', 'ShiftRight|w-2_75'],
+      ['ControlLeft|w-1_25', 'OSLeft|w-1_25', 'AltLeft|w-1_25', 'Space|w-space', 'AltRight|w-1_25', 'Function|w-1_25', 'ContextMenu|w-1_25', 'ControlRight|w-1_25']
+    ];
+
+    let keyData = {};
+    let allBindings = {};
+    const categories = {
+      all: "🌟 全部功能",
+      tech: "⚙️ 核心科技",
+      magic: "✨ 魔法秘術",
+      adventure: "🌍 冒險維度",
+      utility: "🎒 實用工具",
+      system: "🛠️ 系統優化"
+    };
+
+    const defaultIcon = "https://media.forgecdn.net/avatars/53/430/636136190539169641.png";
+
+    async function init() {
+      renderKeyboard();
+      try {
+        const response = await fetch('./data.json');
+        const data = await response.json();
+        keyData = data.keyData;
+        allBindings = data.allBindings;
+        generateTabs();
+        switchCategory('all');
+      } catch (e) { console.error(e); }
+    }
+
+    function renderKeyboard() {
+      const kb = document.getElementById('keyboard-display');
+      kb.innerHTML = '';
+      const section = document.createElement('div');
+      section.className = 'kb-section';
+      
+      KB_LAYOUT.forEach(row => {
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'kb-row';
+        row.forEach(keyStr => {
+          if (keyStr === '') {
+            const spacer = document.createElement('div');
+            spacer.style.width = '20px';
+            rowDiv.appendChild(spacer);
+            return;
+          }
+          const [id, cls] = keyStr.split('|');
+          const key = document.createElement('div');
+          key.className = `key ${cls || ''}`;
+          key.dataset.key = id;
+          key.innerHTML = `<span style="opacity:0.4">${id.replace('Key','').replace('Digit','')}</span><div class="bind-text"></div><div class="tooltip"></div>`;
+          rowDiv.appendChild(key);
+        });
+        section.appendChild(rowDiv);
+      });
+      kb.appendChild(section);
+    }
+
+    function generateTabs() {
+      const catTabs = document.getElementById('category-tabs');
+      Object.entries(categories).forEach(([id, title]) => {
+        const btn = document.createElement('button');
+        btn.className = 'tab-btn';
+        btn.id = `cat-${id}`;
+        btn.innerText = title;
+        btn.onclick = () => switchCategory(id);
+        catTabs.appendChild(btn);
+      });
+    }
+
+    function switchCategory(catId) {
+      document.querySelectorAll('#category-tabs .tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(`cat-${catId}`).classList.add('active');
+
+      const modTabs = document.getElementById('mod-tabs');
+      if (catId === 'all') {
+        modTabs.classList.add('hidden');
+        updateInfo('all');
+      } else {
+        modTabs.classList.remove('hidden');
+        modTabs.innerHTML = '';
+        const mods = Object.entries(keyData).filter(([id, d]) => d.category === catId || (catId === 'system' && !d.category));
+        mods.forEach(([id, d], idx) => {
+          const btn = document.createElement('button');
+          btn.className = 'tab-btn';
+          btn.id = `mod-${id}`;
+          btn.innerText = d.title.split(' (')[0];
+          btn.onclick = () => updateInfo(id);
+          modTabs.appendChild(btn);
+          if (idx === 0) updateInfo(id);
+        });
+      }
+    }
+
+    function updateInfo(modId) {
+      document.querySelectorAll('#mod-tabs .tab-btn').forEach(b => b.classList.remove('active'));
+      if (modId !== 'all') {
+        const modBtn = document.getElementById(`mod-${modId}`);
+        if (modBtn) modBtn.classList.add('active');
+      }
+
+      const data = keyData[modId];
+      document.getElementById('mod-title').innerText = data.title;
+      document.getElementById('mod-author').innerText = `作者：${data.author || 'ATM Team'}`;
+      document.getElementById('mod-icon').src = data.icon || defaultIcon;
+      document.getElementById('mod-description').innerText = data.desc;
+
+      const tags = document.getElementById('mod-tags');
+      tags.innerHTML = '';
+      (data.tags || []).forEach(t => {
+        const s = document.createElement('span');
+        s.className = 'article-tag';
+        s.innerText = t;
+        tags.appendChild(s);
+      });
+
+      const list = document.getElementById('feature-list');
+      list.innerHTML = '';
+      (data.features || ["尚無詳細功能說明。"]).forEach(f => {
+        const li = document.createElement('li');
+        li.innerText = f;
+        list.appendChild(li);
+      });
+
+      updateKeyboard(modId);
+      updateBindingList(modId);
+    }
+
+    function updateKeyboard(modId) {
+      const data = keyData[modId];
+      document.querySelectorAll('.key').forEach(key => {
+        const kid = key.dataset.key;
+        const bindText = key.querySelector('.bind-text');
+        const tooltip = key.querySelector('.tooltip');
+        key.classList.remove('active', 'conflict');
+        bindText.innerText = '';
+        tooltip.innerHTML = '';
+
+        if (modId === 'all') {
+          const binds = allBindings[kid];
+          if (binds) {
+            bindText.innerText = binds[0].action;
+            if (binds.length > 1) key.classList.add('conflict');
+            tooltip.innerHTML = binds.map(b => `<b>[${b.mod}]</b> ${b.action}`).join('<br>');
+          }
+        } else if (data.bindings && data.bindings[kid]) {
+          bindText.innerText = data.bindings[kid];
+          key.classList.add('active');
+          tooltip.innerText = data.bindings[kid];
+        }
+      });
+    }
+
+    function updateBindingList(modId) {
+      const container = document.getElementById('mod-bindings-list');
+      const list = document.getElementById('binding-items-container');
+      list.innerHTML = '';
+
+      if (modId === 'all' || !keyData[modId].bindings || Object.keys(keyData[modId].bindings).length === 0) {
+        container.classList.add('hidden');
+        return;
+      }
+
+      container.classList.remove('hidden');
+      const bindings = keyData[modId].bindings;
+      
+      Object.entries(bindings).forEach(([key, action]) => {
+        const div = document.createElement('div');
+        div.className = 'binding-item';
+        div.innerHTML = `<span>${action}</span> <span class="binding-key">${key.replace('Key','').replace('Digit','')}</span>`;
+        list.appendChild(div);
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>

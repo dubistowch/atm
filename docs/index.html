@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>尋星之夢 ATMon • 冒險指南</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    /* Article view specific styles */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+    
+    .sidebar {
+      background: var(--panel-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 15px;
+      position: sticky;
+      top: 100px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+
+    .sidebar-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .sidebar-link {
+      display: block;
+      padding: 10px 12px;
+      color: var(--text-main);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background 0.2s;
+      margin-bottom: 2px;
+    }
+
+    .sidebar-link:hover {
+      background: var(--hover-bg);
+      color: var(--accent-primary);
+    }
+
+    .sidebar-link.active {
+      background: rgba(255, 127, 80, 0.1);
+      color: var(--accent-primary);
+      font-weight: 600;
+    }
+
+    .filter-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 8px 16px;
+      background: var(--panel-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      color: var(--text-dim);
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent-primary);
+      color: #000;
+      border-color: transparent;
+    }
+
+    /* Override for article view */
+    .hidden { display: none !important; }
+    
+    @media (max-width: 900px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .sidebar { display: none; } /* Hide sidebar on mobile for now or make it collapsible */
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">尋星之夢 <span>ATMon</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-item active">📖 冒險指南</a>
+        <a href="controls.html" class="nav-item">⌨️ 按鍵對照</a>
+        <a href="mods.html" class="nav-item">📦 模組百科</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- List View -->
+    <div id="list-view">
+      <div class="page-header">
+        <h1 class="page-title">冒險指南</h1>
+        <p class="page-subtitle">探索模組世界的生存法則</p>
+      </div>
+
+      <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="搜尋教學文章標題或內容...">
+      </div>
+
+      <div class="filter-bar" id="category-filters">
+        <button class="filter-btn active" onclick="filterCategory('all')">全部</button>
+        <button class="filter-btn" onclick="filterCategory('tech')">⚙️ 科技</button>
+        <button class="filter-btn" onclick="filterCategory('magic')">✨ 魔法</button>
+        <button class="filter-btn" onclick="filterCategory('adventure')">🌍 冒險</button>
+        <button class="filter-btn" onclick="filterCategory('utility')">🎒 實用</button>
+      </div>
+
+      <div class="article-list" id="article-grid">
+        <!-- Articles will be generated here -->
+      </div>
+    </div>
+
+    <!-- Article View -->
+    <div id="content-view" class="hidden">
+      <div class="article-layout">
+        <div class="sidebar">
+          <div class="sidebar-title">文章列表</div>
+          <div id="sidebar-links">
+            <!-- Sidebar links generated here -->
+          </div>
+          <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color);">
+            <a href="#" onclick="showList(); return false;" class="sidebar-link">← 返回搜尋列表</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="markdown-body" id="markdown-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loading" class="loading hidden">正在讀取內容...</div>
+  </div>
+
+  <script>
+    const categoryIcons = {
+      tech: "⚙️",
+      magic: "✨",
+      adventure: "🌍",
+      utility: "🎒"
+    };
+
+    let allGuides = [];
+    let currentCategory = 'all';
+
+    async function init() {
+      try {
+        const response = await fetch('./guides.json');
+        allGuides = await response.json();
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const guideId = urlParams.get('guide');
+
+        renderSidebar(); // Pre-render sidebar
+
+        if (guideId) {
+          showGuide(guideId);
+        } else {
+          renderList(allGuides);
+        }
+
+        document.getElementById('search-input').addEventListener('input', (e) => {
+          filterArticles();
+        });
+      } catch (error) {
+        console.error('Failed to load guides:', error);
+      }
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      filterArticles();
+    }
+
+    function filterArticles() {
+      const term = document.getElementById('search-input').value.toLowerCase();
+      const filtered = allGuides.filter(g => {
+        const matchesSearch = g.title.toLowerCase().includes(term) || (g.description && g.description.toLowerCase().includes(term));
+        const matchesCat = currentCategory === 'all' || g.category === currentCategory;
+        return matchesSearch && matchesCat;
+      });
+      renderList(filtered);
+    }
+
+    function renderList(guides) {
+      const grid = document.getElementById('article-grid');
+      grid.innerHTML = '';
+      
+      if (guides.length === 0) {
+        grid.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-dim);">沒有找到相關文章。</div>';
+        return;
+      }
+
+      guides.forEach(guide => {
+        const item = document.createElement('a');
+        item.href = `?guide=${guide.id}`;
+        item.className = 'article-item';
+        item.onclick = (e) => {
+          e.preventDefault();
+          history.pushState(null, '', `?guide=${guide.id}`);
+          showGuide(guide.id);
+        };
+
+        const iconHtml = guide.icon 
+          ? `<img src="${guide.icon}" style="width:30px; height:30px; object-fit:contain;">`
+          : (categoryIcons[guide.category] || '📄');
+
+        item.innerHTML = `
+          <div class="article-icon">${iconHtml}</div>
+          <div class="article-content">
+            <h3 class="article-title">${guide.title}</h3>
+            <p class="article-desc">${guide.description || '點擊閱讀詳細教學內容。'}</p>
+          </div>
+          <div class="article-meta">
+            <span class="article-tag">${guide.type === 'mod' ? '模組教學' : '一般教學'}</span>
+          </div>
+        `;
+        grid.appendChild(item);
+      });
+
+      document.getElementById('list-view').classList.remove('hidden');
+      document.getElementById('content-view').classList.add('hidden');
+    }
+
+    function renderSidebar() {
+      const container = document.getElementById('sidebar-links');
+      container.innerHTML = '';
+      allGuides.forEach(guide => {
+        const link = document.createElement('a');
+        link.href = `?guide=${guide.id}`;
+        link.className = 'sidebar-link';
+        link.id = `sidebar-${guide.id}`;
+        link.innerText = guide.title;
+        link.onclick = (e) => {
+          e.preventDefault();
+          history.pushState(null, '', `?guide=${guide.id}`);
+          showGuide(guide.id);
+        };
+        container.appendChild(link);
+      });
+    }
+
+    function showList() {
+      history.pushState(null, '', 'index.html');
+      document.getElementById('list-view').classList.remove('hidden');
+      document.getElementById('content-view').classList.add('hidden');
+      window.scrollTo(0, 0);
+    }
+
+    async function showGuide(id) {
+      const listView = document.getElementById('list-view');
+      const contentView = document.getElementById('content-view');
+      const loading = document.getElementById('loading');
+
+      // Update sidebar active state
+      document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
+      const activeLink = document.getElementById(`sidebar-${id}`);
+      if (activeLink) activeLink.classList.add('active');
+
+      listView.classList.add('hidden');
+      contentView.classList.add('hidden');
+      loading.classList.remove('hidden');
+
+      try {
+        const response = await fetch(`./articles/mods/${id}.md`);
+        if (!response.ok) throw new Error('Guide not found');
+        const text = await response.text();
+        
+        document.getElementById('markdown-content').innerHTML = marked.parse(text);
+        contentView.classList.remove('hidden');
+        window.scrollTo(0, 0);
+      } catch (error) {
+        document.getElementById('markdown-content').innerHTML = `<h1>404</h1><p>找不到該指南內容，請返回重試。</p>`;
+        contentView.classList.remove('hidden');
+      } finally {
+        loading.classList.add('hidden');
+      }
+    }
+
+    window.onpopstate = () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const guideId = urlParams.get('guide');
+      if (guideId) showGuide(guideId);
+      else {
+        document.getElementById('list-view').classList.remove('hidden');
+        document.getElementById('content-view').classList.add('hidden');
+      }
+    };
+
+    init();
+  </script>
+</body>
+</html>

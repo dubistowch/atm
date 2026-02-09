@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模組列表 - ATMon 尋星之夢</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Specific overrides for mods.html */
+        .category-header {
+            background: linear-gradient(90deg, var(--panel-bg), transparent);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 30px 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-left: 5px solid var(--accent-primary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .category-title { font-size: 20px; font-weight: bold; color: #fff; margin: 0; }
+        .category-count { color: var(--text-dim); font-size: 14px; }
+        
+        .mod-row {
+            grid-template-columns: 50px 250px 1fr 180px;
+        }
+        
+        #extra-mods-btn {
+            width: 100%;
+            margin: 40px 0;
+            padding: 20px;
+            font-size: 18px;
+        }
+        
+        .mod-name-zh { font-size: 16px; font-weight: bold; color: var(--accent-primary); margin: 0; text-decoration: none; }
+        .mod-name-en { font-size: 11px; color: var(--text-dim); margin-top: 2px; font-family: ui-monospace, SFMono-Regular, monospace; display: block; }
+        
+        .mod-meta-info { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; font-size: 12px; color: var(--text-dim); text-align: right; }
+        .mod-version { color: var(--text-main); background: var(--card-bg); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border-color); }
+        .mod-author { color: var(--accent-secondary); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-brand">尋星之夢 <span>ATMon</span></a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">📖 冒險指南</a>
+            <a href="controls.html" class="nav-item">⌨️ 按鍵對照</a>
+            <a href="mods.html" class="nav-item active">📦 模組百科</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="page-header">
+        <h1 class="page-title">模組百科</h1>
+        <p class="page-subtitle" id="mod-count">正在讀取模組資料...</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="搜尋 380+ 個模組中的名稱、作者、分類或介紹...">
+    </div>
+
+    <div id="featured-content">
+        <!-- Featured Modules -->
+    </div>
+
+    <button id="extra-mods-btn" class="btn">📦 點擊展開更多模組 (包含輔助庫與其餘 200+ 個模組)</button>
+
+    <div id="extra-mods-container" class="hidden">
+        <div id="extra-content">
+            <!-- Other Modules -->
+        </div>
+    </div>
+
+    <div id="no-results" class="loading hidden">找不到符合條件的模組。</div>
+</div>
+
+<script>
+    const defaultIcon = "https://media.forgecdn.net/avatars/53/430/636136190539169641.png";
+    
+    const categoryConfig = {
+        "科技": "⚙️ 科技發展 (Technology)",
+        "魔法": "✨ 魔法秘術 (Magic)",
+        "冒險與探索": "🌍 冒險與探索 (Adventure)",
+        "儲存與背包": "🎒 儲存與背包 (Storage)",
+        "世界生成": "🌳 世界生成 (World Gen)",
+        "工具與實用": "🔧 工具與實用 (Utility)",
+        "農業與料理": "🍳 農業與料理 (Farming)",
+        "建築與裝飾": "🏠 建築與裝飾 (Building)",
+        "音效與視覺": "🎨 音效與視覺 (Visuals)",
+        "介面與HUD": "📊 介面與 HUD (UI)",
+        "效能最佳化": "⚡ 效能最佳化 (Performance)",
+        "紅石與物流": "🔴 紅石與物流 (Redstone)",
+        "生物與AI": "🐾 生物與 AI (Mobs)",
+        "兼容與整合": "🧩 兼容與整合 (Compat)",
+        "前置庫與API": "🛠️ 前置庫與 API (Libs)",
+        "伺服器管理": "🖥️ 伺服器管理 (Server)",
+        "其他": "📁 其他 (Others)"
+    };
+
+    function parseCSV(text) {
+        const lines = text.split('\n');
+        const result = [];
+        for (let i = 1; i < lines.length; i++) {
+            if (!lines[i].trim()) continue;
+            const row = [];
+            let current = '';
+            let inQuotes = false;
+            for (let char of lines[i]) {
+                if (char === '"') inQuotes = !inQuotes;
+                else if (char === ',' && !inQuotes) {
+                    row.push(current.trim());
+                    current = '';
+                } else current += char;
+            }
+            row.push(current.trim());
+            if (row.length < 9) continue;
+            result.push({
+                name: row[0], url: row[1], version: row[2], author: row[3],
+                file: row[4], zh: row[5], icon: row[6], desc: row[7],
+                cat: row[8] || "其他"
+            });
+        }
+        return result;
+    }
+
+    async function loadAllMods() {
+        try {
+            const res = await fetch('mods_enriched_ALL_tc_with_icons.csv');
+            const text = await res.text();
+            const allMods = parseCSV(text);
+            const featured = allMods.filter(m => m.icon && m.cat !== "前置庫與API" && m.cat !== "效能最佳化" && m.cat !== "其他");
+            const others = allMods.filter(m => !featured.includes(m));
+            renderUI(featured, others, allMods);
+        } catch (e) {
+            console.error(e);
+            document.getElementById('mod-count').innerText = "載入失敗。";
+        }
+    }
+
+    function renderUI(featured, others, allData) {
+        const featuredContent = document.getElementById('featured-content');
+        const extraContent = document.getElementById('extra-content');
+        const searchInput = document.getElementById('search-input');
+        const modCountLabel = document.getElementById('mod-count');
+
+        modCountLabel.innerText = `目前已載入 ${allData.length} 個繁體中文模組資料`;
+
+        function filterAndDisplay() {
+            const term = searchInput.value.toLowerCase();
+            const filtered = allData.filter(m => 
+                m.name.toLowerCase().includes(term) || m.zh.toLowerCase().includes(term) ||
+                m.author.toLowerCase().includes(term) || m.cat.toLowerCase().includes(term) ||
+                m.desc.toLowerCase().includes(term)
+            );
+
+            featuredContent.innerHTML = '';
+            extraContent.innerHTML = '';
+
+            const grouped = {};
+            Object.keys(categoryConfig).forEach(c => grouped[c] = []);
+            filtered.forEach(m => {
+                const cat = m.cat in categoryConfig ? m.cat : "其他";
+                grouped[cat].push(m);
+            });
+
+            Object.keys(categoryConfig).forEach(catName => {
+                const modsInCat = grouped[catName];
+                if (modsInCat.length === 0) return;
+                const featuredInCat = modsInCat.filter(m => featured.includes(m));
+                const othersInCat = modsInCat.filter(m => !featured.includes(m));
+                if (featuredInCat.length > 0) featuredContent.appendChild(createSection(categoryConfig[catName], featuredInCat));
+                if (othersInCat.length > 0) extraContent.appendChild(createSection(categoryConfig[catName], othersInCat));
+            });
+
+            document.getElementById('no-results').classList.toggle('hidden', filtered.length !== 0);
+        }
+
+        searchInput.addEventListener('input', filterAndDisplay);
+        filterAndDisplay();
+    }
+
+    function createSection(title, mods) {
+        const section = document.createElement('div');
+        const rows = mods.map(m => {
+            const displayIcon = (m.icon && m.icon.trim() !== "") ? m.icon : defaultIcon;
+            return `
+                <div class="mod-row">
+                    <img src="${displayIcon}" loading="lazy" onerror="this.src='${defaultIcon}';">
+                    <div>
+                        <a href="${m.url || '#'}" target="_blank" class="mod-name-zh">${m.zh || m.name}</a>
+                        <span class="mod-name-en">${m.name}</span>
+                    </div>
+                    <div class="mod-desc">${m.desc || '暫無詳細介紹。'}</div>
+                    <div class="mod-meta-info">
+                        <span class="mod-author">By ${m.author || '未知'}</span>
+                        <span class="mod-version">Ver: ${m.version || '最新'}</span>
+                    </div>
+                </div>
+            `;
+        }).join('');
+        
+        section.innerHTML = `
+            <div class="category-header">
+                <h2 class="category-title">${title}</h2>
+                <span class="category-count">${mods.length} 個模組</span>
+            </div>
+            <div class="mod-grid">${rows}</div>
+        `;
+        return section;
+    }
+
+    document.getElementById('extra-mods-btn').addEventListener('click', function() {
+        const container = document.getElementById('extra-mods-container');
+        const isVisible = container.classList.toggle('hidden');
+        this.innerText = !isVisible ? '🔼 隱藏額外模組' : '📦 點擊展開更多模組 (包含輔助庫與其餘 200+ 個模組)';
+    });
+
+    loadAllMods();
+</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "01-cobblemon",
+    "title": "寶可夢入門 (Cobblemon)",
+    "category": "adventure",
+    "type": "mod",
+    "description": "探索 Cobblemon 的世界！本指南將帶你了解如何捕捉、訓練寶可夢，以及基礎的生存技巧。",
+    "icon": "https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp"
+  },
+  {
+    "id": "02-mekanism",
+    "title": "通用機械 (Mekanism)",
+    "category": "tech",
+    "type": "mod",
+    "description": "從基礎礦物處理到核融合反應爐，通用機械是科技發展的核心。學習如何建立高效的工廠與能源系統。",
+    "icon": "https://cdn.modrinth.com/data/Ce6I4WUE/ea185eb1300a64867f89101d4798e71a54ef6bed_96.webp"
+  },
+  {
+    "id": "03-create",
+    "title": "機械動力 (Create)",
+    "category": "tech",
+    "type": "mod",
+    "description": "利用齒輪、傳送帶與動力元件，構建美觀且實用的自動化機械。體驗最具有「物理感」的科技模組。",
+    "icon": "https://cdn.modrinth.com/data/LNytGWDc/61d716699bcf1ec42ed4926a9e1c7311be6087e2_96.webp"
+  },
+  {
+    "id": "04-ars-nouveau",
+    "title": "新生魔藝 (Ars Nouveau)",
+    "category": "magic",
+    "type": "mod",
+    "description": "編寫自定義咒語，召喚魔法生物，並利用魔力自動化你的生產線。成為一位強大的戰鬥法師或附魔師。",
+    "icon": "https://cdn.modrinth.com/data/TKB6INcv/7ccd369857b70b16e0fbd3f10e5278b0f75c7772_96.webp"
+  },
+  {
+    "id": "05-mystical-agriculture",
+    "title": "神秘農藝 (Mystical Agriculture)",
+    "category": "magic",
+    "type": "mod",
+    "description": "種植礦物與資源！透過精華與種子的培育，讓你不再需要整天待在礦坑裡。",
+    "icon": "https://cdn.modrinth.com/data/C95ReXie/2bddd50d346a470536319c9c1ae6c21f6a5b3e72_96.webp"
+  },
+  {
+    "id": "06-apotheosis",
+    "title": "神化 (Apotheosis)",
+    "category": "magic",
+    "type": "mod",
+    "description": "大幅強化原版的附魔、藥水與生怪磚系統。挑戰強大的 BOSS 生物，獲取神話級的裝備。",
+    "icon": "https://cdn.modrinth.com/data/tCkE8p2N/f5a71de378c2cc940efaa812da151c480cfdbbb6_96.webp"
+  },
+  {
+    "id": "07-hostile-neural-networks",
+    "title": "敵對網絡 (Hostile Neural Networks)",
+    "category": "tech",
+    "type": "mod",
+    "description": "透過模擬訓練數據模型，自動化生成生物掉落物。和平且高效的資源獲取方式。"
+  },
+  {
+    "id": "08-industrial-foregoing",
+    "title": "工業先鋒 (Industrial Foregoing)",
+    "category": "tech",
+    "type": "mod",
+    "description": "大型農業與畜牧業自動化解決方案。包含液體收集、附魔提取與大範圍採集機器。",
+    "icon": "https://cdn.modrinth.com/data/lWxpUd04/a49f4b8e396b3ad4537e02e1c5e95c4c5074f96c_96.webp"
+  },
+  {
+    "id": "09-draconic-evolution",
+    "title": "龍之進化 (Draconic Evolution)",
+    "category": "tech",
+    "type": "mod",
+    "description": "終極後期的科技模組。利用龍之精華製作強大的裝備、工具與儲能裝置，挑戰混沌守衛。",
+    "icon": "https://cdn.modrinth.com/data/nBqivi8H/990a99155e8617963e69735623f3e179fc6b8753_96.webp"
+  },
+  {
+    "id": "10-applied-energistics-2",
+    "title": "應用能源 2 (AE2)",
+    "category": "tech",
+    "type": "mod",
+    "description": "最先進的物流與儲存系統。將成千上萬的物品數位化儲存，並實現複雜的自動合成網絡。",
+    "icon": "https://cdn.modrinth.com/data/XxWD5pD3/60b001515abbf6ebf32bc2729b0ddd95d2793feb_96.webp"
+  },
+  {
+    "id": "11-journeymap",
+    "title": "旅行地圖 (JourneyMap)",
+    "category": "utility",
+    "type": "mod",
+    "description": "即時繪製世界地圖，標記重要地點，並查看附近的生物與地形。冒險者的必備工具。"
+  },
+  {
+    "id": "12-iron-jetpacks",
+    "title": "噴射背包 (Iron Jetpacks)",
+    "category": "tech",
+    "type": "mod",
+    "description": "提供多種等級的噴射背包，利用電力飛行，讓你輕鬆探索世界與建築。",
+    "icon": "https://cdn.modrinth.com/data/DWIEOniQ/ae173e06848b2b77127ac64aa8a0571ca93c0265_96.webp"
+  },
+  {
+    "id": "13-sophisticated-backpacks",
+    "title": "進階背包 (Sophisticated Backpacks)",
+    "category": "utility",
+    "type": "mod",
+    "description": "可升級的背包系統。增加容量、自動拾取、磁鐵功能，甚至內建合成台與熔爐。",
+    "icon": "https://cdn.modrinth.com/data/TyCTlI4b/e31c7e2f8769d317339e25b2a8d1b40fbf312729_96.webp"
+  },
+  {
+    "id": "14-waystones",
+    "title": "傳送石碑 (Waystones)",
+    "category": "utility",
+    "type": "mod",
+    "description": "在世界各地建立傳送點。利用傳送石碑、捲軸與傳送石，在基地與探險地之間快速往返。",
+    "icon": "https://cdn.modrinth.com/data/LOpKHB2A/6c81041b60d525d63c0b9da497db66cfda215e16_96.webp"
+  },
+  {
+    "id": "15-easy-villagers",
+    "title": "簡單村民 (Easy Villagers)",
+    "category": "utility",
+    "type": "mod",
+    "description": "簡化村民交易與繁殖。將村民放入方塊中，自動化交易、轉職與生產鐵魔像。",
+    "icon": "https://cdn.modrinth.com/data/Kaov2qgi/ceb583c0f27eaca42f6dfbe79ddec5e6142f1766_96.webp"
+  },
+  {
+    "id": "16-ftb-ultimine",
+    "title": "連鎖挖礦 (FTB Ultimine)",
+    "category": "utility",
+    "type": "mod",
+    "description": "按住快捷鍵即可一次挖掘多個方塊。大幅提升採集效率，支援多種挖掘模式。"
+  },
+  {
+    "id": "17-natures-compass",
+    "title": "自然指南針 (Nature's Compass)",
+    "category": "utility",
+    "type": "mod",
+    "description": "尋找特定生態系（Biome）的指南針。顯示座標與距離，並指引你前往目標區域。",
+    "icon": "https://cdn.modrinth.com/data/fPetb5Kh/9b0d54f2a8d9e49a10f5bcb8004bc757f55bb013.png"
+  },
+  {
+    "id": "18-explorers-compass",
+    "title": "探險家指南針 (Explorer's Compass)",
+    "category": "utility",
+    "type": "mod",
+    "description": "尋找特定結構（如村莊、地牢、終界要塞）的指南針。冒險家的最佳導航工具。",
+    "icon": "https://cdn.modrinth.com/data/RV1qfVQ8/16aee9631790996daba4d0dc5fe75f4e894ccaee.png"
+  },
+  {
+    "id": "19-time-in-a-bottle",
+    "title": "瓶中時光 (Time in a Bottle)",
+    "category": "utility",
+    "type": "mod",
+    "description": "儲存你的遊玩時間，並用來加速機器運作或作物生長。時間就是金錢，更是效率！",
+    "icon": "https://cdn.modrinth.com/data/LQdpBqdS/1870e5eaced6948d39f107e06238225b495a9806.png"
+  },
+  {
+    "id": "20-pocket-storage",
+    "title": "口袋儲存 (Pocket Storage)",
+    "category": "utility",
+    "type": "mod",
+    "description": "輕量級的物品儲存方案。類似袋子，但能容納大量單一種類的物品，並支援自動補給。"
+  },
+  {
+    "id": "21-akashic-tome",
+    "title": "阿卡西紀錄 (Akashic Tome)",
+    "category": "utility",
+    "type": "mod",
+    "description": "將所有模組的指導手冊合而為一。節省背包空間，隨時查閱任何模組的說明書。",
+    "icon": "https://cdn.modrinth.com/data/JBthPdnp/f31b97209d7973f2975c9162d6bf20a2f8488837_96.webp"
+  },
+  {
+    "id": "22-jade",
+    "title": "Jade HUD",
+    "category": "utility",
+    "type": "mod",
+    "description": "顯示準心指向方塊或生物的詳細資訊。包括名稱、血量、儲存內容物與破壞進度。"
+  }
+]

@@ -1,0 +1,2423 @@
+{
+  "keyData": {
+    "all": {
+      "title": "全部功能 (All Functions)",
+      "desc": "顯示所有已設定的按鍵。紅色表示該按鍵被多個模組同時使用，可能存在衝突。",
+      "features": [
+        "衝突偵測",
+        "懸浮查看詳細功能",
+        "完整對照"
+      ],
+      "author": "ATM Team",
+      "icon": "https://media.forgecdn.net/avatars/53/430/636136190539169641.png",
+      "tags": [
+        "System",
+        "Global"
+      ],
+      "categories": {
+        "tech": "⚙️ 核心科技 (Technology)",
+        "magic": "✨ 魔法秘術 (Magic)",
+        "adventure": "🌍 冒險與維度 (Adventure)",
+        "utility": "🎒 實用工具 (Utilities)",
+        "system": "🛠️ 系統與優化 (System & Libs)"
+      }
+    },
+    "Vanilla": {
+      "title": "原生基礎 (Vanilla Core)",
+      "desc": "Minecraft 的核心操作設定，包含移動、戰鬥、物品管理與基本的系統功能。",
+      "author": "Mojang Studios",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/31/591/64/64/635431665481711718.png",
+      "url": "https://www.minecraft.net/",
+      "tags": [
+        "Base Game",
+        "Core"
+      ],
+      "features": [
+        "基礎移動與跳躍",
+        "攻擊與方塊互動",
+        "物品欄與快捷列管理",
+        "系統視角與截圖"
+      ],
+      "bindings": {
+        "MouseLeft": "攻擊 / 破壞",
+        "MouseRight": "使用物品 / 放置方塊",
+        "KeyW": "前進",
+        "KeyA": "往左",
+        "KeyS": "後退",
+        "KeyD": "往右",
+        "Space": "跳躍",
+        "ShiftLeft": "潛行",
+        "ControlLeft": "跑步",
+        "KeyQ": "丟棄物品",
+        "KeyE": "開啟背包",
+        "KeyT": "聊天",
+        "Tab": "玩家清單",
+        "MouseMiddle": "複製物品 (創意模式)",
+        "Slash": "輸入指令",
+        "KeyP": "社交選單",
+        "F2": "螢幕截圖",
+        "F5": "切換視角",
+        "F11": "全螢幕切換",
+        "KeyF": "雙手互換",
+        "KeyC": "儲存快捷列狀態",
+        "KeyX": "讀取快捷列狀態",
+        "KeyL": "進度獎勵介面",
+        "Digit1": "快捷欄 1",
+        "Digit2": "快捷欄 2",
+        "Digit3": "快捷欄 3",
+        "Digit4": "快捷欄 4",
+        "Digit5": "快捷欄 5",
+        "Digit6": "快捷欄 6",
+        "Digit7": "快捷欄 7",
+        "Digit8": "快捷欄 8",
+        "Digit9": "快捷欄 9",
+        "KeyB": "系統旁白功能"
+      },
+      "category": "system"
+    },
+    "Cobblemon": {
+      "title": "寶可夢 (Cobblemon)",
+      "desc": "Cobblemon 是一個現代化的開放世界寶可夢模組，旨在與原版遊戲體驗完美結合。它提供了豐富的捕捉、對戰與冒險體驗。",
+      "author": "The Cobblemon Team",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/620/286/64/64/638008832892634916.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/cobblemon",
+      "tags": [
+        "Adventure",
+        "Pokemon"
+      ],
+      "features": [
+        "無縫丟出與召回寶可夢",
+        "隊伍成員快速導航",
+        "支持騎乘與自由視角",
+        "完整的戰鬥與樹果袋系統"
+      ],
+      "bindings": {
+        "KeyO": "隱藏/顯示隊伍介面",
+        "KeyM": "開啟選中寶可夢的總結頁面",
+        "ArrowDown": "隊伍成員向下選擇",
+        "ArrowUp": "隊伍成員向上選擇",
+        "KeyR": "丟出目前的寶可夢",
+        "AltLeft": "騎乘時的自由視角",
+        "KeyG": "主動與野生寶可夢發起戰鬥",
+        "KeyP": "快速開啟樹果袋",
+        "BracketLeft": "切換左側持有的誘餌",
+        "BracketRight": "切換右側持有的誘餌",
+        "Backslash": "自動樹果餵食開關"
+      },
+      "category": "adventure"
+    },
+    "Applied Energistics 2": {
+      "title": "應用能源 2 (Applied Energistics 2)",
+      "desc": "Applied Energistics 2 是一個關於物質與能量轉化的模組。它提供了一套強大的自動化儲存與處理網絡 (ME 網絡)。",
+      "author": "AlgorithmX2, Yueh",
+      "icon": "https://media.forgecdn.net/avatars/1025/127/638548475358792693.webp",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2",
+      "tags": [
+        "Technology",
+        "Storage"
+      ],
+      "features": [
+        "先進的 ME 儲存與自動合成",
+        "樣板系統 (Pattern) 精準控制",
+        "空間存儲與維度傳輸",
+        "支持多樣化的無線終端"
+      ],
+      "bindings": {
+        "ShiftLeft": "配合滑鼠滾輪修改物品屬性",
+        "ControlLeft": "零件的反向精確放置",
+        "KeyP": "快速查看編碼樣板",
+        "MouseMiddle": "在終端中設定數量"
+      },
+      "category": "tech"
+    },
+    "Mekanism": {
+      "title": "通用機械 (Mekanism)",
+      "desc": "Mekanism 提供了一系列高性能的機器與裝備。從五倍礦產處理到強大的數碼型裝甲，應有盡有。",
+      "author": "aidancbrady",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/492/672/64/64/637801316302309362.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/mekanism",
+      "tags": [
+        "Technology",
+        "Industry"
+      ],
+      "features": [
+        "多樣化的能源生產 (風力、聚變)",
+        "裝甲的多種功能模式 (飛行、夜視)",
+        "可配置的物流與氣體傳輸系統"
+      ],
+      "bindings": {
+        "KeyN": "顯示機器或物品的詳細說明",
+        "KeyV": "機甲頭盔功能模式切換",
+        "KeyG": "機甲胸甲功能模式切換",
+        "KeyJ": "機甲腿部功能模式切換",
+        "KeyB": "機甲靴子功能模式切換",
+        "ShiftLeft": "在界面中顯示進階資訊",
+        "Backslash": "快速開啟模組調整器",
+        "ControlLeft": "機甲裝備的按鍵加速",
+        "KeyH": "切換按鍵配置的 HUD 顯示"
+      },
+      "category": "tech"
+    },
+    "Ars Nouveau": {
+      "title": "新生魔藝 (Ars Nouveau)",
+      "desc": "這是一個現代魔法模組，讓玩家可以自定義法術。您可以製作強大的魔法、自動化您的基地並使用魔法道具。",
+      "author": "baileyh",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/565/915/64/64/637924211543296813.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ars-nouveau",
+      "tags": [
+        "Magic",
+        "Automation"
+      ],
+      "features": [
+        "完全自定義的法術組合",
+        "強大的魔法手冊 (Enchanter's Spellbook)",
+        "魔法自動化 (Starbuncles)",
+        "專屬的魔法 HUD 與快捷鍵"
+      ],
+      "bindings": {
+        "KeyC": "開啟選中的魔法書",
+        "KeyV": "開啟法術槽位的 HUD 選擇界面",
+        "KeyX": "切換至下一個法術槽位",
+        "KeyZ": "切換至上一個法術槽位",
+        "KeyG": "快速使用頭部飾品功能",
+        "ControlLeft": "在魔法書中開啟文件說明"
+      },
+      "category": "magic"
+    },
+    "Create": {
+      "title": "機械動力 (Create)",
+      "desc": "機械動力模組提供了一組美觀且具備動態感的工具與方塊。它專注於利用旋轉動力來實現自動化。",
+      "author": "simibubi",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/1065/184/64/64/638598725500886388.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/create",
+      "tags": [
+        "Technology",
+        "Cosmetic"
+      ],
+      "features": [
+        "極具視覺效果的機械傳動系統",
+        "創新的思索 (Ponder) 展示系統",
+        "實用的工具腰帶與濾波器",
+        "全自動化的火車與工廠設計"
+      ],
+      "bindings": {
+        "AltLeft": "查看工具腰帶或持有物品的資訊"
+      },
+      "category": "tech"
+    },
+    "Sophisticated": {
+      "title": "進階儲存 (Sophisticated Series)",
+      "desc": "包含進階背包、儲存箱與核心組件。它為 Minecraft 帶來了最具靈活性的存儲解決方案。",
+      "author": "P3pp3rF1sh",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/375/56/64/64/637549610342642859.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
+      "tags": [
+        "Storage",
+        "Utility"
+      ],
+      "features": [
+        "可升級的背包與箱子容量",
+        "自動拾取、整理與過濾模組",
+        "多樣化的外觀與染色支持",
+        "背包與玩家物品欄的智慧互動"
+      ],
+      "bindings": {
+        "KeyB": "直接開啟身上裝備的背包",
+        "KeyC": "快速與背包內容物進行互動",
+        "KeyX": "啟動或切換背包升級槽位 2",
+        "KeyZ": "啟動或切換背包升級槽位 1",
+        "MouseMiddle": "執行物品欄智慧整理"
+      },
+      "category": "utility"
+    },
+    "Cataclysm": {
+      "title": "災變 (Cataclysm)",
+      "desc": "這是一個增加強大挑戰者的模組。它為遊戲帶來了極具史詩感的 Boss 戰鬥與獨特的戰利品。",
+      "author": "mcl_ender",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/460/870/64/64/637739722679428303.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/l_ender-s-cataclysm",
+      "tags": [
+        "Adventure",
+        "Bosses"
+      ],
+      "features": [
+        "極高挑戰性的多階段 Boss",
+        "具有獨特主動能力的裝甲與武器",
+        "史詩般的地牢結構 (如烈焰競技場)"
+      ],
+      "bindings": {
+        "KeyX": "施放武器或裝備的主動特殊技能",
+        "KeyC": "施放頭盔專屬的特殊能力",
+        "KeyY": "施放胸甲專屬的特殊能力",
+        "KeyV": "施放靴子專屬的特殊能力"
+      },
+      "category": "adventure"
+    },
+    "Building Gadgets": {
+      "title": "建築工具 (Building Gadgets)",
+      "desc": "這是一個提供專用工具以幫助大規模建築與挖掘的模組。適合懶人與大型工程。",
+      "author": "Direwolf20",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/161/452/64/64/636672128890190531.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/building-gadgets",
+      "tags": [
+        "Construction",
+        "Tools"
+      ],
+      "features": [
+        "大規模方塊放置與替換",
+        "撤銷 (Undo) 操作以防誤觸",
+        "支持圖表樣板 (Templates)",
+        "可視化的定位與範圍設定"
+      ],
+      "bindings": {
+        "KeyG": "Settings Menu",
+        "KeyU": "Undo",
+        "KeyH": "Anchor",
+        "KeyR": "Range"
+      },
+      "category": "utility"
+    },
+    "Twilight Forest": {
+      "title": "暮光森林 (Twilight Forest)",
+      "desc": "一個充滿奇幻氣息的黃昏維度。這裡有巨大的古樹、神秘的城堡與獨特的 Boss 等待您挑戰。",
+      "author": "Benimatic",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/14/212/64/64/635589178760357568.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest",
+      "tags": [
+        "Adventure",
+        "Magic",
+        "Dimension"
+      ],
+      "features": [
+        "獨特的地牢進度與 Boss 系統",
+        "美麗的黃昏生態系與魔法植物",
+        "傳奇裝備與可穿戴的飾品"
+      ],
+      "bindings": {
+        "KeyC": "循環切換暮光地圖的顯示模式",
+        "KeyV": "快速切換主快捷列與備用欄",
+        "KeyZ": "使用暮光森林物品的縮放功能"
+      },
+      "category": "adventure"
+    },
+    "Navigation": {
+      "title": "導航與工具 (Navigation & Utilities)",
+      "desc": "包含各類實用的工具快捷鍵，如導航系統、物品手冊與特殊交互功能。",
+      "author": "Various Authors",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/modpacks/all-the-mods-10",
+      "tags": [
+        "Utility",
+        "Tools",
+        "Navigation"
+      ],
+      "features": [
+        "目的地導航系統",
+        "模組幫助手冊",
+        "特殊功能切換",
+        "載具與飾品管理"
+      ],
+      "bindings": {
+        "F1": "開啟模組手冊 (Manual)",
+        "BracketRight": "導航: 下一個目的地",
+        "BracketLeft": "導航: 前一個目的地",
+        "Backslash": "離開載具 / 特殊功能切換",
+        "ShiftRight": "角色外觀/面具開關",
+        "KeyK": "開啟 KubeDex (ATM 任務/說明)"
+      },
+      "category": "utility"
+    },
+    "Iris": {
+      "title": "Iris 光影 (Iris Shaders)",
+      "desc": "Iris 是一個高性能的光影模組，為 Minecraft 提供美麗的視覺效果。",
+      "author": "Iris Team",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/391/367/64/64/637584172062782791.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/irisshaders",
+      "tags": [
+        "Visual",
+        "Shaders"
+      ],
+      "features": [
+        "光影包支援",
+        "即時光影切換",
+        "高性能渲染"
+      ],
+      "bindings": {
+        "KeyK": "Keybind.Toggleshaders",
+        "KeyO": "Keybind.Shaderpackselection"
+      },
+      "category": "utility"
+    },
+    "Supplementaries": {
+      "title": "補充模組 (Supplementaries)",
+      "desc": "添加各種裝飾性與實用性的方塊與物品。",
+      "author": "MehVahdJukaar",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/supplementaries",
+      "tags": [
+        "Decoration",
+        "Utility"
+      ],
+      "features": [
+        "裝飾方塊",
+        "實用物品",
+        "箭袋功能"
+      ],
+      "bindings": {
+        "KeyV": "Keybind.Quiver"
+      },
+      "category": "utility"
+    },
+    "Accessories": {
+      "title": "飾品 (Accessories)",
+      "desc": "提供額外的飾品系統。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Equipment",
+        "Accessories"
+      ],
+      "features": [
+        "飾品系統"
+      ],
+      "bindings": {
+        "KeyH": "Key.Open Accessories Screen"
+      },
+      "category": "utility"
+    },
+    "Sfm": {
+      "title": "簡單流體機械 (SFM)",
+      "desc": "提供流體與標籤管理系統。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Utility",
+        "Management"
+      ],
+      "features": [
+        "標籤系統",
+        "容器檢查",
+        "網路工具"
+      ],
+      "bindings": {
+        "ShiftLeft": "Label Gun.Pull Modifier",
+        "KeyI:CONTROL": "Container Inspector.Activation Key",
+        "AltLeft": "Toggle Network Tool Overlay",
+        "ControlLeft": "Label Gun.Contiguous Modifier",
+        "AltRight": "Label Gun.Target Manager Modifier",
+        "KeyE:CONTROL": "Title Screen.Text Editor"
+      },
+      "category": "utility"
+    },
+    "Occultism": {
+      "title": "神秘學 (Occultism)",
+      "desc": "一個關於召喚與魔法儀式的模組，提供獨特的儲存與自動化系統。",
+      "author": "kli_kli",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/occultism",
+      "tags": [
+        "Magic",
+        "Storage"
+      ],
+      "features": [
+        "召喚系統",
+        "魔法儲存",
+        "使魔系統"
+      ],
+      "bindings": {
+        "KeyB": "Backpack",
+        "KeyV": "Ender Bag",
+        "KeyN": "Storage Remote"
+      },
+      "category": "magic"
+    },
+    "Craftingtweaks": {
+      "title": "合成調整 (Crafting Tweaks)",
+      "desc": "提供多種合成介面的便利功能，如旋轉、平衡、壓縮等。",
+      "author": "BlayTheNinth",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks",
+      "tags": [
+        "Utility",
+        "Crafting"
+      ],
+      "features": [
+        "合成表旋轉",
+        "物品平衡",
+        "壓縮功能"
+      ],
+      "bindings": {
+        "KeyK:CONTROL": "Compress One",
+        "KeyK": "Compress Stack",
+        "KeyK:SHIFT": "Compress All",
+        "Tab:CONTROL": "Refill Last",
+        "Tab": "Refill Last Stack"
+      },
+      "category": "utility"
+    },
+    "Placebo": {
+      "title": " Placebo 核心 (Placebo)",
+      "desc": "提供各種視覺效果與功能。",
+      "author": "Shadows_of_Fire",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Utility",
+        "Visual"
+      ],
+      "features": [
+        "視覺效果",
+        "翅膀切換"
+      ],
+      "bindings": {
+        "Numpad9": "Toggletrails",
+        "Numpad8": "Togglewings"
+      },
+      "category": "utility"
+    },
+    "Bridgingmod": {
+      "title": "自動架橋 (Bridging Mod)",
+      "desc": "提供自動架橋功能，方便建築。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Utility",
+        "Building"
+      ],
+      "features": [
+        "自動架橋"
+      ],
+      "bindings": {
+        "Comma": "Toggle Bridging"
+      },
+      "category": "utility"
+    },
+    "Curios": {
+      "title": "飾品欄 (Curios API)",
+      "desc": "提供額外的飾品欄位系統，讓玩家可以裝備更多物品。",
+      "author": "TheIllusiveC4",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/curios",
+      "tags": [
+        "API",
+        "Equipment"
+      ],
+      "features": [
+        "飾品欄位系統",
+        "支援多種飾品"
+      ],
+      "bindings": {
+        "KeyG": "Open.Desc"
+      },
+      "category": "utility"
+    },
+    "Apotheosis": {
+      "title": "神化 (Apotheosis)",
+      "desc": "大幅增強原版遊戲內容，包括更強大的附魔、生成器與 Boss。",
+      "author": "Shadows_of_Fire",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/apotheosis",
+      "tags": [
+        "Enhancement",
+        "Combat"
+      ],
+      "features": [
+        "增強附魔系統",
+        "世界階層系統",
+        "裝備比較功能"
+      ],
+      "bindings": {
+        "KeyO:CONTROL": "Toggle Radial Mining",
+        "KeyT:CONTROL": "Open World Tier Select",
+        "KeyT:SHIFT": "Link Item To Chat",
+        "ShiftLeft": "Compare Equipment"
+      },
+      "category": "magic"
+    },
+    "Crystalix": {
+      "title": "水晶 (Crystalix)",
+      "desc": "Crystalix 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyV": "Wand Config",
+        "KeyX": "Copy Properties",
+        "ControlLeft": "Apply Colorless"
+      },
+      "category": "tech"
+    },
+    "Railcraft": {
+      "title": "鐵路工藝 (Railcraft)",
+      "desc": "Railcraft 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyG": "Change Aura",
+        "KeyN": "Loco.Reverse",
+        "Period": "Loco.Faster",
+        "Comma": "Loco.Slower",
+        "KeyB": "Loco.Whistle"
+      },
+      "category": "tech"
+    },
+    "Aether": {
+      "title": "以太 (The Aether)",
+      "desc": "Aether 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyI": "Open Accessories.Desc",
+        "Space": "Gravitite Jump Ability.Desc",
+        "KeyV": "Invisibility Toggle.Desc"
+      },
+      "category": "adventure"
+    },
+    "Relics": {
+      "title": "聖遺物 (Relics)",
+      "desc": "Relics 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "AltLeft": "Active Abilities List",
+        "ShiftLeft": "Research Relic"
+      },
+      "category": "magic"
+    },
+    "Kubejs": {
+      "title": "KubeJS 腳本 (KubeJS)",
+      "desc": "一個強大的腳本模組，允許玩家自定義配方、事件與內容。",
+      "author": "LatvianModder",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/kubejs",
+      "tags": [
+        "Scripting",
+        "Customization"
+      ],
+      "features": [
+        "自定義配方",
+        "事件腳本",
+        "內容自定義"
+      ],
+      "bindings": {
+        "KeyK": "Kubedex"
+      },
+      "category": "system"
+    },
+    "Jade": {
+      "title": "Jade HUD (Jade)",
+      "desc": "Jade 提供了一個可自定義的 HUD 系統，顯示方塊、實體和流體的詳細資訊。",
+      "author": "Snownee",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/jade",
+      "tags": [
+        "Utility",
+        "HUD"
+      ],
+      "features": [
+        "方塊資訊顯示",
+        "實體資訊顯示",
+        "流體資訊顯示",
+        "可自定義配置"
+      ],
+      "bindings": {
+        "Numpad0": "Config",
+        "Numpad1": "Show Overlay",
+        "Numpad2": "Toggle Liquid",
+        "Numpad3": "Show Recipes",
+        "Numpad4": "Show Uses",
+        "Numpad5": "Narrate",
+        "ShiftLeft": "Show Details"
+      },
+      "category": "utility"
+    },
+    "FTB Ultimine": {
+      "title": "連鎖挖礦 (FTB Ultimine)",
+      "desc": "最受歡迎的連鎖挖掘工具，可以一次性採掘大量相同類型的方塊，大幅提升資源獲取效率。",
+      "author": "FTB Team",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/972/578/64/64/638474886453116037.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge",
+      "tags": [
+        "Utility",
+        "Mining"
+      ],
+      "features": [
+        "連鎖挖掘相同方塊",
+        "多種挖掘形狀切換",
+        "飢餓值自動平衡",
+        "支持草地與礦石挖掘"
+      ],
+      "bindings": {
+        "Backquote": "啟動連鎖挖掘鍵",
+        "ArrowUp": "切換挖掘形狀 (下一個)",
+        "ArrowDown": "切換挖掘形狀 (前一個)"
+      },
+      "category": "utility"
+    },
+    "Simple Magnets": {
+      "title": "簡單磁鐵 (Simple Magnets)",
+      "desc": "提供磁鐵功能，自動拾取附近的物品。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Utility",
+        "Magnet"
+      ],
+      "features": [
+        "自動拾取",
+        "範圍拾取"
+      ],
+      "bindings": {
+        "KeyH": "Keys.Toggle"
+      },
+      "category": "utility"
+    },
+    "The Bumblezone": {
+      "title": "蜂巢區域 (The Bumblezone)",
+      "desc": "添加一個以蜜蜂為主題的維度。",
+      "author": "TelepathicGrunt",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/the-bumblezone-forge",
+      "tags": [
+        "Dimension",
+        "Adventure"
+      ],
+      "features": [
+        "蜜蜂維度",
+        "獨特生物"
+      ],
+      "bindings": {
+        "Space": "Beehemoth Up",
+        "CapsLock": "Beehemoth Down"
+      },
+      "category": "adventure"
+    },
+    "Utility Vest": {
+      "title": "實用背心 (Utility Vest)",
+      "desc": "提供一個實用的背心系統，包含多種功能。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Utility",
+        "Equipment"
+      ],
+      "features": [
+        "背心功能",
+        "快速補給"
+      ],
+      "bindings": {
+        "KeyR": "Gui",
+        "KeyX": "Restock",
+        "AltLeft": "Save",
+        "ControlLeft": "Load"
+      },
+      "category": "utility"
+    },
+    "SecurityCraft": {
+      "title": "安全工藝 (SecurityCraft)",
+      "desc": "提供各種安全設備，包括攝影機、警報器與防護系統。",
+      "author": "Geforce132",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/security-craft",
+      "tags": [
+        "Security",
+        "Utility"
+      ],
+      "features": [
+        "攝影機系統",
+        "警報系統",
+        "防護方塊"
+      ],
+      "bindings": {
+        "Equal": "Camerazoomin",
+        "Minus": "Camerazoomout",
+        "KeyR": "Cameraemitredstone",
+        "KeyN": "Cameraactivatenightvision",
+        "KeyU": "Setdefaultviewingdirection"
+      },
+      "category": "tech"
+    },
+    "Hostile Neural Networks": {
+      "title": "敵對網絡 (Hostile Neural Networks)",
+      "desc": "一個關於深度學習與 AI 的模組。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Technology",
+        "AI"
+      ],
+      "features": [
+        "深度學習器",
+        "AI 系統"
+      ],
+      "bindings": {
+        "KeyU": "Open Deep Learner"
+      },
+      "category": "tech"
+    },
+    "More Overlays": {
+      "title": "更多覆蓋層 (More Overlays)",
+      "desc": "提供額外的視覺覆蓋層，如亮度顯示與區塊邊界。",
+      "author": "feldim2425",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/more-overlays",
+      "tags": [
+        "Utility",
+        "Visual"
+      ],
+      "features": [
+        "亮度覆蓋層",
+        "區塊邊界顯示"
+      ],
+      "bindings": {
+        "F7": "Lightoverlay.Desc",
+        "F9": "Chunkbounds.Desc"
+      },
+      "category": "utility"
+    },
+    "Toast Control": {
+      "title": "通知控制 (Toast Control)",
+      "desc": "控制遊戲中的通知與提示訊息顯示。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Utility",
+        "UI"
+      ],
+      "features": [
+        "通知管理",
+        "訊息過濾"
+      ],
+      "bindings": {
+        "KeyJ": "Clear"
+      },
+      "category": "utility"
+    },
+    "Easy Villagers": {
+      "title": "簡單村民 (Easy Villagers)",
+      "desc": "提供更方便的村民互動與交易系統。",
+      "author": "henkelmax",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/easy-villagers",
+      "tags": [
+        "Utility",
+        "Villagers"
+      ],
+      "features": [
+        "村民拾取",
+        "交易循環"
+      ],
+      "bindings": {
+        "KeyV": "Pick Up",
+        "KeyC": "Cycle Trades"
+      },
+      "category": "utility"
+    },
+    "Modular Routers": {
+      "title": "模組化路由器 (Modular Routers)",
+      "desc": "提供模組化的物品傳輸與處理系統。",
+      "author": "desht",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/modular-routers",
+      "tags": [
+        "Technology",
+        "Transport"
+      ],
+      "features": [
+        "模組化路由",
+        "物品傳輸",
+        "模組資訊"
+      ],
+      "bindings": {
+        "KeyC": "Configure",
+        "KeyI": "Moduleinfo"
+      },
+      "category": "tech"
+    },
+    "Just Zoom": {
+      "title": "縮放 (Just Zoom)",
+      "desc": "提供畫面縮放功能。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Utility",
+        "Visual"
+      ],
+      "features": [
+        "畫面縮放"
+      ],
+      "bindings": {
+        "KeyZ": "Keybinds.Keybind.Zoom"
+      },
+      "category": "utility"
+    },
+    "Eternal Starlight": {
+      "title": "永恆星光 (Eternal Starlight)",
+      "desc": "添加與星光相關的內容與功能。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Magic",
+        "Adventure"
+      ],
+      "features": [
+        "星光系統",
+        "徽章切換"
+      ],
+      "bindings": {
+        "KeyH": "Switch Crest"
+      },
+      "category": "magic"
+    },
+    "Silent Gear": {
+      "title": "寂靜裝備 (Silent Gear)",
+      "desc": "提供可自定義的裝備系統，包含多種材料與特性。",
+      "author": "SilentChaos512",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/silent-gear",
+      "tags": [
+        "Equipment",
+        "Customization"
+      ],
+      "features": [
+        "自定義裝備",
+        "材料系統",
+        "特性顯示"
+      ],
+      "bindings": {
+        "KeyZ": "Cycle.Back",
+        "KeyC": "Cycle.Next",
+        "ControlLeft": "Displayitemproperties",
+        "ShiftLeft": "Displaytraitdescriptions",
+        "AltLeft": "Displayitemconstruction",
+        "KeyX": "Openitem"
+      },
+      "category": "utility"
+    },
+    "Draconic Evolution": {
+      "title": "龍之進化 (Draconic Evolution)",
+      "desc": "Draconicevolution 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyP": "Place Item",
+        "KeyC": "Tool Config",
+        "KeyC:SHIFT": "Tool Modules"
+      },
+      "category": "tech"
+    },
+    "Immersive Engineering": {
+      "title": "沉浸工程 (Immersive Engineering)",
+      "desc": "Immersiveengineering 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyS": "Magnetequip",
+        "MouseMiddle": "Railgunzoom"
+      },
+      "category": "tech"
+    },
+    "Crafting on a Stick": {
+      "title": "手持合成 (Crafting on a Stick)",
+      "desc": "Crafting_on_a_stick 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyV": "Key.Open Curios"
+      },
+      "category": "utility"
+    },
+    "Integrated Dynamics": {
+      "title": "整合動力 (Integrated Dynamics)",
+      "desc": "Integrateddynamics 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyF:ALT": "Logic Programmer Focus Search",
+        "KeyR:ALT": "Logic Programmer Open Rename"
+      },
+      "category": "tech"
+    },
+    "Crash Utils": {
+      "title": "崩潰工具 (Crash Utils)",
+      "desc": "Crashutils 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyU:CONTROL": "Openscreen"
+      },
+      "category": "utility"
+    },
+    "Deeper and Darker": {
+      "title": "更深更暗 (Deeper and Darker)",
+      "desc": "Deeperdarker 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyB": "Boost",
+        "KeyV": "Transmit"
+      },
+      "category": "adventure"
+    },
+    "OritTech": {
+      "title": "OritTech 科技 (OritTech)",
+      "desc": "Oritech 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyG": "Augment Screen"
+      },
+      "category": "tech"
+    },
+    "Oracle Index": {
+      "title": "神諭索引 (Oracle Index)",
+      "desc": "提供一個搜尋與索引系統，幫助玩家快速找到資訊。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Utility",
+        "Search"
+      ],
+      "features": [
+        "資訊搜尋",
+        "索引系統"
+      ],
+      "bindings": {
+        "KeyH": "Open"
+      },
+      "category": "utility"
+    },
+    "FTB Chunks": {
+      "title": "FTB 區塊 (FTB Chunks)",
+      "desc": "Ftbchunks 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "Equal": "Minimap.Zoomin",
+        "Minus": "Minimap.Zoomout"
+      },
+      "category": "utility"
+    },
+    "Berry Pouch": {
+      "title": "樹果袋 (Berry Pouch)",
+      "desc": "Berrypouch 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyP": "Open Pouch",
+        "BracketLeft": "Cycle Bait Left",
+        "BracketRight": "Cycle Bait Right",
+        "Backslash": "Toggle Auto Berry"
+      },
+      "category": "utility"
+    },
+    "Fight or Flight": {
+      "title": "戰鬥或飛行 (Fight or Flight)",
+      "desc": "Fightorflight 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyG": "Startbattle"
+      },
+      "category": "adventure"
+    },
+    "Just Dire Things": {
+      "title": "Dire 工具 (Just Dire Things)",
+      "desc": "Justdirethings 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyV": "Key.Toggle Tool"
+      },
+      "category": "utility"
+    },
+    "Guide Me": {
+      "title": "引導我 (Guide Me)",
+      "desc": "Guideme 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "KeyG": "Guide"
+      },
+      "category": "utility"
+    },
+    "Framed Blocks": {
+      "title": "框架方塊 (Framed Blocks)",
+      "desc": "Framedblocks 模組的按鍵設定。",
+      "author": "Unknown",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/246/906/64/64/637155694857490651.png",
+      "url": "",
+      "tags": [
+        "Mod"
+      ],
+      "features": [
+        "按鍵功能"
+      ],
+      "bindings": {
+        "F9": "Key.Update Cull"
+      },
+      "category": "utility"
+    },
+    "VoiceChat": {
+      "title": "語音聊天 (Simple Voice Chat)",
+      "desc": "為 Minecraft 增加近距離語音通訊功能的模組，支持群組頻道與麥克風控制。",
+      "author": "henkelmax",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/391/367/64/64/637584172062782791.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat",
+      "tags": [
+        "Utility",
+        "Social",
+        "Communication"
+      ],
+      "features": [
+        "近距離即時語音",
+        "語音群組與頻道管理",
+        "麥克風與揚聲器設定",
+        "錄音與靜音功能"
+      ],
+      "bindings": {
+        "KeyM": "麥克風靜音開關",
+        "KeyN": "停用語音聊天",
+        "KeyG": "語音聊天的群組設定"
+      },
+      "category": "utility"
+    },
+    "Iron Jetpacks": {
+      "title": "噴射背包 (Iron Jetpacks)",
+      "desc": "提供多種等級與材料製作的噴射背包，是中後期跨越地形與空戰的核心工具。",
+      "author": "BlakeBr0",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/930/451/64/64/638403277029666425.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks",
+      "tags": [
+        "Technology",
+        "Armor",
+        "Flight"
+      ],
+      "features": [
+        "完全可定制的噴射背包",
+        "支持多種燃料與動力等級",
+        "懸浮與引擎精準控制",
+        "出力調整系統"
+      ],
+      "bindings": {
+        "KeyH": "懸浮模式 (Hover) 開關",
+        "KeyV": "背包引擎 (Engine) 開關",
+        "Period": "增加引擎出力 (Increment)",
+        "Comma": "減少引擎出力 (Decrement)"
+      },
+      "category": "tech"
+    },
+    "JourneyMap": {
+      "title": "旅行地圖 (JourneyMap)",
+      "desc": "JourneyMap 會在您探索時即時繪製您的 Minecraft 世界。它提供了一個全功能的客戶端地圖界面。",
+      "author": "techbrew",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/9/144/64/64/635421614078544069.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/journeymap",
+      "tags": [
+        "Map",
+        "Utility"
+      ],
+      "features": [
+        "即時地圖縮放與平移",
+        "路徑點管理與遠程導航",
+        "實體與怪物在小地圖上的追蹤",
+        "多種地圖渲染模式 (地下、地形)"
+      ],
+      "bindings": {
+        "Equal": "地圖界面放大",
+        "Minus": "地圖界面縮小",
+        "BracketLeft": "循環切換小地圖顯示類型",
+        "Backslash": "切換地圖預設配置",
+        "KeyB": "在地圖上快速創建新路徑點",
+        "KeyC": "全螢幕地圖下的聊天框位置調整",
+        "KeyJ": "切換小地圖主開關 (Alternate)",
+        "KeyN": "開啟全螢幕路徑點管理器",
+        "KeyO": "開啟地圖全螢幕選項選單",
+        "ArrowUp": "地圖視角向北偏移",
+        "ArrowDown": "地圖視角向南偏移",
+        "ArrowRight": "地圖視角向東偏移",
+        "ArrowLeft": "地圖視角向西偏移",
+        "KeyF": "全螢幕地圖追蹤玩家位置",
+        "KeyG": "切換實體/NPC 名稱顯示"
+      },
+      "category": "utility"
+    },
+    "PneumaticCraft": {
+      "title": "氣壓工藝 (PneumaticCraft)",
+      "desc": "這是一個基於氣壓 (Pressure) 的工業模組。它提供了一些非常精密且有趣的機械裝置。",
+      "author": "MineMaarten, Desht",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/478/360/64/64/637774086636641462.png",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized",
+      "tags": [
+        "Technology",
+        "Advanced"
+      ],
+      "features": [
+        "先進的壓縮空氣儲能系統",
+        "可編程的無人機 (Drones)",
+        "具有 HUD 的氣壓動力裝甲",
+        "精密的空氣物流網路"
+      ],
+      "bindings": {
+        "KeyU": "快速開啟裝甲配置選項",
+        "KeyH": "啟動頭盔的黑客模組",
+        "KeyY": "啟動頭盔的無人機調試模式",
+        "KeyX": "執行靴子的強力踢擊能力",
+        "KeyC": "啟動胸甲附帶的發射器",
+        "Space": "在空中的噴射靴子操作"
+      },
+      "category": "tech"
+    },
+    "JEI": {
+      "title": "JEI 物品管理器 (Just Enough Items)",
+      "desc": "JEI 是 Minecraft 中最核心的物品查詢工具，讓您可以查看所有方塊與物品的用途與合成方式。",
+      "author": "mezz",
+      "icon": "https://media.forgecdn.net/avatars/thumbnails/29/69/64/64/635838945588716414.jpeg",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/jei",
+      "tags": [
+        "Utility",
+        "Core"
+      ],
+      "features": [
+        "快速檢索物品清單",
+        "查看合成表 (R) 與用途 (U)",
+        "支持書籤功能方便常用物品查詢",
+        "與自動合成系統的高度集成"
+      ],
+      "bindings": {
+        "KeyO": "切換右側覆蓋層的顯示",
+        "KeyF": "將焦點移動至搜尋框中",
+        "KeyA": "將物品添加至書籤欄位",
+        "KeyR": "顯示該物品的合成方式",
+        "MouseLeft": "點擊物品隱藏或顯示",
+        "KeyU": "顯示該物品的所有用途",
+        "MouseRight": "以萬用字元隱藏相似材料",
+        "ArrowUp": "切換至上一次的搜尋記錄",
+        "ArrowDown": "切換至下一次的搜尋記錄",
+        "MouseMiddle": "在管理模式下給予物品堆疊",
+        "Backspace": "返回上一次查看的合成頁面",
+        "PageUp": "切換至合成介面的上一個類別",
+        "PageDown": "切換至合成介面的下一個類別",
+        "Escape": "關閉目前的查詢視窗"
+      },
+      "category": "utility"
+    }
+  },
+  "allBindings": {
+    "AltLeft": [
+      {
+        "mod": "寂靜裝備",
+        "action": "Displayitemconstruction"
+      },
+      {
+        "mod": "實用背心",
+        "action": "Save"
+      },
+      {
+        "mod": "寶可夢",
+        "action": "騎乘時的自由視角"
+      },
+      {
+        "mod": "機械動力",
+        "action": "查看工具腰帶或持有物品的資訊"
+      },
+      {
+        "mod": "簡單流體機械",
+        "action": "Toggle Network Tool Overlay"
+      },
+      {
+        "mod": "聖遺物",
+        "action": "Active Abilities List"
+      }
+    ],
+    "AltRight": [
+      {
+        "mod": "簡單流體機械",
+        "action": "Label Gun.Target Manager Modifier"
+      }
+    ],
+    "ArrowDown": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "切換至下一次的搜尋記錄"
+      },
+      {
+        "mod": "寶可夢",
+        "action": "隊伍成員向下選擇"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "地圖視角向南偏移"
+      },
+      {
+        "mod": "連鎖挖礦",
+        "action": "切換挖掘形狀 (前一個)"
+      }
+    ],
+    "ArrowLeft": [
+      {
+        "mod": "旅行地圖",
+        "action": "地圖視角向西偏移"
+      }
+    ],
+    "ArrowRight": [
+      {
+        "mod": "旅行地圖",
+        "action": "地圖視角向東偏移"
+      }
+    ],
+    "ArrowUp": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "切換至上一次的搜尋記錄"
+      },
+      {
+        "mod": "寶可夢",
+        "action": "隊伍成員向上選擇"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "地圖視角向北偏移"
+      },
+      {
+        "mod": "連鎖挖礦",
+        "action": "切換挖掘形狀 (下一個)"
+      }
+    ],
+    "Backquote": [
+      {
+        "mod": "連鎖挖礦",
+        "action": "啟動連鎖挖掘鍵"
+      }
+    ],
+    "Backslash": [
+      {
+        "mod": "寶可夢",
+        "action": "自動樹果餵食開關"
+      },
+      {
+        "mod": "導航與工具",
+        "action": "離開載具 / 特殊功能切換"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "切換地圖預設配置"
+      },
+      {
+        "mod": "樹果袋",
+        "action": "Toggle Auto Berry"
+      },
+      {
+        "mod": "通用機械",
+        "action": "快速開啟模組調整器"
+      }
+    ],
+    "Backspace": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "返回上一次查看的合成頁面"
+      }
+    ],
+    "BracketLeft": [
+      {
+        "mod": "寶可夢",
+        "action": "切換左側持有的誘餌"
+      },
+      {
+        "mod": "導航與工具",
+        "action": "導航: 前一個目的地"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "循環切換小地圖顯示類型"
+      },
+      {
+        "mod": "樹果袋",
+        "action": "Cycle Bait Left"
+      }
+    ],
+    "BracketRight": [
+      {
+        "mod": "寶可夢",
+        "action": "切換右側持有的誘餌"
+      },
+      {
+        "mod": "導航與工具",
+        "action": "導航: 下一個目的地"
+      },
+      {
+        "mod": "樹果袋",
+        "action": "Cycle Bait Right"
+      }
+    ],
+    "CapsLock": [
+      {
+        "mod": "蜂巢區域",
+        "action": "Beehemoth Down"
+      }
+    ],
+    "Comma": [
+      {
+        "mod": "噴射背包",
+        "action": "減少引擎出力 (Decrement)"
+      },
+      {
+        "mod": "自動架橋",
+        "action": "Toggle Bridging"
+      },
+      {
+        "mod": "鐵路工藝",
+        "action": "Loco.Slower"
+      }
+    ],
+    "ControlLeft": [
+      {
+        "mod": "原生基礎",
+        "action": "跑步"
+      },
+      {
+        "mod": "寂靜裝備",
+        "action": "Displayitemproperties"
+      },
+      {
+        "mod": "實用背心",
+        "action": "Load"
+      },
+      {
+        "mod": "應用能源 2",
+        "action": "零件的反向精確放置"
+      },
+      {
+        "mod": "新生魔藝",
+        "action": "在魔法書中開啟文件說明"
+      },
+      {
+        "mod": "水晶",
+        "action": "Apply Colorless"
+      },
+      {
+        "mod": "簡單流體機械",
+        "action": "Label Gun.Contiguous Modifier"
+      },
+      {
+        "mod": "通用機械",
+        "action": "機甲裝備的按鍵加速"
+      }
+    ],
+    "Digit1": [
+      {
+        "mod": "原生基礎",
+        "action": "快捷欄 1"
+      }
+    ],
+    "Digit2": [
+      {
+        "mod": "原生基礎",
+        "action": "快捷欄 2"
+      }
+    ],
+    "Digit3": [
+      {
+        "mod": "原生基礎",
+        "action": "快捷欄 3"
+      }
+    ],
+    "Digit4": [
+      {
+        "mod": "原生基礎",
+        "action": "快捷欄 4"
+      }
+    ],
+    "Digit5": [
+      {
+        "mod": "原生基礎",
+        "action": "快捷欄 5"
+      }
+    ],
+    "Digit6": [
+      {
+        "mod": "原生基礎",
+        "action": "快捷欄 6"
+      }
+    ],
+    "Digit7": [
+      {
+        "mod": "原生基礎",
+        "action": "快捷欄 7"
+      }
+    ],
+    "Digit8": [
+      {
+        "mod": "原生基礎",
+        "action": "快捷欄 8"
+      }
+    ],
+    "Digit9": [
+      {
+        "mod": "原生基礎",
+        "action": "快捷欄 9"
+      }
+    ],
+    "Equal": [
+      {
+        "mod": "FTB 區塊",
+        "action": "Minimap.Zoomin"
+      },
+      {
+        "mod": "安全工藝",
+        "action": "Camerazoomin"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "地圖界面放大"
+      }
+    ],
+    "Escape": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "關閉目前的查詢視窗"
+      }
+    ],
+    "F1": [
+      {
+        "mod": "導航與工具",
+        "action": "開啟模組手冊 (Manual)"
+      }
+    ],
+    "F11": [
+      {
+        "mod": "原生基礎",
+        "action": "全螢幕切換"
+      }
+    ],
+    "F2": [
+      {
+        "mod": "原生基礎",
+        "action": "螢幕截圖"
+      }
+    ],
+    "F5": [
+      {
+        "mod": "原生基礎",
+        "action": "切換視角"
+      }
+    ],
+    "F7": [
+      {
+        "mod": "更多覆蓋層",
+        "action": "Lightoverlay.Desc"
+      }
+    ],
+    "F9": [
+      {
+        "mod": "更多覆蓋層",
+        "action": "Chunkbounds.Desc"
+      },
+      {
+        "mod": "框架方塊",
+        "action": "Key.Update Cull"
+      }
+    ],
+    "KeyA": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "將物品添加至書籤欄位"
+      },
+      {
+        "mod": "原生基礎",
+        "action": "往左"
+      }
+    ],
+    "KeyB": [
+      {
+        "mod": "原生基礎",
+        "action": "系統旁白功能"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "在地圖上快速創建新路徑點"
+      },
+      {
+        "mod": "更深更暗",
+        "action": "Boost"
+      },
+      {
+        "mod": "神秘學",
+        "action": "Backpack"
+      },
+      {
+        "mod": "通用機械",
+        "action": "機甲靴子功能模式切換"
+      },
+      {
+        "mod": "進階儲存",
+        "action": "直接開啟身上裝備的背包"
+      },
+      {
+        "mod": "鐵路工藝",
+        "action": "Loco.Whistle"
+      }
+    ],
+    "KeyC": [
+      {
+        "mod": "原生基礎",
+        "action": "儲存快捷列狀態"
+      },
+      {
+        "mod": "寂靜裝備",
+        "action": "Cycle.Next"
+      },
+      {
+        "mod": "新生魔藝",
+        "action": "開啟選中的魔法書"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "全螢幕地圖下的聊天框位置調整"
+      },
+      {
+        "mod": "暮光森林",
+        "action": "循環切換暮光地圖的顯示模式"
+      },
+      {
+        "mod": "模組化路由器",
+        "action": "Configure"
+      },
+      {
+        "mod": "氣壓工藝",
+        "action": "啟動胸甲附帶的發射器"
+      },
+      {
+        "mod": "災變",
+        "action": "施放頭盔專屬的特殊能力"
+      },
+      {
+        "mod": "簡單村民",
+        "action": "Cycle Trades"
+      },
+      {
+        "mod": "進階儲存",
+        "action": "快速與背包內容物進行互動"
+      },
+      {
+        "mod": "龍之進化",
+        "action": "Tool Config"
+      }
+    ],
+    "KeyC:SHIFT": [
+      {
+        "mod": "龍之進化",
+        "action": "Tool Modules"
+      }
+    ],
+    "KeyD": [
+      {
+        "mod": "原生基礎",
+        "action": "往右"
+      }
+    ],
+    "KeyE": [
+      {
+        "mod": "原生基礎",
+        "action": "開啟背包"
+      }
+    ],
+    "KeyE:CONTROL": [
+      {
+        "mod": "簡單流體機械",
+        "action": "Title Screen.Text Editor"
+      }
+    ],
+    "KeyF": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "將焦點移動至搜尋框中"
+      },
+      {
+        "mod": "原生基礎",
+        "action": "雙手互換"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "全螢幕地圖追蹤玩家位置"
+      }
+    ],
+    "KeyF:ALT": [
+      {
+        "mod": "整合動力",
+        "action": "Logic Programmer Focus Search"
+      }
+    ],
+    "KeyG": [
+      {
+        "mod": "OritTech 科技",
+        "action": "Augment Screen"
+      },
+      {
+        "mod": "寶可夢",
+        "action": "主動與野生寶可夢發起戰鬥"
+      },
+      {
+        "mod": "建築工具",
+        "action": "Settings Menu"
+      },
+      {
+        "mod": "引導我",
+        "action": "Guide"
+      },
+      {
+        "mod": "戰鬥或飛行",
+        "action": "Startbattle"
+      },
+      {
+        "mod": "新生魔藝",
+        "action": "快速使用頭部飾品功能"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "切換實體/NPC 名稱顯示"
+      },
+      {
+        "mod": "語音聊天",
+        "action": "語音聊天的群組設定"
+      },
+      {
+        "mod": "通用機械",
+        "action": "機甲胸甲功能模式切換"
+      },
+      {
+        "mod": "鐵路工藝",
+        "action": "Change Aura"
+      },
+      {
+        "mod": "飾品欄",
+        "action": "Open.Desc"
+      }
+    ],
+    "KeyH": [
+      {
+        "mod": "噴射背包",
+        "action": "懸浮模式 (Hover) 開關"
+      },
+      {
+        "mod": "建築工具",
+        "action": "Anchor"
+      },
+      {
+        "mod": "氣壓工藝",
+        "action": "啟動頭盔的黑客模組"
+      },
+      {
+        "mod": "永恆星光",
+        "action": "Switch Crest"
+      },
+      {
+        "mod": "神諭索引",
+        "action": "Open"
+      },
+      {
+        "mod": "簡單磁鐵",
+        "action": "Keys.Toggle"
+      },
+      {
+        "mod": "通用機械",
+        "action": "切換按鍵配置的 HUD 顯示"
+      },
+      {
+        "mod": "飾品",
+        "action": "Key.Open Accessories Screen"
+      }
+    ],
+    "KeyI": [
+      {
+        "mod": "以太",
+        "action": "Open Accessories.Desc"
+      },
+      {
+        "mod": "模組化路由器",
+        "action": "Moduleinfo"
+      }
+    ],
+    "KeyI:CONTROL": [
+      {
+        "mod": "簡單流體機械",
+        "action": "Container Inspector.Activation Key"
+      }
+    ],
+    "KeyJ": [
+      {
+        "mod": "旅行地圖",
+        "action": "切換小地圖主開關 (Alternate)"
+      },
+      {
+        "mod": "通用機械",
+        "action": "機甲腿部功能模式切換"
+      },
+      {
+        "mod": "通知控制",
+        "action": "Clear"
+      }
+    ],
+    "KeyK": [
+      {
+        "mod": "Iris 光影",
+        "action": "Keybind.Toggleshaders"
+      },
+      {
+        "mod": "KubeJS 腳本",
+        "action": "Kubedex"
+      },
+      {
+        "mod": "合成調整",
+        "action": "Compress Stack"
+      },
+      {
+        "mod": "導航與工具",
+        "action": "開啟 KubeDex (ATM 任務/說明)"
+      }
+    ],
+    "KeyK:CONTROL": [
+      {
+        "mod": "合成調整",
+        "action": "Compress One"
+      }
+    ],
+    "KeyK:SHIFT": [
+      {
+        "mod": "合成調整",
+        "action": "Compress All"
+      }
+    ],
+    "KeyL": [
+      {
+        "mod": "原生基礎",
+        "action": "進度獎勵介面"
+      }
+    ],
+    "KeyM": [
+      {
+        "mod": "寶可夢",
+        "action": "開啟選中寶可夢的總結頁面"
+      },
+      {
+        "mod": "語音聊天",
+        "action": "麥克風靜音開關"
+      }
+    ],
+    "KeyN": [
+      {
+        "mod": "安全工藝",
+        "action": "Cameraactivatenightvision"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "開啟全螢幕路徑點管理器"
+      },
+      {
+        "mod": "神秘學",
+        "action": "Storage Remote"
+      },
+      {
+        "mod": "語音聊天",
+        "action": "停用語音聊天"
+      },
+      {
+        "mod": "通用機械",
+        "action": "顯示機器或物品的詳細說明"
+      },
+      {
+        "mod": "鐵路工藝",
+        "action": "Loco.Reverse"
+      }
+    ],
+    "KeyO": [
+      {
+        "mod": "Iris 光影",
+        "action": "Keybind.Shaderpackselection"
+      },
+      {
+        "mod": "JEI 物品管理器",
+        "action": "切換右側覆蓋層的顯示"
+      },
+      {
+        "mod": "寶可夢",
+        "action": "隱藏/顯示隊伍介面"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "開啟地圖全螢幕選項選單"
+      }
+    ],
+    "KeyO:CONTROL": [
+      {
+        "mod": "神化",
+        "action": "Toggle Radial Mining"
+      }
+    ],
+    "KeyP": [
+      {
+        "mod": "原生基礎",
+        "action": "社交選單"
+      },
+      {
+        "mod": "寶可夢",
+        "action": "快速開啟樹果袋"
+      },
+      {
+        "mod": "應用能源 2",
+        "action": "快速查看編碼樣板"
+      },
+      {
+        "mod": "樹果袋",
+        "action": "Open Pouch"
+      },
+      {
+        "mod": "龍之進化",
+        "action": "Place Item"
+      }
+    ],
+    "KeyQ": [
+      {
+        "mod": "原生基礎",
+        "action": "丟棄物品"
+      }
+    ],
+    "KeyR": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "顯示該物品的合成方式"
+      },
+      {
+        "mod": "安全工藝",
+        "action": "Cameraemitredstone"
+      },
+      {
+        "mod": "實用背心",
+        "action": "Gui"
+      },
+      {
+        "mod": "寶可夢",
+        "action": "丟出目前的寶可夢"
+      },
+      {
+        "mod": "建築工具",
+        "action": "Range"
+      }
+    ],
+    "KeyR:ALT": [
+      {
+        "mod": "整合動力",
+        "action": "Logic Programmer Open Rename"
+      }
+    ],
+    "KeyS": [
+      {
+        "mod": "原生基礎",
+        "action": "後退"
+      },
+      {
+        "mod": "沉浸工程",
+        "action": "Magnetequip"
+      }
+    ],
+    "KeyT": [
+      {
+        "mod": "原生基礎",
+        "action": "聊天"
+      }
+    ],
+    "KeyT:CONTROL": [
+      {
+        "mod": "神化",
+        "action": "Open World Tier Select"
+      }
+    ],
+    "KeyT:SHIFT": [
+      {
+        "mod": "神化",
+        "action": "Link Item To Chat"
+      }
+    ],
+    "KeyU": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "顯示該物品的所有用途"
+      },
+      {
+        "mod": "安全工藝",
+        "action": "Setdefaultviewingdirection"
+      },
+      {
+        "mod": "建築工具",
+        "action": "Undo"
+      },
+      {
+        "mod": "敵對網絡",
+        "action": "Open Deep Learner"
+      },
+      {
+        "mod": "氣壓工藝",
+        "action": "快速開啟裝甲配置選項"
+      }
+    ],
+    "KeyU:CONTROL": [
+      {
+        "mod": "崩潰工具",
+        "action": "Openscreen"
+      }
+    ],
+    "KeyV": [
+      {
+        "mod": "Dire 工具",
+        "action": "Key.Toggle Tool"
+      },
+      {
+        "mod": "以太",
+        "action": "Invisibility Toggle.Desc"
+      },
+      {
+        "mod": "噴射背包",
+        "action": "背包引擎 (Engine) 開關"
+      },
+      {
+        "mod": "手持合成",
+        "action": "Key.Open Curios"
+      },
+      {
+        "mod": "新生魔藝",
+        "action": "開啟法術槽位的 HUD 選擇界面"
+      },
+      {
+        "mod": "暮光森林",
+        "action": "快速切換主快捷列與備用欄"
+      },
+      {
+        "mod": "更深更暗",
+        "action": "Transmit"
+      },
+      {
+        "mod": "水晶",
+        "action": "Wand Config"
+      },
+      {
+        "mod": "災變",
+        "action": "施放靴子專屬的特殊能力"
+      },
+      {
+        "mod": "神秘學",
+        "action": "Ender Bag"
+      },
+      {
+        "mod": "簡單村民",
+        "action": "Pick Up"
+      },
+      {
+        "mod": "補充模組",
+        "action": "Keybind.Quiver"
+      },
+      {
+        "mod": "通用機械",
+        "action": "機甲頭盔功能模式切換"
+      }
+    ],
+    "KeyW": [
+      {
+        "mod": "原生基礎",
+        "action": "前進"
+      }
+    ],
+    "KeyX": [
+      {
+        "mod": "原生基礎",
+        "action": "讀取快捷列狀態"
+      },
+      {
+        "mod": "寂靜裝備",
+        "action": "Openitem"
+      },
+      {
+        "mod": "實用背心",
+        "action": "Restock"
+      },
+      {
+        "mod": "新生魔藝",
+        "action": "切換至下一個法術槽位"
+      },
+      {
+        "mod": "氣壓工藝",
+        "action": "執行靴子的強力踢擊能力"
+      },
+      {
+        "mod": "水晶",
+        "action": "Copy Properties"
+      },
+      {
+        "mod": "災變",
+        "action": "施放武器或裝備的主動特殊技能"
+      },
+      {
+        "mod": "進階儲存",
+        "action": "啟動或切換背包升級槽位 2"
+      }
+    ],
+    "KeyY": [
+      {
+        "mod": "氣壓工藝",
+        "action": "啟動頭盔的無人機調試模式"
+      },
+      {
+        "mod": "災變",
+        "action": "施放胸甲專屬的特殊能力"
+      }
+    ],
+    "KeyZ": [
+      {
+        "mod": "寂靜裝備",
+        "action": "Cycle.Back"
+      },
+      {
+        "mod": "新生魔藝",
+        "action": "切換至上一個法術槽位"
+      },
+      {
+        "mod": "暮光森林",
+        "action": "使用暮光森林物品的縮放功能"
+      },
+      {
+        "mod": "縮放",
+        "action": "Keybinds.Keybind.Zoom"
+      },
+      {
+        "mod": "進階儲存",
+        "action": "啟動或切換背包升級槽位 1"
+      }
+    ],
+    "Minus": [
+      {
+        "mod": "FTB 區塊",
+        "action": "Minimap.Zoomout"
+      },
+      {
+        "mod": "安全工藝",
+        "action": "Camerazoomout"
+      },
+      {
+        "mod": "旅行地圖",
+        "action": "地圖界面縮小"
+      }
+    ],
+    "MouseLeft": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "點擊物品隱藏或顯示"
+      },
+      {
+        "mod": "原生基礎",
+        "action": "攻擊 / 破壞"
+      }
+    ],
+    "MouseMiddle": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "在管理模式下給予物品堆疊"
+      },
+      {
+        "mod": "原生基礎",
+        "action": "複製物品 (創意模式)"
+      },
+      {
+        "mod": "應用能源 2",
+        "action": "在終端中設定數量"
+      },
+      {
+        "mod": "沉浸工程",
+        "action": "Railgunzoom"
+      },
+      {
+        "mod": "進階儲存",
+        "action": "執行物品欄智慧整理"
+      }
+    ],
+    "MouseRight": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "以萬用字元隱藏相似材料"
+      },
+      {
+        "mod": "原生基礎",
+        "action": "使用物品 / 放置方塊"
+      }
+    ],
+    "Numpad0": [
+      {
+        "mod": "Jade HUD",
+        "action": "Config"
+      }
+    ],
+    "Numpad1": [
+      {
+        "mod": "Jade HUD",
+        "action": "Show Overlay"
+      }
+    ],
+    "Numpad2": [
+      {
+        "mod": "Jade HUD",
+        "action": "Toggle Liquid"
+      }
+    ],
+    "Numpad3": [
+      {
+        "mod": "Jade HUD",
+        "action": "Show Recipes"
+      }
+    ],
+    "Numpad4": [
+      {
+        "mod": "Jade HUD",
+        "action": "Show Uses"
+      }
+    ],
+    "Numpad5": [
+      {
+        "mod": "Jade HUD",
+        "action": "Narrate"
+      }
+    ],
+    "Numpad8": [
+      {
+        "mod": " Placebo 核心",
+        "action": "Togglewings"
+      }
+    ],
+    "Numpad9": [
+      {
+        "mod": " Placebo 核心",
+        "action": "Toggletrails"
+      }
+    ],
+    "PageDown": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "切換至合成介面的下一個類別"
+      }
+    ],
+    "PageUp": [
+      {
+        "mod": "JEI 物品管理器",
+        "action": "切換至合成介面的上一個類別"
+      }
+    ],
+    "Period": [
+      {
+        "mod": "噴射背包",
+        "action": "增加引擎出力 (Increment)"
+      },
+      {
+        "mod": "鐵路工藝",
+        "action": "Loco.Faster"
+      }
+    ],
+    "ShiftLeft": [
+      {
+        "mod": "Jade HUD",
+        "action": "Show Details"
+      },
+      {
+        "mod": "原生基礎",
+        "action": "潛行"
+      },
+      {
+        "mod": "寂靜裝備",
+        "action": "Displaytraitdescriptions"
+      },
+      {
+        "mod": "應用能源 2",
+        "action": "配合滑鼠滾輪修改物品屬性"
+      },
+      {
+        "mod": "神化",
+        "action": "Compare Equipment"
+      },
+      {
+        "mod": "簡單流體機械",
+        "action": "Label Gun.Pull Modifier"
+      },
+      {
+        "mod": "聖遺物",
+        "action": "Research Relic"
+      },
+      {
+        "mod": "通用機械",
+        "action": "在界面中顯示進階資訊"
+      }
+    ],
+    "ShiftRight": [
+      {
+        "mod": "導航與工具",
+        "action": "角色外觀/面具開關"
+      }
+    ],
+    "Slash": [
+      {
+        "mod": "原生基礎",
+        "action": "輸入指令"
+      }
+    ],
+    "Space": [
+      {
+        "mod": "以太",
+        "action": "Gravitite Jump Ability.Desc"
+      },
+      {
+        "mod": "原生基礎",
+        "action": "跳躍"
+      },
+      {
+        "mod": "氣壓工藝",
+        "action": "在空中的噴射靴子操作"
+      },
+      {
+        "mod": "蜂巢區域",
+        "action": "Beehemoth Up"
+      }
+    ],
+    "Tab": [
+      {
+        "mod": "原生基礎",
+        "action": "玩家清單"
+      },
+      {
+        "mod": "合成調整",
+        "action": "Refill Last Stack"
+      }
+    ],
+    "Tab:CONTROL": [
+      {
+        "mod": "合成調整",
+        "action": "Refill Last"
+      }
+    ]
+  }
+}
