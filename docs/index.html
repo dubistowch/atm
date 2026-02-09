@@ -83,6 +83,16 @@
 
     /* Override for article view */
     .hidden { display: none !important; }
+
+    #content-view .markdown-body {
+      margin-top: 0;
+    }
+
+    #content-view .markdown-body h1:first-child,
+    #content-view .markdown-body h2:first-child,
+    #content-view .markdown-body h3:first-child {
+      margin-top: 0;
+    }
     
     @media (max-width: 900px) {
       .article-layout { grid-template-columns: 1fr; }
