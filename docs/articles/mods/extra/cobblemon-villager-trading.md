@@ -1,5 +1,7 @@
 # Cobblemon：交易村民教學（取得／刷新／交易思路）
 
+![模組圖示](https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp)
+
 > 目標讀者：想把 Cobblemon 的道具（樹果、藥品、種子等）穩定量產、用綠寶石解決補給的生存玩家。
 >
 > 版本提醒：Cobblemon 會改動「新增職業／配方／交易內容」。本文以 **Cobblemon Wiki 的 Villager/Healing Machine 條目** 為基礎講玩法流程，**不提供固定交易表**（以免版本差異造成誤導）；實際交易內容請以你當下版本（或伺服器設定）為準。
@@ -131,3 +133,7 @@
   - <https://wiki.cobblemon.com/index.php/Healing_Machine>
 - Minecraft Wiki：Villager（香草村民職業／補貨機制背景）
   - <https://minecraft.wiki/w/Villager>
+
+## 資料來源
+- <https://modrinth.com/mod/cobblemon>
+- <https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp>

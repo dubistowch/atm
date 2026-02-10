@@ -1,5 +1,7 @@
 # Industrial Foregoing 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/lWxpUd04/a49f4b8e396b3ad4537e02e1c5e95c4c5074f96c_96.webp)
+
 ## 簡介
 Industrial Foregoing（IF）是一個很「工具箱」的自動化模組：你缺木材、缺作物、缺皮革、缺經驗、缺某種流體……它幾乎都能用對應機器把流程自動化。
 
@@ -80,8 +82,13 @@ IF 主要在機器 GUI 裡操作，通常沒有必備快捷鍵。
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Industrial%20Foregoing>
 
 ## 圖片
-（為避免版本差異造成連結失效，本篇不固定引用圖片；建議直接參考 Modrinth/GitHub 發佈頁）
+
+![模組圖示](https://cdn.modrinth.com/data/lWxpUd04/a49f4b8e396b3ad4537e02e1c5e95c4c5074f96c_96.webp)
 
 ## 安裝與前置（可略讀）
 - IF 需要穩定 FE 供電與物流/倉儲配套才會「舒服」；整合包通常會一併提供其他能源/管線模組。
 - 若你是管理員：機器範圍/耗能等平衡多在 config；修改前先備份。
+
+## 資料來源
+- <https://modrinth.com/mod/industrial-foregoing>
+- <https://cdn.modrinth.com/data/lWxpUd04/a49f4b8e396b3ad4537e02e1c5e95c4c5074f96c_96.webp>

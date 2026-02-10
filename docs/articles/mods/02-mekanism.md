@@ -1,5 +1,7 @@
 # Mekanism 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/Ce6I4WUE/ea185eb1300a64867f89101d4798e71a54ef6bed_96.webp)
+
 ## 簡介
 Mekanism 是整合包裡最經典的科技模組之一：從前期機器、能量，到中後期的化學處理、物流與強力裝備，都能一路包辦。它最有感的地方通常是「礦物倍化」與「把材料流變成產線」。
 
@@ -83,9 +85,14 @@ Mekanism 及其附屬模組（Additions/Tools/Generators…）在不同整合包
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Mekanism>
 
 ## 圖片
-![Mekanism 標誌](https://wiki.aidancbrady.com/wiki/File:Mekanism.png)
+
+![模組圖示](https://cdn.modrinth.com/data/Ce6I4WUE/ea185eb1300a64867f89101d4798e71a54ef6bed_96.webp)
 
 ## 安裝與前置（可略讀）
 - Mekanism 常見會拆成主模組 + 附屬模組（Tools/Additions/Generators…），整合包可能只裝其中一部分。
 - 設定調整（例如倍化倍率、生成、平衡）依整合包而定；一般玩家以遊戲內 GUI 與 JEI/REI 為主。
 - 若你是伺服器/整合包管理員：詳細設定多在 config（常見 `.toml`）或資料包覆寫；動手前先備份。
+
+## 資料來源
+- <https://modrinth.com/mod/mekanism>
+- <https://cdn.modrinth.com/data/Ce6I4WUE/ea185eb1300a64867f89101d4798e71a54ef6bed_96.webp>

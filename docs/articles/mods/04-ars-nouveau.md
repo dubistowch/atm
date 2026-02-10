@@ -1,5 +1,7 @@
 # Ars Nouveau 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/TKB6INcv/7ccd369857b70b16e0fbd3f10e5278b0f75c7772_96.webp)
+
 ## 簡介
 Ars Nouveau 是以「自訂法術」為核心的魔法模組：你可以把一個法術拆成不同的效果元件，再像拼積木一樣組起來，做出符合你習慣的移動、採集、戰鬥與生活法術。
 
@@ -72,8 +74,13 @@ Ars Nouveau 是以「自訂法術」為核心的魔法模組：你可以把一�
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Ars%20Nouveau>
 
 ## 圖片
-（官方 wiki 首頁未提供穩定的公開圖片直連，本文略過）
+
+![模組圖示](https://cdn.modrinth.com/data/TKB6INcv/7ccd369857b70b16e0fbd3f10e5278b0f75c7772_96.webp)
 
 ## 安裝與前置（可略讀）
 - 多數整合包會把 Ars Nouveau 的遊戲內指南建立在 Patchouli 系統上；若你在遊戲中看不到指南/書本內容，可能是整合包版本差異或前置缺失。
 - 一般玩家只要確保整合包模組清單完整、伺服器與用戶端版本一致即可。
+
+## 資料來源
+- <https://modrinth.com/mod/ars-nouveau>
+- <https://cdn.modrinth.com/data/TKB6INcv/7ccd369857b70b16e0fbd3f10e5278b0f75c7772_96.webp>

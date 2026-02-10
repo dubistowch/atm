@@ -1,5 +1,7 @@
 # Draconic Evolution 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/nBqivi8H/990a99155e8617963e69735623f3e179fc6b8753_96.webp)
+
 ## 簡介
 Draconic Evolution（DE）是偏後期的「超高階裝備與能量」模組，核心素材通常是 Draconium（龍能/龍晶相關礦物與材料），一路推進到更高階材料，最後做出非常強力的工具、武器、護甲與能量相關方塊。
 
@@ -67,8 +69,13 @@ DE 的快捷鍵很容易因版本與整合包而不同（也常跟其他 HUD/裝
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Draconic%20Evolution>
 
 ## 圖片
-（官方發佈頁通常含展示圖/影片；本篇不固定引用以避免版本分支連結失效）
+
+![模組圖示](https://cdn.modrinth.com/data/nBqivi8H/990a99155e8617963e69735623f3e179fc6b8753_96.webp)
 
 ## 安裝與前置（可略讀）
 - DE 多為後期模組，整合包常會調配方與進度門檻；以任務線/JEI 顯示為準。
 - 若你是管理員：礦物生成、耗能與強度平衡多在 config；修改前先備份。
+
+## 資料來源
+- <https://modrinth.com/mod/draconic-evolution>
+- <https://cdn.modrinth.com/data/nBqivi8H/990a99155e8617963e69735623f3e179fc6b8753_96.webp>

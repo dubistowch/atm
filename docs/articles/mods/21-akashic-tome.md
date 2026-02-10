@@ -1,5 +1,7 @@
 # Akashic Tome 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/JBthPdnp/f31b97209d7973f2975c9162d6bf20a2f8488837_96.webp)
+
 ## 簡介
 Akashic Tome（阿卡西之書）解決一個很現實的問題：整合包每個模組都給你一本指南書，背包很快被書塞爆。
 
@@ -46,8 +48,13 @@ Akashic Tome（阿卡西之書）解決一個很現實的問題：整合包每�
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Akashic%20Tome>
 
 ## 圖片
-（為避免版本差異造成連結失效，本篇略過固定圖片）
+
+![模組圖示](https://cdn.modrinth.com/data/JBthPdnp/f31b97209d7973f2975c9162d6bf20a2f8488837_96.webp)
 
 ## 安裝與前置（可略讀）
 - Akashic Tome 通常不需要複雜前置；整合包一般會直接附上。
 - 若你是管理員：可合併的書籍清單/行為可能可透過資料包或設定調整（依版本）。
+
+## 資料來源
+- <https://modrinth.com/mod/akashic-tome>
+- <https://cdn.modrinth.com/data/JBthPdnp/f31b97209d7973f2975c9162d6bf20a2f8488837_96.webp>

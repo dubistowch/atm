@@ -1,5 +1,7 @@
 # Sophisticated Backpacks 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/TyCTlI4b/e31c7e2f8769d317339e25b2a8d1b40fbf312729_96.webp)
+
 ## 簡介
 Sophisticated Backpacks 是大型整合包裡最實用的 QoL 背包模組之一：它不只是「多一格空間」，而是讓背包變成可升級、可加裝功能的行動工作站。
 
@@ -76,8 +78,14 @@ Sophisticated Backpacks 是大型整合包裡最實用的 QoL 背包模組之一
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Sophisticated%20Backpacks>
 
 ## 圖片
-（為避免版本差異造成連結失效，本篇不固定引用圖片；建議參考發佈頁/README）
+
+![模組圖示](https://cdn.modrinth.com/data/TyCTlI4b/e31c7e2f8769d317339e25b2a8d1b40fbf312729_96.webp)
 
 ## 安裝與前置（可略讀）
 - Sophisticated Backpacks 常見也會搭配 Sophisticated Core 等前置（整合包通常已處理）。
 - 若你遇到鍵位衝突，優先在 Controls 裡解決；不建議玩家自行改檔案設定。
+
+## 資料來源
+- <https://modrinth.com/mod/sophisticated-backpacks>
+- <https://cdn.modrinth.com/data/TyCTlI4b/e31c7e2f8769d317339e25b2a8d1b40fbf312729_96.webp>
+- <https://github.com/P3pp3rF1y/SophisticatedBackpacks>

@@ -1,5 +1,7 @@
 # Cobblemon：考古與化石復活教學（可疑沙礫、刷子、化石、復活流程）
 
+![模組圖示](https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp)
+
 > 重點：
 > - 化石主要來自 **Cobblemon 的化石結構（structures）** 裡的 **可疑沙礫（Suspicious Sand/Gravel）**
 > - 用 **刷子（Brush）** 刷出 **Fossil**
@@ -142,3 +144,8 @@ Cobblemon Wiki 描述：
   - <https://minecraft.wiki/w/Suspicious_Sand>
 - Minecraft Wiki：Suspicious Gravel（香草可疑礫石）
   - <https://minecraft.wiki/w/Suspicious_Gravel>
+
+## 資料來源
+- <https://modrinth.com/mod/cobblemon>
+- <https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp>
+- <https://cdn.modrinth.com/data/MdwFAVRL/images/1867aa59320a9616e2bde500870c45c41247da3f_350.webp>

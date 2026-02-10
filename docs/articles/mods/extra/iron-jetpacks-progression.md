@@ -1,5 +1,7 @@
 # Iron Jetpacks：噴射背包製作與升級路線教學（材料階段、充電、常見升級）
 
+![模組圖示](https://cdn.modrinth.com/data/DWIEOniQ/ae173e06848b2b77127ac64aa8a0571ca93c0265_96.webp)
+
 > 本篇目標：讓你在整合包裡用「最少走彎路」的方式，從第一個能飛的背包一路升級到中後期，並且把充電與常用升級搞懂。
 >
 > 按鍵提醒：不同整合包會改鍵位。本文**不猜按鍵**；請到遊戲內 `Options → Controls` 搜尋 **"Jetpack"** 或 **"Iron Jetpacks"** 查看你實際綁定。
@@ -126,3 +128,8 @@
   - <https://blakesmods.com/iron-jetpacks>
 - Modrinth：Iron Jetpacks（若你能開啟，包含版本資訊）
   - <https://modrinth.com/mod/iron-jetpacks>
+
+## 資料來源
+- <https://modrinth.com/mod/iron-jetpacks>
+- <https://cdn.modrinth.com/data/DWIEOniQ/ae173e06848b2b77127ac64aa8a0571ca93c0265_96.webp>
+- <https://cdn.modrinth.com/data/DWIEOniQ/images/0a61aaadea1aed2e3fe2fa49b68264861ab8dee1_350.webp>

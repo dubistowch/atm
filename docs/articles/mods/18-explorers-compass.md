@@ -1,5 +1,7 @@
 # Explorer’s Compass 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/RV1qfVQ8/16aee9631790996daba4d0dc5fe75f4e894ccaee.png)
+
 ## 簡介
 Explorer’s Compass 是用來找「世界結構（Structure）」的工具：你在介面選擇村莊、要塞、海底神殿、下界堡壘等結構後，它會搜尋最近的位置並指路。
 
@@ -52,8 +54,15 @@ Explorer’s Compass 主要是手持右鍵開介面，不一定有固定鍵位�
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Explorer%27s%20Compass>
 
 ## 圖片
-（發佈頁通常含展示圖：<https://modrinth.com/mod/explorers-compass>）
+
+
+![示意截圖](https://cdn.modrinth.com/data/RV1qfVQ8/images/4e701b15485b8739871047de1cf81f75920d3b7c_350.webp)
 
 ## 安裝與前置（可略讀）
 - 伺服器可能會限制搜尋頻率/半徑；以伺服器規則為準。
 - 若你是管理員：結構搜尋的限制通常可在設定檔調整；修改前先備份。
+
+## 資料來源
+- <https://modrinth.com/mod/explorers-compass>
+- <https://cdn.modrinth.com/data/RV1qfVQ8/16aee9631790996daba4d0dc5fe75f4e894ccaee.png>
+- <https://cdn.modrinth.com/data/RV1qfVQ8/images/4e701b15485b8739871047de1cf81f75920d3b7c_350.webp>

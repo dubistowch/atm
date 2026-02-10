@@ -1,5 +1,7 @@
 # FTB Ultimine 新手教學與玩法筆記
 
+![模組圖示](https://raw.githubusercontent.com/FTBTeam/FTB-Ultimine/main/fabric/src/main/resources/icon.png)
+
 ## 簡介
 FTB Ultimine 是「連鎖挖掘」模組：按住一個鍵挖下去，就能一次挖掉相鄰、符合條件的一整片方塊（例如整條礦脈、整棵樹、整片沙礫）。
 
@@ -63,8 +65,14 @@ FTB Ultimine 通常是功能型模組，不以新增可合成道具為主。
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=FTB%20Ultimine>
 
 ## 圖片
-（功能型模組為主，本篇略過固定圖片）
+
+![模組圖示](https://raw.githubusercontent.com/FTBTeam/FTB-Ultimine/main/fabric/src/main/resources/icon.png)
 
 ## 安裝與前置（可略讀）
 - FTB 系列模組通常會有 FTB Library 等前置（整合包多已處理）。
 - 若你是管理員：連鎖上限、飢餓/耐久消耗等平衡可在設定檔調整；修改前先備份。
+
+## 資料來源
+- <https://github.com/FTBTeam/FTB-Ultimine>
+- <https://raw.githubusercontent.com/FTBTeam/FTB-Ultimine/main/fabric/src/main/resources/icon.png>
+- <https://www.feed-the-beast.com/mods>

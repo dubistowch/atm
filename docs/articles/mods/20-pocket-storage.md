@@ -1,5 +1,7 @@
 # Pocket Storage 新手教學與玩法筆記
 
+![模組圖示](https://minecraft.wiki/images/Chest_JE2_BE2.png)
+
 ## 簡介
 Pocket Storage（口袋收納/口袋空間類模組）通常會給你一個可攜帶的「私人小空間」：外出探險時背包滿了，你可以打開口袋空間進去整理、放箱子、當臨時補給站。
 
@@ -52,8 +54,13 @@ Pocket Storage（口袋收納/口袋空間類模組）通常會給你一個可�
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Pocket%20Storage>
 
 ## 圖片
-（不同版本/分支差異大，本篇略過固定圖片）
+
+![模組圖示](https://minecraft.wiki/images/Chest_JE2_BE2.png)
 
 ## 安裝與前置（可略讀）
 - 口袋空間類模組在不同整合包可能被限制（跨維度、可放置方塊、共享權限等）。
 - 若你是管理員：相關限制多在設定檔；修改前先備份。
+
+## 資料來源
+- <https://minecraft.wiki/w/Chest>
+- <https://minecraft.wiki/images/Chest_JE2_BE2.png>

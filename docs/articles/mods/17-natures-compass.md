@@ -1,5 +1,7 @@
 # Nature’s Compass 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/fPetb5Kh/9b0d54f2a8d9e49a10f5bcb8004bc757f55bb013.png)
+
 ## 簡介
 Nature’s Compass 是用來找「生態域（Biome）」的工具：你選定目標生態域後，它會搜尋最近的位置並指路。
 
@@ -54,8 +56,15 @@ Nature’s Compass 主要是手持右鍵開介面，不一定有固定鍵位。
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Nature%27s%20Compass>
 
 ## 圖片
-（發佈頁通常含展示圖：<https://modrinth.com/mod/natures-compass>）
+
+
+![示意截圖](https://cdn.modrinth.com/data/fPetb5Kh/images/5040466f2a4552e12a317ee0030de06619b71c46_350.webp)
 
 ## 安裝與前置（可略讀）
 - Nature’s Compass 多為單人/客戶端友善工具；伺服器可能會限制搜尋頻率或半徑以保護效能。
 - 若你是管理員：搜尋半徑與冷卻等通常可在設定檔調整；修改前先備份。
+
+## 資料來源
+- <https://modrinth.com/mod/natures-compass>
+- <https://cdn.modrinth.com/data/fPetb5Kh/9b0d54f2a8d9e49a10f5bcb8004bc757f55bb013.png>
+- <https://cdn.modrinth.com/data/fPetb5Kh/images/5040466f2a4552e12a317ee0030de06619b71c46_350.webp>

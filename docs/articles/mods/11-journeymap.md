@@ -1,5 +1,7 @@
 # JourneyMap 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/lfHFW1mp/a1c571a21a88f6fa59eab67829f216f65ab393ee_96.webp)
+
 ## 簡介
 JourneyMap 是最常見的地圖模組之一，提供小地圖、全螢幕地圖、路標（Waypoints），部分版本/整合包還能啟用 Web 地圖。
 
@@ -69,8 +71,14 @@ JourneyMap 主要是 UI 功能模組，通常不以新增可合成道具為主�
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=JourneyMap>
 
 ## 圖片
-- 官方文件內含多張示意圖：<https://teamjm.github.io/journeymap-docs/latest/client/basic-usage/>
+
+![模組圖示](https://cdn.modrinth.com/data/lfHFW1mp/a1c571a21a88f6fa59eab67829f216f65ab393ee_96.webp)
 
 ## 安裝與前置（可略讀）
 - JourneyMap 是純客戶端體驗型模組，但伺服器可能會限制某些顯示/共享功能（例如玩家雷達、Webmap）。
 - 若你遇到鍵位衝突或功能消失，優先以整合包公告/伺服器規則為準。
+
+## 資料來源
+- <https://modrinth.com/mod/journeymap>
+- <https://cdn.modrinth.com/data/lfHFW1mp/a1c571a21a88f6fa59eab67829f216f65ab393ee_96.webp>
+- <https://teamjm.github.io/journeymap-docs/>

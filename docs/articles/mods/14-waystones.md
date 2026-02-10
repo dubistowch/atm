@@ -1,5 +1,7 @@
 # Waystones 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/LOpKHB2A/6c81041b60d525d63c0b9da497db66cfda215e16_96.webp)
+
 ## 簡介
 Waystones 提供「傳送石碑」玩法：你啟動過的 Waystone 會被記錄，之後就能在石碑之間傳送，或用卷軸/傳送石等道具遠端傳送。
 
@@ -59,8 +61,14 @@ Waystones 的互動多在 GUI 內完成；若整合包啟用了「背包介面�
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Waystones>
 
 ## 圖片
-- Modrinth 發佈頁通常有展示圖：<https://modrinth.com/mod/waystones>
+
+![模組圖示](https://cdn.modrinth.com/data/LOpKHB2A/6c81041b60d525d63c0b9da497db66cfda215e16_96.webp)
 
 ## 安裝與前置（可略讀）
 - Waystones 部分版本需要 Balm 作為前置，整合包通常已處理。
 - 傳送規則（成本、冷卻、跨維度）多由整合包/伺服器設定決定；以遊戲內提示為準。
+
+## 資料來源
+- <https://modrinth.com/mod/waystones>
+- <https://cdn.modrinth.com/data/LOpKHB2A/6c81041b60d525d63c0b9da497db66cfda215e16_96.webp>
+- <https://github.com/blay09/Waystones>

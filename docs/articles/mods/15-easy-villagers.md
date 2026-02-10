@@ -1,5 +1,7 @@
 # Easy Villagers 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/Kaov2qgi/ceb583c0f27eaca42f6dfbe79ddec5e6142f1766_96.webp)
+
 ## 簡介
 Easy Villagers 的目標是把「拉村民、蓋交易所、繁殖、補貨、治療」這些很麻煩的流程，濃縮成一套**方塊化、低空間、好管理**的系統。
 
@@ -70,8 +72,13 @@ Easy Villagers 主要以方塊 GUI 操作為主，通常不需要固定鍵位。
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Easy%20Villagers>
 
 ## 圖片
-（不同版本方塊外觀與名稱差異較大，本篇不固定引用圖片；建議以 JEI/REI 與遊戲內方塊為準）
+
+![模組圖示](https://cdn.modrinth.com/data/Kaov2qgi/ceb583c0f27eaca42f6dfbe79ddec5e6142f1766_96.webp)
 
 ## 安裝與前置（可略讀）
 - Easy Villagers 在不同整合包可能被改配方或限制功能（例如補貨條件、是否允許自動交易）。
 - 若你是伺服器管理員：請留意自動交易/村民機制可能影響經濟平衡。
+
+## 資料來源
+- <https://modrinth.com/mod/easy-villagers>
+- <https://cdn.modrinth.com/data/Kaov2qgi/ceb583c0f27eaca42f6dfbe79ddec5e6142f1766_96.webp>

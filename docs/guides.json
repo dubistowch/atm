@@ -209,5 +209,40 @@
     "type": "extra",
     "description": "ME 終端、樣板、分子裝配室到自動合成：新手可照做的 AE2 主線。",
     "icon": "https://cdn.modrinth.com/data/XxWD5pD3/60b001515abbf6ebf32bc2729b0ddd95d2793feb_96.webp"
+  },
+  {
+    "id": "questlines/01-questline-overview",
+    "title": "主線任務總覽：從開荒到 ATM 之星",
+    "category": "adventure",
+    "type": "guide",
+    "description": "用玩家視角整理 All The Mons 主線任務節奏：從 welcome/getting_started 到 ATM 之星的里程碑與常見卡關。"
+  },
+  {
+    "id": "questlines/02-getting-started",
+    "title": "開荒與前期：Cobblemon 起手式",
+    "category": "adventure",
+    "type": "guide",
+    "description": "對應 getting_started 章：初始寶可夢、圖鑑、治療機、電腦與球果/精靈球供應鏈的前期流程。"
+  },
+  {
+    "id": "questlines/03-mainquestline-part1",
+    "title": "主線第一章：工具、收納、地獄與終界",
+    "category": "adventure",
+    "type": "guide",
+    "description": "對應 mainquestline_part_1：建立工具與收納，推進地獄/終界，並選定科技或魔法分支作為中期底盤。"
+  },
+  {
+    "id": "questlines/04-the-star",
+    "title": "星之路徑：ATM 之星主線",
+    "category": "adventure",
+    "type": "guide",
+    "description": "對應 chapter_2_the_star 與 achapter_2r_6the_atm_star：奇點、大量材料與自動化，逐步拆解 ATM 之星需求。"
+  },
+  {
+    "id": "questlines/05-catch-em-all",
+    "title": "抓怪／圖鑑路線：化石、釣魚與追蹤",
+    "category": "adventure",
+    "type": "guide",
+    "description": "對應 catch_em_all：考古化石、復活古代寶可夢、寶可追蹤器與釣魚路線，讓補圖鑑更有效率。"
   }
 ]

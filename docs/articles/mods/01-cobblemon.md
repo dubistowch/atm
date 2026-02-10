@@ -1,5 +1,7 @@
 # Cobblemon 新手教學與玩法筆記
 
+![模組圖示](https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp)
+
 ## 簡介
 Cobblemon 是把「寶可夢的捕捉、培育、對戰」直接融進 Minecraft 生存流程的模組：你一樣要採集、探索、下礦、蓋家，但世界同時會生成野生寶可夢，你可以把牠們當成隊伍成員、移動工具與長期收集目標。
 
@@ -78,9 +80,16 @@ Cobblemon 的常用操作會因版本與整合包而不同；**請以遊戲內�
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=cobblemon>
 
 ## 圖片
-![Cobblemon Wiki 標誌](https://wiki.cobblemon.com/index.php/File:Cobblemon_wiki.png)
+
+
+![示意截圖](https://cdn.modrinth.com/data/MdwFAVRL/images/1867aa59320a9616e2bde500870c45c41247da3f_350.webp)
 
 ## 安裝與前置（可略讀）
 - Cobblemon 可能有不同載入器與版本分支（依整合包而定），請以你整合包的模組清單為準。
 - 一般玩家只需要確認：整合包已正確安裝、伺服器與用戶端版本一致、資源包/材質包（若有要求）已啟用。
 - 若你需要做管理員級調整：可能會用到 config / 資料包（datapack）來改生成、戰利品或平衡；動手前先備份存檔與設定。
+
+## 資料來源
+- <https://modrinth.com/mod/cobblemon>
+- <https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp>
+- <https://cdn.modrinth.com/data/MdwFAVRL/images/1867aa59320a9616e2bde500870c45c41247da3f_350.webp>

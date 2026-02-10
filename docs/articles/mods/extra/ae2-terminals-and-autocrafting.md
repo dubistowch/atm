@@ -1,5 +1,7 @@
 # AE2：終端機與自動合成入門（ME 終端、樣板終端、分子裝配室、匯入/匯出）
 
+![模組圖示](https://cdn.modrinth.com/data/XxWD5pD3/60b001515abbf6ebf32bc2729b0ddd95d2793feb_96.webp)
+
 > 本篇定位：帶你做出「能用的第一套」AE2：
 > - 有 **ME 終端機** 可以搜尋拿取物品
 > - 有 **樣板終端（Pattern Encoding Terminal）** 可以做出合成樣板
@@ -136,3 +138,8 @@ AE2 官方 Players Guide 有大量圖示與示意圖（建議直接看原文頁�
   - <https://guide.appliedenergistics.org/1.20.1/items-blocks-machines/pattern_provider>
 - AE2 Players Guide：Molecular Assembler（與 Pattern Provider 搭配完成合成）
   - <https://guide.appliedenergistics.org/1.20.1/items-blocks-machines/molecular_assembler>
+
+## 資料來源
+- <https://guide.appliedenergistics.org/>
+- <https://modrinth.com/mod/ae2>
+- <https://cdn.modrinth.com/data/XxWD5pD3/60b001515abbf6ebf32bc2729b0ddd95d2793feb_96.webp>
