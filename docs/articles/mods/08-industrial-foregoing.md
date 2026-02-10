@@ -1,53 +1,87 @@
-# Industrial Foregoing 教學與玩法筆記
+# Industrial Foregoing 新手教學與玩法筆記
 
-## 簡介（這個模組在整合包的角色）
-Industrial Foregoing 是一個以「把原版做不到、或做起來很麻煩的事通通自動化」為核心的工業模組：從作物與樹場、動物與怪物農場，到大量流體/物品搬運、儲存與發電，幾乎都能用它的機器完成。它常被用來當作中期自動化的主力，和各種能源系統（FE）、管線/倉儲模組搭配起來效果很好。
+## 簡介
+Industrial Foregoing（IF）是一個很「工具箱」的自動化模組：你缺木材、缺作物、缺皮革、缺經驗、缺某種流體……它幾乎都能用對應機器把流程自動化。
 
-## 模組特色（條列，含 5-10 點）
-- 以 FE 為能源的大量實用機器，專注「自動化」而非複雜的多方塊結構。
-- 具備作物、樹木、動物、怪物等多種農場向機器選項。
-- 有可用於搬運/分配的物品與流體工具（依整合包可能另搭配其他管線模組）。
-- 具備偏向「無腦好用」的資源處理流程（例如橡膠路線）。
-- 提供一套 Infinity 系列工具（偏後期、強力、常見於整合包目標線）。
-- 常見支援配方/腳本調整（例如 CraftTweaker 支援），方便整合包作者平衡。
+在整合包裡它通常是中期主力：機器直覺、用 FE 供能、接上管線與倉儲就能變成穩定產線。
+
+## 模組特色
+- 大量以 FE 驅動的實用機器，專注解決「原版做起來很麻煩」的自動化。
+- 作物/樹場/動物/怪物等農場型機器選項多。
+- 常見有橡膠（Latex）相關流程，很多配方會用到。
+- 提供大容量儲存（黑洞系列）作為農場輸出的緩衝。
+- 後期常見 Infinity 系列工具（依整合包是否啟用）。
 
 ## 按鍵操作
-Industrial Foregoing 通常**沒有一定固定的預設快捷鍵**（大多數操作發生在機器 GUI）。
+IF 主要在機器 GUI 裡操作，通常沒有必備快捷鍵。
 
-- 建議到遊戲內：**選項 → 控制**
-- 在搜尋框輸入：`Industrial Foregoing` 或 `Foregoing`
-- 若整合包有提供手冊/指南書，通常在書本介面內閱讀，不需要快捷鍵。
+- 打開「選項 → 控制設定」，搜尋：
+  - `Industrial Foregoing`
+  - `Foregoing`
 
-> 注意：不同版本/整合包可能會額外加入快捷鍵或與其他模組整合，請以你的遊戲內控制設定為準。
+## 遊戲內設定與調整
+1) **先學會看機器 GUI：工作條件與輸入輸出**
+- IF 的機器多半有幾個共同點：
+  - 需要 FE
+  - 可能需要特定耗材/流體
+  - 有工作範圍或工作面向
+- 你每次覺得機器「不動」時，優先檢查：
+  - 有沒有電
+  - 有沒有輸入
+  - 輸出端是不是滿了
 
-## 如何設定（含常見設定檔位置/遊戲內設定入口）
-- 常見設定檔位置（依載入器與版本可能不同）：
-  - `config/industrialforegoing/`（資料夾或 toml/json）
-  - `config/industrialforegoing-common.toml`（或類似命名）
-- 遊戲內設定入口：
-  - 多數整合包會提供 **Mods** 選單（Mod List）點選 Industrial Foregoing 進入設定（若該版本支援）。
-- 重要提醒：
-  - 自動化模組常見設定包含：機器耗電、工作半徑、黑名單、生怪/掉落行為等。若你找不到某個選項，可能是整合包作者鎖定或改名，屬正常情況。
+2) **用 JEI/REI 找到你的「第一條最有感產線」**
+- 新手最常從橡膠線開始（Latex → 橡膠材料），因為很多機器零件會用到。
+- 也可以反過來：你目前最缺什麼，就先做那條。
 
-## 如何獲得模組道具（生存模式取得路線：合成、掉落、交易、探索；舉 3-6 個代表性物品）
-以下列出典型的「入門→擴展」取得路線（實際配方以整合包為準）：
-- **Tree Fluid Extractor（樹液/乳膠抽取機）**：放在原木旁邊抽取 Latex（乳膠）。
-- **Latex Processing Unit（乳膠處理機）**：以水 + 乳膠 + FE 製作橡膠相關材料（常是入門關鍵）。
-- **Plant Sower / Plant Gatherer（播種/收割機）**：建立自動化農田的常見組合。
-- **Mob Crusher / Mob Duplicator（刷怪處理/複製）**：怪物農場與資源刷取核心（通常需要流體或特定輸入）。
-- **Black Hole Unit / Black Hole Tank（黑洞儲存）**：超大容量的物品/流體儲存（非常適合農場輸出緩衝）。
+3) **黑洞儲存當緩衝，避免農場爆倉**
+- 作物/樹場一旦跑起來產量很大，若沒有緩衝很容易：
+  - 箱子滿 → 機器停機
+  - 物流塞住 → 整條線卡死
+- 先接大容量容器當緩衝，再接入主倉庫最穩。
 
-## 好玩的點在哪（給玩家的玩法建議與小技巧）
-- 先做「橡膠路線」：很多機器的關鍵材料都會用到，越早建立越省心。
-- 農場先求穩：作物/樹場輸出很容易爆倉，先準備足夠的箱子或大容量儲存（黑洞系列很實用）。
-- 怪物自動化要顧「安全與掉落」：不同整合包對生怪、靈魂/精華、掉落處理規則可能不同；先用小規模測試再擴大。
-- 把機器當「模組工具箱」：你不一定要全套都做；挑你當前缺的環節（木材、肉、皮革、骨粉、經驗等）補上即可。
+4) **Mod 設定畫面（若有）**
+- 依整合包與版本可能不同：
+  - `ESC` → **Mods** → Industrial Foregoing → `Config/設定`（若有）
+  - 找不到就先不用管；玩家端多數情況不需要動。
 
-## 相關連結（至少 3 個）
-- GitHub（原始碼/議題）：https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing
-- Modrinth（介紹/版本）：https://modrinth.com/mod/industrial-foregoing
-- CraftTweaker 支援頁（配方/腳本）：https://crafttweaker.readthedocs.io/en/latest/#Mods/Industrial_Foregoing/IndustrialForegoing/
-- Discord（作者社群，README 提供）：https://discord.gg/4tPfwjn
+> 補充（只留短註）：機器耗電、範圍、黑名單等細節通常在設定檔；一般玩家不建議自行改動以免和整合包平衡衝突。
+
+## 如何獲得模組道具
+典型「入門 → 擴展」路線（配方以 JEI/REI 為準）：
+
+- **橡膠/乳膠路線（常見入門關鍵）**
+  - Tree Fluid Extractor 類：對原木抽取 Latex
+  - Latex Processing Unit 類：用水 + 乳膠 + FE 做出橡膠材料
+
+- **農場機器（選你最缺的先做）**
+  - 播種/收割（Plant Sower/Gatherer 類）
+  - 樹場（Plant/Gather 組合或專用樹機）
+
+- **怪物與經驗（整合包若開放）**
+  - Mob Crusher/Mob Duplicator 類機器（常需要流體/特定輸入）
+
+代表性物品/方塊：
+- Tree Fluid Extractor
+- Latex Processing Unit
+- Plant Sower / Plant Gatherer
+- Mob Crusher / Mob Duplicator（若整合包有）
+- Black Hole Unit / Black Hole Tank
+
+## 好玩的點在哪
+- **成就感很直接**：你缺什麼就做一台機器解決，立刻見效。
+- **基地會越來越像工廠**：樹場、農田、怪物線各自獨立，最後全部回到倉庫系統。
+- **玩法很彈性**：不用一次做全套；挑瓶頸補上就能大幅加速整包進度。
+
+## 相關連結
+- GitHub：<https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing>
+- Modrinth：<https://modrinth.com/mod/industrial-foregoing>
+- CraftTweaker（若整合包用腳本改配方可參考）：<https://crafttweaker.readthedocs.io/en/latest/#Mods/Industrial_Foregoing/IndustrialForegoing/>
+- 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Industrial%20Foregoing>
 
 ## 圖片
-- 若你想在文章內放可靠圖片，建議優先使用：官方文件站、Modrinth、或 GitHub Pages 上的圖片連結（不同版本可能路徑不同）。本篇未放置固定圖片以避免連結失效。
+（為避免版本差異造成連結失效，本篇不固定引用圖片；建議直接參考 Modrinth/GitHub 發佈頁）
+
+## 安裝與前置（可略讀）
+- IF 需要穩定 FE 供電與物流/倉儲配套才會「舒服」；整合包通常會一併提供其他能源/管線模組。
+- 若你是管理員：機器範圍/耗能等平衡多在 config；修改前先備份。
