@@ -86,6 +86,10 @@
 
     #content-view .markdown-body {
       margin-top: 0;
+      /* Keep reading width comfortable on large screens */
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     #content-view .markdown-body h1:first-child,
@@ -174,6 +178,9 @@
       try {
         const response = await fetch('./guides.json');
         allGuides = await response.json();
+
+        // Sort for better organization on the list page
+        allGuides = sortGuides(allGuides);
         
         const urlParams = new URLSearchParams(window.location.search);
         const guideId = urlParams.get('guide');
@@ -201,6 +208,37 @@
       filterArticles();
     }
 
+    function sortGuides(guides) {
+      const categoryOrder = { adventure: 0, tech: 1, magic: 2, utility: 3 };
+      const typeOrder = { guide: 0, mod: 1, extra: 2 };
+
+      function numericPrefix(id) {
+        const m = (id || '').match(/^(\d+)-/);
+        return m ? parseInt(m[1], 10) : null;
+      }
+
+      return [...guides].sort((a, b) => {
+        const ca = categoryOrder[a.category] ?? 99;
+        const cb = categoryOrder[b.category] ?? 99;
+        if (ca !== cb) return ca - cb;
+
+        const ta = typeOrder[a.type] ?? 99;
+        const tb = typeOrder[b.type] ?? 99;
+        if (ta !== tb) return ta - tb;
+
+        const na = numericPrefix(a.id);
+        const nb = numericPrefix(b.id);
+        if (na !== null && nb !== null && na !== nb) return na - nb;
+
+        // questlines/01-... sorting
+        const qa = (a.id || '').includes('questlines/') ? numericPrefix((a.id || '').split('/').pop()) : null;
+        const qb = (b.id || '').includes('questlines/') ? numericPrefix((b.id || '').split('/').pop()) : null;
+        if (qa !== null && qb !== null && qa !== qb) return qa - qb;
+
+        return (a.title || '').localeCompare((b.title || ''), 'zh-Hant');
+      });
+    }
+
     function filterArticles() {
       const term = document.getElementById('search-input').value.toLowerCase();
       const filtered = allGuides.filter(g => {
@@ -208,7 +246,7 @@
         const matchesCat = currentCategory === 'all' || g.category === currentCategory;
         return matchesSearch && matchesCat;
       });
-      renderList(filtered);
+      renderList(sortGuides(filtered));
     }
 
     function renderList(guides) {
@@ -292,7 +330,12 @@
       loading.classList.remove('hidden');
 
       try {
-        const response = await fetch(`./articles/mods/${id}.md`);
+        // Support multiple article roots
+        const articlePath = (id.startsWith('questlines/'))
+          ? `./articles/${id}.md`
+          : `./articles/mods/${id}.md`;
+
+        const response = await fetch(articlePath);
         if (!response.ok) throw new Error('Guide not found');
         const text = await response.text();
         
