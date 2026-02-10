@@ -529,6 +529,39 @@ body {
   .markdown-body h3 { font-size: 1.2em; }
 }
 
+/* --- Floating report button --- */
+.report-btn {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1300;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 127, 80, 0.55);
+  background: rgba(13, 17, 23, 0.92);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 13px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+}
+
+.report-btn:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+@media (max-width: 420px) {
+  .report-btn {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 10px;
+  }
+}
+
 /* --- Table of contents --- */
 .toc {
   margin: 16px 0 22px;
