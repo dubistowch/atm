@@ -244,5 +244,12 @@
     "category": "adventure",
     "type": "guide",
     "description": "對應 catch_em_all：考古化石、復活古代寶可夢、寶可追蹤器與釣魚路線，讓補圖鑑更有效率。"
+  },
+  {
+    "id": "23-ftb-teams",
+    "title": "一起玩不吵架：FTB Teams 團隊手冊",
+    "category": "utility",
+    "type": "mod",
+    "description": "建立隊伍、邀請隊友、共享任務與分工協作：讓多人遊玩主線更順。"
   }
 ]
