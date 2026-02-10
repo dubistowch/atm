@@ -462,6 +462,30 @@ body {
 .page-title { font-size: 36px; margin: 0; color: #fff; font-weight: 800; }
 .page-subtitle { font-size: 16px; margin-top: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; }
 
+/* --- Filters (select) --- */
+.filter-label {
+  color: var(--text-dim);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.filter-select {
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+}
+
+.filter-select:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.12);
+}
+
 /* --- List section headers --- */
 .section-header {
   margin: 26px 0 10px;

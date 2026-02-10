@@ -129,10 +129,13 @@
       </div>
 
       <div class="filter-bar" id="type-filters">
-        <button class="filter-btn active" onclick="filterType('all')">全部文章</button>
-        <button class="filter-btn" onclick="filterType('questlines')">🧭 主線任務</button>
-        <button class="filter-btn" onclick="filterType('mod')">📦 模組教學</button>
-        <button class="filter-btn" onclick="filterType('extra')">🧪 進階教學</button>
+        <label class="filter-label" for="type-select">文章種類</label>
+        <select id="type-select" class="filter-select" onchange="filterType(this.value)">
+          <option value="all">全部文章</option>
+          <option value="questlines">🧭 主線任務</option>
+          <option value="mod">📦 模組教學</option>
+          <option value="extra">🧪 進階教學</option>
+        </select>
       </div>
 
       <div class="filter-bar" id="category-toggle-bar">
@@ -222,7 +225,11 @@
 
     function filterType(t) {
       currentType = t;
-      setActiveButtons('type-filters', event.target);
+
+      // Update select UI (for back/forward navigation or programmatic calls)
+      const sel = document.getElementById('type-select');
+      if (sel && sel.value !== t) sel.value = t;
+
       filterArticles();
     }
 
