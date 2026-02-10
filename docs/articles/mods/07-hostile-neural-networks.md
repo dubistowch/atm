@@ -1,7 +1,5 @@
 # Hostile Neural Networks 新手教學與玩法筆記
 
-![模組圖示](https://raw.githubusercontent.com/Shadows-of-Fire/Hostile-Neural-Networks/1.21/logo.png)
-
 ## 簡介
 Hostile Neural Networks（HNN）是一種「不用蓋大刷怪塔，也能量產怪物掉落」的玩法模組：你先用實際擊殺收集資料，訓練出某種怪物的「資料模型」，再把模型放進機器進行模擬，穩定產出該怪物的掉落物。
 
@@ -74,14 +72,9 @@ HNN 主要以方塊/機器 GUI 操作為主，通常不依賴固定鍵位。
 - CurseForge：<https://www.curseforge.com/minecraft/mc-mods/hostile-neural-networks>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Hostile%20Neural%20Networks>
 
-## 圖片
-
-![模組圖示](https://raw.githubusercontent.com/Shadows-of-Fire/Hostile-Neural-Networks/1.21/logo.png)
-
 ## 安裝與前置（可略讀）
 - HNN 常會被整合包用資料包擴充可訓練的模型清單；你只需要照整合包提供的內容玩。
 - 若你是伺服器/整合包管理員：模型擴充與平衡可能在資料包/設定檔；修改前先備份。
 
 ## 資料來源
 - <https://github.com/Shadows-of-Fire/Hostile-Neural-Networks>
-- <https://raw.githubusercontent.com/Shadows-of-Fire/Hostile-Neural-Networks/1.21/logo.png>

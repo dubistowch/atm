@@ -1,7 +1,5 @@
 # Apotheosis 新手教學與玩法筆記
 
-![模組圖示](https://raw.githubusercontent.com/Shadows-of-Fire/Apotheosis/1.21/logo.png)
-
 ## 簡介
 Apotheosis 是「把原版系統做深、做大」的強化型模組：它不一定大量新增機器或新礦，而是針對附魔、鐵砧、刷怪磚、戰利品與世界怪物強度等機制，加入更高上限與更多層的養成。
 
@@ -74,16 +72,9 @@ Apotheosis 多數內容綁在「原版系統」上，取得方式也更像「去
 - CurseForge：<https://www.curseforge.com/minecraft/mc-mods/apotheosis>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Apotheosis>
 
-## 圖片
-
-
-![示意截圖](https://raw.githubusercontent.com/Shadows-of-Fire/Apotheosis/1.21/logo_module.png)
-
 ## 安裝與前置（可略讀）
 - Apotheosis 影響面很廣（附魔、戰利品、刷怪磚…），整合包通常會搭配腳本/資料包做平衡。
 - 玩家端：確保模組版本一致即可；不要自行更動檔案以免和伺服器/整合包設定衝突。
 
 ## 資料來源
 - <https://github.com/Shadows-of-Fire/Apotheosis>
-- <https://raw.githubusercontent.com/Shadows-of-Fire/Apotheosis/1.21/logo.png>
-- <https://raw.githubusercontent.com/Shadows-of-Fire/Apotheosis/1.21/logo_module.png>

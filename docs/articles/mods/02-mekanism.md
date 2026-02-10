@@ -1,7 +1,5 @@
 # Mekanism 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/Ce6I4WUE/ea185eb1300a64867f89101d4798e71a54ef6bed_96.webp)
-
 ## 簡介
 Mekanism 是整合包裡最經典的科技模組之一：從前期機器、能量，到中後期的化學處理、物流與強力裝備，都能一路包辦。它最有感的地方通常是「礦物倍化」與「把材料流變成產線」。
 
@@ -72,6 +70,10 @@ Mekanism 及其附屬模組（Additions/Tools/Generators…）在不同整合包
 - Factory（工廠升級）
 - Digital Miner（數位採礦機）
 
+![Mekanism Digital Miner 主介面示意（截圖）](https://wiki.aidancbrady.com/w/images/aidancbrady/9/92/DGGUI1.png)
+
+*圖：Digital Miner 的主介面。重點是「Config（設定掃描範圍/篩選）」「Start/Stop（啟停）」「Reset（重新掃描）」與 Auto-Eject 等按鈕，這些就是把它接進自動化產線的關鍵。*
+
 ## 好玩的點在哪
 - **最有成就感的瞬間：第一次 2 倍礦處理跑起來**，資源壓力立刻下降。
 - **側面配置是靈魂**：學會「每一面該做什麼」，你會突然看懂整個科技模組的物流思維。
@@ -84,10 +86,6 @@ Mekanism 及其附屬模組（Additions/Tools/Generators…）在不同整合包
 - GitHub：<https://github.com/mekanism/Mekanism>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Mekanism>
 
-## 圖片
-
-![模組圖示](https://cdn.modrinth.com/data/Ce6I4WUE/ea185eb1300a64867f89101d4798e71a54ef6bed_96.webp)
-
 ## 安裝與前置（可略讀）
 - Mekanism 常見會拆成主模組 + 附屬模組（Tools/Additions/Generators…），整合包可能只裝其中一部分。
 - 設定調整（例如倍化倍率、生成、平衡）依整合包而定；一般玩家以遊戲內 GUI 與 JEI/REI 為主。
@@ -95,4 +93,5 @@ Mekanism 及其附屬模組（Additions/Tools/Generators…）在不同整合包
 
 ## 資料來源
 - <https://modrinth.com/mod/mekanism>
-- <https://cdn.modrinth.com/data/Ce6I4WUE/ea185eb1300a64867f89101d4798e71a54ef6bed_96.webp>
+- <https://wiki.aidancbrady.com/wiki/Digital_Miner>
+- <https://wiki.aidancbrady.com/w/images/aidancbrady/9/92/DGGUI1.png>

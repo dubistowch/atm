@@ -1,11 +1,13 @@
 # Nature’s Compass 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/fPetb5Kh/9b0d54f2a8d9e49a10f5bcb8004bc757f55bb013.png)
-
 ## 簡介
 Nature’s Compass 是用來找「生態域（Biome）」的工具：你選定目標生態域後，它會搜尋最近的位置並指路。
 
 在整合包世界生成很複雜、或任務要求你去特定生態域時，它能省下大量「靠運氣跑圖」的時間。
+
+![Nature’s Compass 生態域搜尋介面示意（截圖）](https://cdn.modrinth.com/data/fPetb5Kh/images/5040466f2a4552e12a317ee0030de06619b71c46_350.webp)
+
+*圖：在介面中選定目標生態域並開始搜尋後，羅盤會指向最近的位置。重點是「先用關鍵字搜尋生態域名稱」，再調整半徑避免搜尋過久。*
 
 ## 模組特色
 - 介面中選生態域 → 搜尋 → 指向最近的該生態域。
@@ -55,16 +57,10 @@ Nature’s Compass 主要是手持右鍵開介面，不一定有固定鍵位。
 - CurseForge：<https://www.curseforge.com/minecraft/mc-mods/natures-compass>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Nature%27s%20Compass>
 
-## 圖片
-
-
-![示意截圖](https://cdn.modrinth.com/data/fPetb5Kh/images/5040466f2a4552e12a317ee0030de06619b71c46_350.webp)
-
 ## 安裝與前置（可略讀）
 - Nature’s Compass 多為單人/客戶端友善工具；伺服器可能會限制搜尋頻率或半徑以保護效能。
 - 若你是管理員：搜尋半徑與冷卻等通常可在設定檔調整；修改前先備份。
 
 ## 資料來源
 - <https://modrinth.com/mod/natures-compass>
-- <https://cdn.modrinth.com/data/fPetb5Kh/9b0d54f2a8d9e49a10f5bcb8004bc757f55bb013.png>
 - <https://cdn.modrinth.com/data/fPetb5Kh/images/5040466f2a4552e12a317ee0030de06619b71c46_350.webp>

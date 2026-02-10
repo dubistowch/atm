@@ -1,11 +1,13 @@
 # Mystical Agriculture 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/C95ReXie/2bddd50d346a470536319c9c1ae6c21f6a5b3e72_96.webp)
-
 ## 簡介
 Mystical Agriculture 的核心概念很直白：**用作物來種出資源**。你不只是在種小麥，而是把礦物、材料、怪物掉落做成「種子」，透過農田量產精華（Essence），再合成你需要的資源。
 
 在整合包裡，它通常是中後期的「材料壓力終結者」：當你需要大量鐵、金、紅石、模組材料，或某些麻煩掉落時，種田會比一直跑圖或刷怪更穩定。
+
+![精華作物與資源農場示意（截圖）](https://cdn.modrinth.com/data/C95ReXie/images/905df0baa810e976e55a013eff7c9ddcec104328_350.webp)
+
+*圖：Mystical Agriculture 的遊戲內示意截圖。重點是「把資源轉成可自動化量產的作物」，中後期通常會把農田整合進收割與倉儲系統。*
 
 ## 模組特色
 - 大量資源作物：涵蓋原版與常見模組材料（依版本/整合包）。
@@ -79,16 +81,10 @@ Mystical Agriculture 通常沒有「必定存在」的核心鍵位，多數互�
 - Docs：<https://blakesmods.com/docs/mysticalagriculture>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Mystical%20Agriculture>
 
-## 圖片
-
-
-![示意截圖](https://cdn.modrinth.com/data/C95ReXie/images/905df0baa810e976e55a013eff7c9ddcec104328_350.webp)
-
 ## 安裝與前置（可略讀）
 - Mystical Agriculture 在很多整合包會搭配 Patchouli 類指南系統、以及其他農場/儲存模組一起使用；實際內容以整合包為準。
 - 若你在遊戲中看不到指南書內容，可能是整合包版本差異或前置缺失（玩家通常不用自行處理，交給整合包）。
 
 ## 資料來源
 - <https://modrinth.com/mod/mystical-agriculture>
-- <https://cdn.modrinth.com/data/C95ReXie/2bddd50d346a470536319c9c1ae6c21f6a5b3e72_96.webp>
 - <https://cdn.modrinth.com/data/C95ReXie/images/905df0baa810e976e55a013eff7c9ddcec104328_350.webp>

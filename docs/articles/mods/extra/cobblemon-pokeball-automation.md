@@ -1,7 +1,5 @@
 # Cobblemon：精靈球自動化／精靈球機器製作教學（整合包自動化思路）
 
-![模組圖示](https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp)
-
 > 本篇是「玩法與工廠思路」：
 > - Cobblemon 的球大多需要 **杏果（Apricorn）+ 金屬錠** 等材料（細節依球種不同）
 > - 整合包通常會有 Create / Mekanism / Industrial Foregoing / AE2 等模組，可以把「種杏果 → 收成 → 合成球」整條線自動化
@@ -129,15 +127,6 @@ Industrial Foregoing 常見定位是：
 
 ---
 
-## 圖片（可靠來源才放）
-
-- Cobblemon Wiki：Poké Ball 圖例（頁面內有各種球的模型圖，若你需要直連可從 File 取得 Special:FilePath）
-  - <https://wiki.cobblemon.com/index.php/Pok%C3%A9_Ball>
-
-（自動化流程建議自行截圖你的工廠：最能反映你整合包版本與機器配置。）
-
----
-
 ## 相關連結
 
 - Cobblemon Wiki：Poké Ball（球種、取得方式、部分配方示例與版本說明）
@@ -151,4 +140,3 @@ Industrial Foregoing 常見定位是：
 
 ## 資料來源
 - <https://modrinth.com/mod/cobblemon>
-- <https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp>

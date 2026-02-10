@@ -1,7 +1,5 @@
 # Time in a Bottle 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/dQCBl2Ht/1099da55fe0a7d26f3b2ff536ecb43e9d63a0b99_96.webp)
-
 ## 簡介
 Time in a Bottle（瓶中時間）是一個很直覺的加速道具：你在線上活動時它會累積「時間」，之後你可以對某個方塊使用，讓它在一段時間內加速運作。
 
@@ -53,14 +51,9 @@ Time in a Bottle（瓶中時間）是一個很直覺的加速道具：你在線�
 - Modrinth（若你版本有上架可搜尋）：<https://modrinth.com/mods>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Time%20in%20a%20Bottle>
 
-## 圖片
-
-![模組圖示](https://cdn.modrinth.com/data/dQCBl2Ht/1099da55fe0a7d26f3b2ff536ecb43e9d63a0b99_96.webp)
-
 ## 安裝與前置（可略讀）
 - Time in a Bottle 的強度常由整合包限制可加速目標；以整合包規則為準。
 - 若你是管理員：可加速黑名單/倍率等可能在設定檔；修改前先備份。
 
 ## 資料來源
 - <https://modrinth.com/mod/time-in-a-bottle>
-- <https://cdn.modrinth.com/data/dQCBl2Ht/1099da55fe0a7d26f3b2ff536ecb43e9d63a0b99_96.webp>

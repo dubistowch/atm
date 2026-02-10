@@ -1,7 +1,5 @@
 # Applied Energistics 2 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/XxWD5pD3/60b001515abbf6ebf32bc2729b0ddd95d2793feb_96.webp)
-
 ## 簡介
 Applied Energistics 2（AE2）是整合包中最常見的「數位倉儲 + 自動合成」核心模組。它用 ME 網路把物品收納、搜尋、分類、物流與自動合成都整合在一起：你不用再面對成排箱子，只要打開終端機搜尋物品，甚至能一鍵下單自動合成。
 
@@ -35,6 +33,10 @@ AE2 多數操作在 GUI 內完成，通常沒有「必背固定快捷鍵」。
 - 解法通常也在遊戲內就能排：
   - 檢查控制器/電源/線路是否連通
   - 檢查儲存元件容量
+
+![AE2 子網路（Sub-networks）概念示意圖](https://appliedenergistics.org/_next/static/media/subnetworks.adf0ceb6.png)
+
+*圖：官方網站對「子網路（sub-networks）」的示意。重點是把網路功能分段（例如：主幹倉儲 vs. 機器端輸入輸出），讓佈線與擴建更可控、也更不容易把整個網路搞到斷線。*
 
 3) **先做倉儲，再做自動合成（最不容易爆炸）**
 - 新手常見順序：
@@ -82,15 +84,12 @@ AE2 多數操作在 GUI 內完成，通常沒有「必背固定快捷鍵」。
 - Discord：<https://discord.gg/Zd6t9ka7ne>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=AE2>
 
-## 圖片
-
-![模組圖示](https://cdn.modrinth.com/data/XxWD5pD3/60b001515abbf6ebf32bc2729b0ddd95d2793feb_96.webp)
-
 ## 安裝與前置（可略讀）
 - AE2 在整合包中常是「中樞模組」，通常會與能源、物流與任務線深度綁定。
 - 若你是管理員：通道限制、能耗、生成等多在 config；修改前先備份。
 
 ## 資料來源
 - <https://modrinth.com/mod/ae2>
-- <https://cdn.modrinth.com/data/XxWD5pD3/60b001515abbf6ebf32bc2729b0ddd95d2793feb_96.webp>
+- <https://appliedenergistics.org/>
+- <https://appliedenergistics.org/_next/static/media/subnetworks.adf0ceb6.png>
 - <https://guide.appliedenergistics.org/>

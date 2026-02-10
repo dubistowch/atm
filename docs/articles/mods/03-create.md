@@ -1,7 +1,5 @@
 # Create 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/LNytGWDc/61d716699bcf1ec42ed4926a9e1c7311be6087e2_96.webp)
-
 ## 簡介
 Create 是「看得見、會動的科技」：你不是把材料丟進一堆 GUI，而是用齒輪、皮帶、轉速與各種機械方塊，在世界裡搭出真正會運轉的工廠。它特別適合拿來做前中期自動化、物流整線，以及「邊實用邊好看」的基地產線。
 
@@ -79,10 +77,6 @@ Create 的鍵位常被整合包調整；**請以遊戲內控制設定為準**。
 - Create Wiki（GitHub）：<https://github.com/Creators-of-Create/Create/wiki>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Create%20%E6%A8%A1%E7%B5%84>
 
-## 圖片
-
-![模組圖示](https://cdn.modrinth.com/data/LNytGWDc/61d716699bcf1ec42ed4926a9e1c7311be6087e2_96.webp)
-
 ## 安裝與前置（可略讀）
 - Create 常見會搭配許多附加模組（例如額外零件/機械/裝飾），整合包實際內容以模組清單為準。
 - 一般玩家：裝好整合包後直接用 Ponder 學即可。
@@ -90,4 +84,3 @@ Create 的鍵位常被整合包調整；**請以遊戲內控制設定為準**。
 
 ## 資料來源
 - <https://modrinth.com/mod/create>
-- <https://cdn.modrinth.com/data/LNytGWDc/61d716699bcf1ec42ed4926a9e1c7311be6087e2_96.webp>

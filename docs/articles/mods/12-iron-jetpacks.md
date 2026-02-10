@@ -1,11 +1,13 @@
 # Iron Jetpacks 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/DWIEOniQ/ae173e06848b2b77127ac64aa8a0571ca93c0265_96.webp)
-
 ## 簡介
 Iron Jetpacks 提供以 FE（Forge Energy）驅動的噴射背包，讓你在中前期就能享受「垂直移動」的自由：上山、挖礦直上直下、建築拉線、跨地形探索都變得非常順手。
 
 在整合包裡它通常是「早中期最實用的移動解法」之一；後期可能被更高階的飛行裝備取代，但噴射背包仍然非常直覺好用。
+
+![噴射背包實際飛行示意（截圖）](https://cdn.modrinth.com/data/DWIEOniQ/images/0a61aaadea1aed2e3fe2fa49b68264861ab8dee1_350.webp)
+
+*圖：Iron Jetpacks 的遊戲內示意截圖。重點是「垂直移動」能力：不論挖礦直上直下或建築施工，都能大幅縮短動線。*
 
 ## 模組特色
 - 多階級噴射背包（等級與材料依版本/整合包）。
@@ -66,16 +68,10 @@ Iron Jetpacks 提供以 FE（Forge Energy）驅動的噴射背包，讓你在中
 - Modrinth：<https://modrinth.com/mod/iron-jetpacks>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Iron%20Jetpacks>
 
-## 圖片
-
-
-![示意截圖](https://cdn.modrinth.com/data/DWIEOniQ/images/0a61aaadea1aed2e3fe2fa49b68264861ab8dee1_350.webp)
-
 ## 安裝與前置（可略讀）
 - 噴射背包需要 FE 供能；整合包通常會提供發電與充電方式。
 - 若你是管理員：推力/耗電平衡可能在設定檔；修改前先備份。
 
 ## 資料來源
 - <https://modrinth.com/mod/iron-jetpacks>
-- <https://cdn.modrinth.com/data/DWIEOniQ/ae173e06848b2b77127ac64aa8a0571ca93c0265_96.webp>
 - <https://cdn.modrinth.com/data/DWIEOniQ/images/0a61aaadea1aed2e3fe2fa49b68264861ab8dee1_350.webp>

@@ -1,11 +1,13 @@
 # Explorer’s Compass 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/RV1qfVQ8/16aee9631790996daba4d0dc5fe75f4e894ccaee.png)
-
 ## 簡介
 Explorer’s Compass 是用來找「世界結構（Structure）」的工具：你在介面選擇村莊、要塞、海底神殿、下界堡壘等結構後，它會搜尋最近的位置並指路。
 
 在整合包結構很多、地形很誇張、或任務要求你「找到一次」的時候，它能避免你無止境地亂跑。
+
+![Explorer’s Compass 結構搜尋介面示意（截圖）](https://cdn.modrinth.com/data/RV1qfVQ8/images/4e701b15485b8739871047de1cf81f75920d3b7c_350.webp)
+
+*圖：在介面中選定目標結構後開始搜尋，羅盤會指向最近的位置。重點是「先用關鍵字縮小清單」，並視伺服器效能調整搜尋半徑。*
 
 ## 模組特色
 - 選結構 → 搜尋 → 指向最近的該結構。
@@ -53,16 +55,10 @@ Explorer’s Compass 主要是手持右鍵開介面，不一定有固定鍵位�
 - CurseForge：<https://www.curseforge.com/minecraft/mc-mods/explorers-compass>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Explorer%27s%20Compass>
 
-## 圖片
-
-
-![示意截圖](https://cdn.modrinth.com/data/RV1qfVQ8/images/4e701b15485b8739871047de1cf81f75920d3b7c_350.webp)
-
 ## 安裝與前置（可略讀）
 - 伺服器可能會限制搜尋頻率/半徑；以伺服器規則為準。
 - 若你是管理員：結構搜尋的限制通常可在設定檔調整；修改前先備份。
 
 ## 資料來源
 - <https://modrinth.com/mod/explorers-compass>
-- <https://cdn.modrinth.com/data/RV1qfVQ8/16aee9631790996daba4d0dc5fe75f4e894ccaee.png>
 - <https://cdn.modrinth.com/data/RV1qfVQ8/images/4e701b15485b8739871047de1cf81f75920d3b7c_350.webp>

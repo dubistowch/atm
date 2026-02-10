@@ -1,7 +1,5 @@
 # Cobblemon：考古與化石復活教學（可疑沙礫、刷子、化石、復活流程）
 
-![模組圖示](https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp)
-
 > 重點：
 > - 化石主要來自 **Cobblemon 的化石結構（structures）** 裡的 **可疑沙礫（Suspicious Sand/Gravel）**
 > - 用 **刷子（Brush）** 刷出 **Fossil**
@@ -121,17 +119,6 @@ Cobblemon Wiki 描述：
 
 ---
 
-## 圖片（可靠來源才放）
-
-- Fossil Analyzer（Cobblemon Wiki 圖檔）：
-  - https://wiki.cobblemon.com/index.php/Special:FilePath/Fossil_Analyzer_(block,_inactive).png
-- Restoration Tank（Cobblemon Wiki 圖檔）：
-  - https://wiki.cobblemon.com/index.php/Special:FilePath/Restoration_Tank_(block).png
-
-（若檔名因版本不同導致 404，請改用 Wiki 條目頁面點進 File，再用 Special:FilePath 取得直連。）
-
----
-
 ## 相關連結
 
 - Cobblemon Wiki：Fossil（化石取得方式、來源結構概述）
@@ -147,5 +134,3 @@ Cobblemon Wiki 描述：
 
 ## 資料來源
 - <https://modrinth.com/mod/cobblemon>
-- <https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp>
-- <https://cdn.modrinth.com/data/MdwFAVRL/images/1867aa59320a9616e2bde500870c45c41247da3f_350.webp>

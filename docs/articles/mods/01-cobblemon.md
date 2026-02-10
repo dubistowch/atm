@@ -1,11 +1,13 @@
 # Cobblemon 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp)
-
 ## 簡介
 Cobblemon 是把「寶可夢的捕捉、培育、對戰」直接融進 Minecraft 生存流程的模組：你一樣要採集、探索、下礦、蓋家，但世界同時會生成野生寶可夢，你可以把牠們當成隊伍成員、移動工具與長期收集目標。
 
 在整合包裡它通常是很耐玩的「長線主線」：想補圖鑑、抓稀有、做出更好的球與培育資源，就會自然被推著去跑生態域、找結構、做基地機能。
+
+![Cobblemon 遊戲內世界與寶可夢示意（截圖）](https://cdn.modrinth.com/data/MdwFAVRL/images/1867aa59320a9616e2bde500870c45c41247da3f_350.webp)
+
+*圖：Cobblemon 的遊戲內示意截圖。重點是「野外會自然生成寶可夢」，探索/跑圖本身就會產生捕捉與收集目標。*
 
 ## 模組特色
 - 捕捉、培育並組成隊伍，與野生寶可夢對戰取得經驗與招式成長。
@@ -79,11 +81,6 @@ Cobblemon 的常用操作會因版本與整合包而不同；**請以遊戲內�
 - Modrinth：<https://modrinth.com/mod/cobblemon>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=cobblemon>
 
-## 圖片
-
-
-![示意截圖](https://cdn.modrinth.com/data/MdwFAVRL/images/1867aa59320a9616e2bde500870c45c41247da3f_350.webp)
-
 ## 安裝與前置（可略讀）
 - Cobblemon 可能有不同載入器與版本分支（依整合包而定），請以你整合包的模組清單為準。
 - 一般玩家只需要確認：整合包已正確安裝、伺服器與用戶端版本一致、資源包/材質包（若有要求）已啟用。
@@ -91,5 +88,4 @@ Cobblemon 的常用操作會因版本與整合包而不同；**請以遊戲內�
 
 ## 資料來源
 - <https://modrinth.com/mod/cobblemon>
-- <https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp>
 - <https://cdn.modrinth.com/data/MdwFAVRL/images/1867aa59320a9616e2bde500870c45c41247da3f_350.webp>

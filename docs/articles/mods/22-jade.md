@@ -1,11 +1,13 @@
 # Jade 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/nvQzSEkH/b04217bc2b7dc524c4d12f81ff42cc1cefb9b0fc_96.webp)
-
 ## 簡介
 Jade 是方塊/實體資訊顯示模組（WAILA/HWYLA 類）：你把準星指向方塊或生物時，畫面上會即時顯示名稱、所屬模組，以及（若有整合）容器內容摘要、機器能量/流體/進度、村民職業等資訊。
 
 在整合包裡它像「隨身檢視器」：做自動化、排管線、找方塊來源時會省非常多時間。
+
+![Jade 方塊資訊浮窗示意（截圖）](https://cdn.modrinth.com/data/nvQzSEkH/images/0bf8da81675d890d2bccba0ed0f51a0fabef5267.png)
+
+*圖：準星指向方塊/生物時，Jade 會在畫面上方顯示名稱、所屬模組與延伸資訊。重點是「用模組來源快速定位配方/指南」與「用能量/流體/進度資訊除錯」。*
 
 ## 模組特色
 - 顯示方塊名稱、所屬模組（整合包東西多時超重要）。
@@ -57,16 +59,10 @@ Jade 通常是純 HUD/UI 模組，不以新增可合成道具為主。
 - GitHub：<https://github.com/Snownee/Jade>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Jade%20%E6%A8%A1%E7%B5%84>
 
-## 圖片
-
-
-![示意截圖](https://cdn.modrinth.com/data/nvQzSEkH/images/0bf8da81675d890d2bccba0ed0f51a0fabef5267.png)
-
 ## 安裝與前置（可略讀）
 - Jade 常有額外插件/整合模組（用來顯示更多機器資訊）；整合包通常會一併處理。
 - 若你是管理員：可用設定控制顯示項目與權限（例如伺服器是否允許顯示容器內容），依版本而定。
 
 ## 資料來源
 - <https://modrinth.com/mod/jade>
-- <https://cdn.modrinth.com/data/nvQzSEkH/b04217bc2b7dc524c4d12f81ff42cc1cefb9b0fc_96.webp>
 - <https://cdn.modrinth.com/data/nvQzSEkH/images/0bf8da81675d890d2bccba0ed0f51a0fabef5267.png>

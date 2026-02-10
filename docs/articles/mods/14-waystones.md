@@ -1,11 +1,13 @@
 # Waystones 新手教學與玩法筆記
 
-![模組圖示](https://cdn.modrinth.com/data/LOpKHB2A/6c81041b60d525d63c0b9da497db66cfda215e16_96.webp)
-
 ## 簡介
 Waystones 提供「傳送石碑」玩法：你啟動過的 Waystone 會被記錄，之後就能在石碑之間傳送，或用卷軸/傳送石等道具遠端傳送。
 
 在整合包裡它常用來取代 `/home`、`/warp` 這類指令便利性，讓生存也能有「合理的快速移動」。
+
+![Waystones 模組示意圖（官方網站）](https://mods.twelveiterations.com/img/minecraft-bedrock/waystones.jpg)
+
+*圖：Waystones 的官方示意圖。重點是「啟動過的 Waystone 會進入清單」，之後就能在各點之間傳送；實務上最常用在基地、主城樞紐與資源點之間的往返。*
 
 ## 模組特色
 - Waystone 方塊：啟動後可作為傳送目的地。
@@ -60,15 +62,11 @@ Waystones 的互動多在 GUI 內完成；若整合包啟用了「背包介面�
 - Balm（前置，部分版本需要）：<https://modrinth.com/mod/balm>
 - 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=Waystones>
 
-## 圖片
-
-![模組圖示](https://cdn.modrinth.com/data/LOpKHB2A/6c81041b60d525d63c0b9da497db66cfda215e16_96.webp)
-
 ## 安裝與前置（可略讀）
 - Waystones 部分版本需要 Balm 作為前置，整合包通常已處理。
 - 傳送規則（成本、冷卻、跨維度）多由整合包/伺服器設定決定；以遊戲內提示為準。
 
 ## 資料來源
 - <https://modrinth.com/mod/waystones>
-- <https://cdn.modrinth.com/data/LOpKHB2A/6c81041b60d525d63c0b9da497db66cfda215e16_96.webp>
-- <https://github.com/blay09/Waystones>
+- <https://mods.twelveiterations.com/minecraft/waystones>
+- <https://mods.twelveiterations.com/img/minecraft-bedrock/waystones.jpg>
