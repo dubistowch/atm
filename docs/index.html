@@ -128,8 +128,15 @@
         <input type="text" id="search-input" class="search-input" placeholder="搜尋教學文章標題或內容...">
       </div>
 
+      <div class="filter-bar" id="type-filters">
+        <button class="filter-btn active" onclick="filterType('all')">全部文章</button>
+        <button class="filter-btn" onclick="filterType('questlines')">🧭 主線任務</button>
+        <button class="filter-btn" onclick="filterType('mod')">📦 模組教學</button>
+        <button class="filter-btn" onclick="filterType('extra')">🧪 進階教學</button>
+      </div>
+
       <div class="filter-bar" id="category-filters">
-        <button class="filter-btn active" onclick="filterCategory('all')">全部</button>
+        <button class="filter-btn active" onclick="filterCategory('all')">全部分類</button>
         <button class="filter-btn" onclick="filterCategory('tech')">⚙️ 科技</button>
         <button class="filter-btn" onclick="filterCategory('magic')">✨ 魔法</button>
         <button class="filter-btn" onclick="filterCategory('adventure')">🌍 冒險</button>
@@ -173,6 +180,7 @@
 
     let allGuides = [];
     let currentCategory = 'all';
+    let currentType = 'all';
 
     async function init() {
       try {
@@ -201,10 +209,22 @@
       }
     }
 
+    function setActiveButtons(containerId, activeEl) {
+      const root = document.getElementById(containerId);
+      if (!root) return;
+      root.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      if (activeEl) activeEl.classList.add('active');
+    }
+
+    function filterType(t) {
+      currentType = t;
+      setActiveButtons('type-filters', event.target);
+      filterArticles();
+    }
+
     function filterCategory(cat) {
       currentCategory = cat;
-      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
+      setActiveButtons('category-filters', event.target);
       filterArticles();
     }
 
@@ -239,12 +259,19 @@
       });
     }
 
+    function matchesTypeFilter(g) {
+      if (currentType === 'all') return true;
+      if (currentType === 'questlines') return (g.id || '').startsWith('questlines/');
+      return g.type === currentType;
+    }
+
     function filterArticles() {
       const term = document.getElementById('search-input').value.toLowerCase();
       const filtered = allGuides.filter(g => {
         const matchesSearch = g.title.toLowerCase().includes(term) || (g.description && g.description.toLowerCase().includes(term));
         const matchesCat = currentCategory === 'all' || g.category === currentCategory;
-        return matchesSearch && matchesCat;
+        const matchesType = matchesTypeFilter(g);
+        return matchesSearch && matchesCat && matchesType;
       });
       renderList(sortGuides(filtered));
     }

@@ -79,5 +79,5 @@
 ---
 
 ## 資料來源
-- 壓縮檔內章節定義（quests）：`minecraft/config/ftbquests/quests/chapters/catch_em_all.snbt`
-- 壓縮檔內中文語系（zh_cn）：`minecraft/config/ftbquests/quests/lang/zh_cn/chapters/catch_em_all.snbt`
+- 壓縮檔內章節定義（quests）：`ftbquests/quests/chapters/catch_em_all.snbt`
+- 壓縮檔內中文語系（zh_cn）：`ftbquests/quests/lang/zh_cn/chapters/catch_em_all.snbt`

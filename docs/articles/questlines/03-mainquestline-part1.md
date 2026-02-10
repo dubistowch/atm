@@ -86,5 +86,5 @@
 ---
 
 ## 資料來源
-- 壓縮檔內章節定義（quests）：`minecraft/config/ftbquests/quests/chapters/mainquestline_part_1.snbt`
-- 壓縮檔內中文語系（zh_cn）：`minecraft/config/ftbquests/quests/lang/zh_cn/chapters/mainquestline_part_1.snbt`
+- 壓縮檔內章節定義（quests）：`ftbquests/quests/chapters/mainquestline_part_1.snbt`
+- 壓縮檔內中文語系（zh_cn）：`ftbquests/quests/lang/zh_cn/chapters/mainquestline_part_1.snbt`

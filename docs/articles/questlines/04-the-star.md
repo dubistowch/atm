@@ -90,8 +90,8 @@
 
 ## 資料來源
 - 壓縮檔內章節定義（quests）：
-  - `minecraft/config/ftbquests/quests/chapters/chapter_2_the_star.snbt`
-  - `minecraft/config/ftbquests/quests/chapters/achapter_2r_6the_atm_star.snbt`
+  - `ftbquests/quests/chapters/chapter_2_the_star.snbt`
+  - `ftbquests/quests/chapters/achapter_2r_6the_atm_star.snbt`
 - 壓縮檔內中文語系（zh_cn）：
-  - `minecraft/config/ftbquests/quests/lang/zh_cn/chapters/chapter_2_the_star.snbt`
-  - `minecraft/config/ftbquests/quests/lang/zh_cn/chapters/achapter_2r_6the_atm_star.snbt`
+  - `ftbquests/quests/lang/zh_cn/chapters/chapter_2_the_star.snbt`
+  - `ftbquests/quests/lang/zh_cn/chapters/achapter_2r_6the_atm_star.snbt`

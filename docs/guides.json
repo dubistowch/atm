@@ -1,7 +1,7 @@
 [
   {
     "id": "01-cobblemon",
-    "title": "寶可夢入門 (Cobblemon)",
+    "title": "抓怪開局：Cobblemon 生存與對戰入門",
     "category": "adventure",
     "type": "mod",
     "description": "探索 Cobblemon 的世界！本指南將帶你了解如何捕捉、訓練寶可夢，以及基礎的生存技巧。",
@@ -72,7 +72,7 @@
   },
   {
     "id": "10-applied-energistics-2",
-    "title": "應用能源 2 (AE2)",
+    "title": "告別找箱子：AE2 終端與自動合成入門",
     "category": "tech",
     "type": "mod",
     "description": "最先進的物流與儲存系統。將成千上萬的物品數位化儲存，並實現複雜的自動合成網絡。",
@@ -80,14 +80,14 @@
   },
   {
     "id": "11-journeymap",
-    "title": "旅行地圖 (JourneyMap)",
+    "title": "迷路終結者：JourneyMap 地圖與路標必學",
     "category": "utility",
     "type": "mod",
     "description": "即時繪製世界地圖，標記重要地點，並查看附近的生物與地形。冒險者的必備工具。"
   },
   {
     "id": "12-iron-jetpacks",
-    "title": "噴射背包 (Iron Jetpacks)",
+    "title": "想飛就飛：噴射背包製作與續航技巧",
     "category": "tech",
     "type": "mod",
     "description": "提供多種等級的噴射背包，利用電力飛行，讓你輕鬆探索世界與建築。",
@@ -212,35 +212,35 @@
   },
   {
     "id": "questlines/01-questline-overview",
-    "title": "主線任務總覽：從開荒到 ATM 之星",
+    "title": "主線總覽：從開荒到 ATM 之星（一張表帶你走完）",
     "category": "adventure",
     "type": "guide",
     "description": "用玩家視角整理 All The Mons 主線任務節奏：從 welcome/getting_started 到 ATM 之星的里程碑與常見卡關。"
   },
   {
     "id": "questlines/02-getting-started",
-    "title": "開荒與前期：Cobblemon 起手式",
+    "title": "開荒起手式：先活下來、再把抓怪變成資源",
     "category": "adventure",
     "type": "guide",
     "description": "對應 getting_started 章：初始寶可夢、圖鑑、治療機、電腦與球果/精靈球供應鏈的前期流程。"
   },
   {
     "id": "questlines/03-mainquestline-part1",
-    "title": "主線第一章：工具、收納、地獄與終界",
+    "title": "主線第一章：收納上線、下界/終界門票到手",
     "category": "adventure",
     "type": "guide",
     "description": "對應 mainquestline_part_1：建立工具與收納，推進地獄/終界，並選定科技或魔法分支作為中期底盤。"
   },
   {
     "id": "questlines/04-the-star",
-    "title": "星之路徑：ATM 之星主線",
+    "title": "星之路徑：把「缺材料」變成「自動產線」",
     "category": "adventure",
     "type": "guide",
     "description": "對應 chapter_2_the_star 與 achapter_2r_6the_atm_star：奇點、大量材料與自動化，逐步拆解 ATM 之星需求。"
   },
   {
     "id": "questlines/05-catch-em-all",
-    "title": "抓怪／圖鑑路線：化石、釣魚與追蹤",
+    "title": "抓怪主線：化石復活、考古路線、圖鑑推進",
     "category": "adventure",
     "type": "guide",
     "description": "對應 catch_em_all：考古化石、復活古代寶可夢、寶可追蹤器與釣魚路線，讓補圖鑑更有效率。"

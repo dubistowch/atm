@@ -108,20 +108,20 @@
 
 ## 資料來源
 - 壓縮檔內章節定義（quests）：
-  - `minecraft/config/ftbquests/quests/chapters/welcome.snbt`
-  - `minecraft/config/ftbquests/quests/chapters/intro.snbt`
-  - `minecraft/config/ftbquests/quests/chapters/getting_started.snbt`
-  - `minecraft/config/ftbquests/quests/chapters/mainquestline_part_1.snbt`
-  - `minecraft/config/ftbquests/quests/chapters/chapter_2_the_star.snbt`
-  - `minecraft/config/ftbquests/quests/chapters/achapter_2r_6the_atm_star.snbt`
-  - `minecraft/config/ftbquests/quests/chapters/catch_em_all.snbt`
-  - `minecraft/config/ftbquests/quests/chapters/the_pika_star_009BBEA41077ED01.snbt`
+  - `ftbquests/quests/chapters/welcome.snbt`
+  - `ftbquests/quests/chapters/intro.snbt`
+  - `ftbquests/quests/chapters/getting_started.snbt`
+  - `ftbquests/quests/chapters/mainquestline_part_1.snbt`
+  - `ftbquests/quests/chapters/chapter_2_the_star.snbt`
+  - `ftbquests/quests/chapters/achapter_2r_6the_atm_star.snbt`
+  - `ftbquests/quests/chapters/catch_em_all.snbt`
+  - `ftbquests/quests/chapters/the_pika_star_009BBEA41077ED01.snbt`
 - 壓縮檔內中文語系（zh_cn）：
-  - `minecraft/config/ftbquests/quests/lang/zh_cn/chapters/welcome.snbt`
-  - `minecraft/config/ftbquests/quests/lang/zh_cn/chapters/getting_started.snbt`
-  - `minecraft/config/ftbquests/quests/lang/zh_cn/chapters/mainquestline_part_1.snbt`
-  - `minecraft/config/ftbquests/quests/lang/zh_cn/chapters/chapter_2_the_star.snbt`
-  - `minecraft/config/ftbquests/quests/lang/zh_cn/chapters/achapter_2r_6the_atm_star.snbt`
-  - `minecraft/config/ftbquests/quests/lang/zh_cn/chapters/catch_em_all.snbt`
+  - `ftbquests/quests/lang/zh_cn/chapters/welcome.snbt`
+  - `ftbquests/quests/lang/zh_cn/chapters/getting_started.snbt`
+  - `ftbquests/quests/lang/zh_cn/chapters/mainquestline_part_1.snbt`
+  - `ftbquests/quests/lang/zh_cn/chapters/chapter_2_the_star.snbt`
+  - `ftbquests/quests/lang/zh_cn/chapters/achapter_2r_6the_atm_star.snbt`
+  - `ftbquests/quests/lang/zh_cn/chapters/catch_em_all.snbt`
 
 > 註：`intro` 與 `the_pika_star_009BBEA41077ED01` 在本壓縮檔中未提供對應的 `zh_cn` 章節語言檔，因此本文僅做「用途/路線解讀」。
