@@ -258,5 +258,12 @@
     "category": "utility",
     "type": "mod",
     "description": "用區塊宣告保護基地，搭配 FTB Teams 共享給隊友；權限與常見排查一次搞懂。"
+  },
+  {
+    "id": "25-server-basics-commands",
+    "title": "新手必學：伺服器常用指令（回家/死回/傳送）",
+    "category": "utility",
+    "type": "guide",
+    "description": "/back /home /sethome /spawn /rtp /tpa /tpahere：多人服最常用的生存指令一次整理。"
   }
 ]
