@@ -458,6 +458,70 @@
       window.scrollTo(0, 0);
     }
 
+    function slugifyHeading(text) {
+      return (text || '')
+        .trim()
+        .toLowerCase()
+        // keep CJK, latin, numbers; replace spaces with -
+        .replace(/\s+/g, '-')
+        .replace(/[^\p{Letter}\p{Number}\u4E00-\u9FFF\u3400-\u4DBF\uF900-\uFAFF\-]/gu, '')
+        .replace(/\-+/g, '-');
+    }
+
+    function buildTOCFromHtml(html) {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const headings = Array.from(doc.querySelectorAll('h2, h3'));
+
+      if (headings.length < 2) {
+        return { tocHtml: '', contentHtml: doc.body.innerHTML };
+      }
+
+      const used = new Map();
+      const entries = [];
+
+      headings.forEach(h => {
+        const level = h.tagName.toLowerCase();
+        const title = (h.textContent || '').trim();
+        if (!title) return;
+
+        let slug = slugifyHeading(title) || 'section';
+        const n = (used.get(slug) || 0) + 1;
+        used.set(slug, n);
+        if (n > 1) slug = `${slug}-${n}`;
+
+        h.id = slug;
+        entries.push({ level, title, id: slug });
+      });
+
+      const items = entries.map(e => {
+        const cls = e.level === 'h3' ? 'toc-item toc-item-h3' : 'toc-item';
+        return `<a class="${cls}" href="#${e.id}">${escapeHtml(e.title)}</a>`;
+      }).join('');
+
+      const tocHtml = `
+        <div class="toc" id="toc">
+          <div class="toc-head">
+            <div class="toc-title">目錄</div>
+            <a class="toc-top" href="#" onclick="event.preventDefault(); window.scrollTo({top:0, behavior:'smooth'});">回到頂部 ↑</a>
+          </div>
+          <div class="toc-items">${items}</div>
+        </div>
+      `;
+
+      // Insert TOC after the first H1 if present, else at top
+      const firstH1 = doc.querySelector('h1');
+      if (firstH1 && firstH1.parentNode) {
+        const wrapper = doc.createElement('div');
+        wrapper.innerHTML = tocHtml;
+        firstH1.insertAdjacentElement('afterend', wrapper.firstElementChild);
+      } else {
+        doc.body.insertAdjacentHTML('afterbegin', tocHtml);
+      }
+
+      return { tocHtml: tocHtml, contentHtml: doc.body.innerHTML };
+    }
+
     function buildArticleFooter(currentId) {
       const groups = [
         { title: '🧭 主線任務', items: allGuides.filter(g => (g.id || '').startsWith('questlines/')) },
@@ -513,12 +577,28 @@
         if (!response.ok) throw new Error('Guide not found');
         const text = await response.text();
         
-        const html = marked.parse(text);
+        const rawHtml = marked.parse(text);
+        const { contentHtml } = buildTOCFromHtml(rawHtml);
 
         // Add a bottom navigation list for easier hopping (especially on mobile)
         const footer = buildArticleFooter(id);
 
-        document.getElementById('markdown-content').innerHTML = html + footer;
+        const root = document.getElementById('markdown-content');
+        root.innerHTML = contentHtml + footer;
+
+        // Smooth scroll for TOC links
+        root.querySelectorAll('.toc a[href^="#"]').forEach(a => {
+          a.addEventListener('click', (e) => {
+            const href = a.getAttribute('href');
+            if (!href || href === '#') return;
+            const target = root.querySelector(href);
+            if (!target) return;
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.replaceState(null, '', href);
+          });
+        });
+
         contentView.classList.remove('hidden');
         window.scrollTo(0, 0);
       } catch (error) {
