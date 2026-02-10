@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>勘誤紀錄 - ATMon 尋星之夢</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">尋星之夢 <span>ATMon</span></a>
+
+      <button class="nav-toggle" type="button" aria-label="開啟選單" aria-expanded="false" onclick="toggleNavMenu()">☰</button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-item">📖 冒險指南</a>
+        <a href="controls.html" class="nav-item">⌨️ 按鍵對照</a>
+        <a href="mods.html" class="nav-item">📦 模組百科</a>
+        <a href="errata.html" class="nav-item active">🧾 勘誤紀錄</a>
+      </div>
+    </div>
+  </nav>
+
+  <a class="report-btn" href="https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8" target="_blank" rel="noopener noreferrer" title="回報錯誤">🐛 回報錯誤</a>
+
+  <div class="container">
+    <div class="page-header">
+      <h1 class="page-title">勘誤紀錄</h1>
+      <p class="page-subtitle">玩家回報 → 修正追蹤（以聊天訊息形式呈現）</p>
+    </div>
+
+    <div class="chat-toolbar">
+      <div class="chat-hint">提示：點「🐛 回報錯誤」可提交問題；這裡會把已處理/待處理事項整理成紀錄。</div>
+      <div class="chat-filters">
+        <button class="filter-btn active" onclick="setStatusFilter('all')">全部</button>
+        <button class="filter-btn" onclick="setStatusFilter('open')">未處理</button>
+        <button class="filter-btn" onclick="setStatusFilter('fixed')">已修正</button>
+      </div>
+    </div>
+
+    <div id="errata-list" class="chat-list">
+      <div class="loading">正在讀取勘誤紀錄...</div>
+    </div>
+  </div>
+
+  <script>
+    let allItems = [];
+    let statusFilter = 'all';
+
+    function escapeHtml(s) {
+      return (s || '').replace(/[&<>\"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    }
+
+    function setActiveButtons(containerEl, activeEl) {
+      containerEl.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      if (activeEl) activeEl.classList.add('active');
+    }
+
+    function setStatusFilter(v) {
+      statusFilter = v;
+      setActiveButtons(document.querySelector('.chat-filters'), event.target);
+      render();
+    }
+
+    function fmtTime(iso) {
+      try {
+        const d = new Date(iso);
+        return d.toLocaleString('zh-Hant', { year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' });
+      } catch (e) {
+        return iso || '';
+      }
+    }
+
+    function badge(status) {
+      const s = (status || 'open').toLowerCase();
+      const map = {
+        open: { text: '未處理', cls: 'status-open' },
+        fixed: { text: '已修正', cls: 'status-fixed' },
+        wip: { text: '處理中', cls: 'status-wip' },
+      };
+      const b = map[s] || { text: escapeHtml(status || 'open'), cls: 'status-open' };
+      return `<span class="status-badge ${b.cls}">${b.text}</span>`;
+    }
+
+    function render() {
+      const root = document.getElementById('errata-list');
+      const items = allItems
+        .filter(it => statusFilter === 'all' || (it.status || 'open').toLowerCase() === statusFilter)
+        .sort((a,b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
+
+      if (items.length === 0) {
+        root.innerHTML = '<div class="loading">目前沒有符合條件的紀錄。</div>';
+        return;
+      }
+
+      root.innerHTML = items.map(it => {
+        const page = it.page ? `<a class="chat-meta-link" href="index.html?guide=${encodeURIComponent(it.page)}">查看相關文章</a>` : '';
+        return `
+          <div class="chat-card">
+            <div class="chat-meta">
+              <div class="chat-meta-left">
+                ${badge(it.status)}
+                <span class="chat-time">${escapeHtml(fmtTime(it.createdAt))}</span>
+              </div>
+              <div class="chat-meta-right">
+                ${page}
+              </div>
+            </div>
+
+            <div class="chat-bubble chat-user">
+              <div class="chat-name">${escapeHtml(it.user?.name || '玩家')}</div>
+              <div class="chat-msg">${escapeHtml(it.user?.message || '')}</div>
+            </div>
+
+            <div class="chat-bubble chat-ai">
+              <div class="chat-name">${escapeHtml(it.ai?.name || 'BearClaw')}</div>
+              <div class="chat-msg">${escapeHtml(it.ai?.message || '')}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function toggleNavMenu() {
+      const links = document.getElementById('nav-links');
+      const btn = document.querySelector('.nav-toggle');
+      if (!links || !btn) return;
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    async function init() {
+      try {
+        const res = await fetch('./errata.json');
+        if (!res.ok) throw new Error('failed');
+        allItems = await res.json();
+      } catch (e) {
+        allItems = [];
+      }
+      render();
+    }
+
+    init();
+  </script>
+</body>
+</html>

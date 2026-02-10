@@ -612,6 +612,107 @@ body {
   font-weight: 700;
 }
 
+/* --- Errata chat UI --- */
+.chat-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.chat-hint {
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.chat-card {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--panel-bg);
+  padding: 14px;
+}
+
+.chat-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.chat-meta-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-time {
+  color: var(--text-dim);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.chat-meta-link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.chat-meta-link:hover { text-decoration: underline; }
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.status-open { color: #ffd166; border-color: rgba(255, 209, 102, 0.35); background: rgba(255, 209, 102, 0.08); }
+.status-wip { color: #4fc3f7; border-color: rgba(79, 195, 247, 0.35); background: rgba(79, 195, 247, 0.08); }
+.status-fixed { color: #7ee787; border-color: rgba(126, 231, 135, 0.35); background: rgba(126, 231, 135, 0.08); }
+
+.chat-bubble {
+  max-width: 880px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+
+.chat-user {
+  margin-right: auto;
+  background: var(--card-bg);
+}
+
+.chat-ai {
+  margin-left: auto;
+  background: rgba(255, 127, 80, 0.08);
+  border-color: rgba(255, 127, 80, 0.35);
+}
+
+.chat-name {
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.chat-msg {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
 /* --- Article footer navigation --- */
 .article-footer {
   margin-top: 28px;

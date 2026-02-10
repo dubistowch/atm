@@ -1,0 +1,16 @@
+[
+  {
+    "id": "sample-001",
+    "createdAt": "2026-02-10T00:00:00Z",
+    "page": "13-sophisticated-backpacks",
+    "status": "fixed",
+    "user": {
+      "name": "玩家",
+      "message": "進階背包看不懂怎麼獲得、怎麼使用。"
+    },
+    "ai": {
+      "name": "BearClaw",
+      "message": "已補上『最短上手流程』與 JEI/REI 找配方、Controls 找按鍵的步驟，避免瞎猜。"
+    }
+  }
+]
