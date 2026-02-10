@@ -249,6 +249,23 @@
       renderList(sortGuides(filtered));
     }
 
+    function escapeHtml(s) {
+      return (s || '').replace(/[&<>\"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    }
+
+    function renderSectionHeader(title, count, subtitle) {
+      const wrap = document.createElement('div');
+      wrap.className = 'section-header';
+      wrap.innerHTML = `
+        <div class="section-title">${escapeHtml(title)}</div>
+        <div class="section-meta">
+          <span class="section-count">${count} 篇</span>
+          ${subtitle ? `<span class="section-subtitle">${escapeHtml(subtitle)}</span>` : ''}
+        </div>
+      `;
+      return wrap;
+    }
+
     function renderList(guides) {
       const grid = document.getElementById('article-grid');
       grid.innerHTML = '';
@@ -258,32 +275,49 @@
         return;
       }
 
-      guides.forEach(guide => {
-        const item = document.createElement('a');
-        item.href = `?guide=${guide.id}`;
-        item.className = 'article-item';
-        item.onclick = (e) => {
-          e.preventDefault();
-          history.pushState(null, '', `?guide=${guide.id}`);
-          showGuide(guide.id);
-        };
+      // Grouping for clarity: main questlines first, then mods, then extras
+      const questlines = guides.filter(g => (g.id || '').startsWith('questlines/'));
+      const mods = guides.filter(g => g.type === 'mod' && !(g.id || '').startsWith('questlines/'));
+      const extras = guides.filter(g => g.type === 'extra');
+      const others = guides.filter(g => !questlines.includes(g) && !mods.includes(g) && !extras.includes(g));
 
-        const iconHtml = guide.icon 
-          ? `<img src="${guide.icon}" style="width:30px; height:30px; object-fit:contain;">`
-          : (categoryIcons[guide.category] || '📄');
+      const groups = [
+        { title: '主線任務', subtitle: '照著走就能推進整合包主目標', items: questlines },
+        { title: '模組教學', subtitle: '每個模組一篇，快速上手與玩法重點', items: mods },
+        { title: '進階教學', subtitle: '手把手流程：自動化、終端、噴射背包…', items: extras },
+        { title: '其他文章', subtitle: '', items: others },
+      ].filter(g => g.items.length > 0);
 
-        item.innerHTML = `
-          <div class="article-icon">${iconHtml}</div>
-          <div class="article-content">
-            <h3 class="article-title">${guide.title}</h3>
-            <p class="article-desc">${guide.description || '點擊閱讀詳細教學內容。'}</p>
-          </div>
-          <div class="article-meta">
-            <span class="article-tag">${guide.type === 'mod' ? '模組教學' : '一般教學'}</span>
-            <span class="article-open">點此閱讀 →</span>
-          </div>
-        `;
-        grid.appendChild(item);
+      groups.forEach(group => {
+        grid.appendChild(renderSectionHeader(group.title, group.items.length, group.subtitle));
+
+        group.items.forEach(guide => {
+          const item = document.createElement('a');
+          item.href = `?guide=${guide.id}`;
+          item.className = 'article-item';
+          item.onclick = (e) => {
+            e.preventDefault();
+            history.pushState(null, '', `?guide=${guide.id}`);
+            showGuide(guide.id);
+          };
+
+          const iconHtml = guide.icon 
+            ? `<img src="${guide.icon}" style="width:30px; height:30px; object-fit:contain;">`
+            : (categoryIcons[guide.category] || '📄');
+
+          item.innerHTML = `
+            <div class="article-icon">${iconHtml}</div>
+            <div class="article-content">
+              <h3 class="article-title">${guide.title}</h3>
+              <p class="article-desc">${guide.description || '點擊閱讀詳細教學內容。'}</p>
+            </div>
+            <div class="article-meta">
+              <span class="article-tag">${guide.type === 'mod' ? '模組教學' : (guide.type === 'extra' ? '進階教學' : '主線任務')}</span>
+              <span class="article-open">點此閱讀 →</span>
+            </div>
+          `;
+          grid.appendChild(item);
+        });
       });
 
       document.getElementById('list-view').classList.remove('hidden');
