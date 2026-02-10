@@ -339,6 +339,39 @@ body {
   .article-meta { align-items: center; }
 }
 
+/* Mobile navbar: avoid text wrapping / vertical stacked characters */
+@media (max-width: 700px) {
+  :root { --header-height: 120px; }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .nav-brand {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+
+  .nav-item {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
 /* Loading Spinner */
 .loading { text-align: center; padding: 50px; font-size: 18px; color: var(--text-dim); }
 
