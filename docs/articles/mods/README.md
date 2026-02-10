@@ -26,6 +26,7 @@
 21. [Akashic Tome](./21-akashic-tome.md)
 22. [Jade](./22-jade.md)
 23. [FTB Teams](./23-ftb-teams.md)
+24. [FTB Chunks](./24-ftb-chunks.md)
 
 ## 進階教學
 - [Cobblemon：交易村民教學（取得／刷新／交易思路）](./extra/cobblemon-villager-trading.md)
