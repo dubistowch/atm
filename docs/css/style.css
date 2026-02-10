@@ -475,13 +475,27 @@ body {
   }
 
   /* Dropdown becomes static inside the opened menu */
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .nav-dropdown-btn {
+    justify-content: space-between;
+  }
+
   .nav-dropdown-menu {
     position: static;
     display: none;
     box-shadow: none;
-    background: transparent;
+    width: 100%;
+    background: var(--panel-bg);
     border: 1px solid var(--border-color);
     border-radius: 12px;
+    padding: 6px;
+  }
+
+  .nav-dropdown-item {
+    color: var(--text-main);
   }
 
   .nav-dropdown-menu.open { display: block; }
@@ -492,7 +506,7 @@ body {
 
 /* Small phones */
 @media (max-width: 420px) {
-  :root { --header-height: 118px; }
+  :root { --header-height: 76px; }
 
   .nav-brand { font-size: 18px; }
   .nav-item { font-size: 13px; padding: 7px 10px; }
@@ -513,6 +527,83 @@ body {
   .markdown-body h1 { font-size: 2.0em; }
   .markdown-body h2 { font-size: 1.5em; }
   .markdown-body h3 { font-size: 1.2em; }
+}
+
+/* --- Article footer navigation --- */
+.article-footer {
+  margin-top: 28px;
+  padding: 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--panel-bg);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-title {
+  font-weight: 900;
+  color: #fff;
+}
+
+.footer-back {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.footer-back:hover {
+  color: #fff;
+}
+
+.footer-group {
+  margin-top: 14px;
+}
+
+.footer-group-title {
+  font-size: 13px;
+  color: var(--text-dim);
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.footer-link:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.footer-link.active {
+  border-color: rgba(255, 127, 80, 0.6);
+  background: rgba(255, 127, 80, 0.08);
+}
+
+@media (max-width: 420px) {
+  .footer-links { flex-direction: column; }
+  .footer-link { width: 100%; justify-content: space-between; }
 }
 
 /* Loading Spinner */
