@@ -169,5 +169,45 @@
     "category": "utility",
     "type": "mod",
     "description": "顯示準心指向方塊或生物的詳細資訊。包括名稱、血量、儲存內容物與破壞進度。"
+  },
+  {
+    "id": "extra/cobblemon-villager-trading",
+    "title": "Cobblemon：交易村民攻略",
+    "category": "adventure",
+    "type": "extra",
+    "description": "從抓寶到補給：用村民與治療機器建立穩定補給與交易流程（不依賴死記交易表）。",
+    "icon": "https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp"
+  },
+  {
+    "id": "extra/cobblemon-archaeology-fossil-revival",
+    "title": "Cobblemon：考古與化石復活流程",
+    "category": "adventure",
+    "type": "extra",
+    "description": "刷子、可疑沙礫到復活機：一步步把化石變成古代寶可夢。",
+    "icon": "https://cdn.modrinth.com/data/MdwFAVRL/abfca1654a2d09bab85cbffcc9869938c951ee0e_96.webp"
+  },
+  {
+    "id": "extra/cobblemon-pokeball-automation",
+    "title": "Cobblemon：精靈球自動化工廠思路",
+    "category": "tech",
+    "type": "extra",
+    "description": "杏果農場→金屬供應→儲存物流：用整合包常見科技把精靈球量產起來（配方以 JEI/REI 為準）。",
+    "icon": "https://cdn.modrinth.com/data/LNytGWDc/61d716699bcf1ec42ed4926a9e1c7311be6087e2_96.webp"
+  },
+  {
+    "id": "extra/iron-jetpacks-progression",
+    "title": "Iron Jetpacks：噴射背包製作與升級路線",
+    "category": "tech",
+    "type": "extra",
+    "description": "從第一個能飛到穩定續航：材料、充電、升級與常見坑一次整理。",
+    "icon": "https://cdn.modrinth.com/data/DWIEOniQ/ae173e06848b2b77127ac64aa8a0571ca93c0265_96.webp"
+  },
+  {
+    "id": "extra/ae2-terminals-and-autocrafting",
+    "title": "AE2：終端機與自動合成入門",
+    "category": "tech",
+    "type": "extra",
+    "description": "ME 終端、樣板、分子裝配室到自動合成：新手可照做的 AE2 主線。",
+    "icon": "https://cdn.modrinth.com/data/XxWD5pD3/60b001515abbf6ebf32bc2729b0ddd95d2793feb_96.webp"
   }
 ]

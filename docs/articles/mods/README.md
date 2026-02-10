@@ -17,3 +17,18 @@
 12. [Iron Jetpacks](./12-iron-jetpacks.md)
 13. [Sophisticated Backpacks](./13-sophisticated-backpacks.md)
 14. [Waystones](./14-waystones.md)
+15. [Easy Villagers](./15-easy-villagers.md)
+16. [FTB Ultimine](./16-ftb-ultimine.md)
+17. [Nature’s Compass](./17-natures-compass.md)
+18. [Explorer’s Compass](./18-explorers-compass.md)
+19. [Time in a Bottle](./19-time-in-a-bottle.md)
+20. [Pocket Storage](./20-pocket-storage.md)
+21. [Akashic Tome](./21-akashic-tome.md)
+22. [Jade](./22-jade.md)
+
+## 進階教學
+- [Cobblemon：交易村民教學（取得／刷新／交易思路）](./extra/cobblemon-villager-trading.md)
+- [Cobblemon：考古與化石復活教學](./extra/cobblemon-archaeology-fossil-revival.md)
+- [Cobblemon：精靈球自動化／精靈球機器製作教學](./extra/cobblemon-pokeball-automation.md)
+- [Iron Jetpacks：噴射背包製作與升級路線教學](./extra/iron-jetpacks-progression.md)
+- [AE2：終端機與自動合成入門](./extra/ae2-terminals-and-autocrafting.md)
