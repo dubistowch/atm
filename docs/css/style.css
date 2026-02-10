@@ -77,6 +77,62 @@ body {
   gap: 20px;
 }
 
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.nav-toggle:hover {
+  background: var(--hover-bg);
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  min-width: 220px;
+  background: rgba(13, 17, 23, 0.98);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+  padding: 8px;
+  z-index: 1100;
+}
+
+.nav-dropdown-menu.open {
+  display: block;
+}
+
+.nav-dropdown-item {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.nav-dropdown-item:hover {
+  background: var(--hover-bg);
+  color: var(--accent-primary);
+}
+
 .nav-item {
   color: var(--text-dim);
   text-decoration: none;
@@ -372,41 +428,66 @@ body {
 
 /* Mobile navbar: avoid text wrapping / vertical stacked characters */
 @media (max-width: 700px) {
-  :root { --header-height: 120px; }
+  :root { --header-height: 76px; }
 
   body { padding-top: var(--header-height); }
 
   .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
     padding: 12px 14px;
   }
 
   .nav-brand {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.1;
   }
 
+  .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
+
+  /* Collapsed menu by default */
   .nav-links {
-    width: 100%;
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    top: calc(var(--header-height) - 6px);
+    display: none;
+    flex-direction: column;
     gap: 10px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 6px;
+    padding: 12px;
+    background: rgba(13, 17, 23, 0.98);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 18px 60px rgba(0,0,0,0.55);
+    z-index: 1200;
   }
 
+  .nav-links.open { display: flex; }
+
   .nav-item {
-    flex: 0 0 auto;
+    width: 100%;
+    justify-content: flex-start;
     white-space: nowrap;
-    padding: 8px 12px;
+    padding: 10px 12px;
     font-size: 14px;
   }
 
+  /* Dropdown becomes static inside the opened menu */
+  .nav-dropdown-menu {
+    position: static;
+    display: none;
+    box-shadow: none;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+  }
+
+  .nav-dropdown-menu.open { display: block; }
+
   /* Prevent iOS long-press highlight/zoom issues on nav */
-  .nav-item, .nav-brand { -webkit-tap-highlight-color: transparent; }
+  .nav-item, .nav-brand, .nav-toggle { -webkit-tap-highlight-color: transparent; }
 }
 
 /* Small phones */

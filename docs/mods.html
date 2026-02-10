@@ -73,7 +73,8 @@
 <nav class="navbar">
     <div class="nav-container">
         <a href="index.html" class="nav-brand">尋星之夢 <span>ATMon</span></a>
-        <div class="nav-links">
+        <button class="nav-toggle" type="button" aria-label="開啟選單" aria-expanded="false" onclick="toggleNavMenu()">☰</button>
+        <div class="nav-links" id="nav-links">
             <a href="index.html" class="nav-item">📖 冒險指南</a>
             <a href="controls.html" class="nav-item">⌨️ 按鍵對照</a>
             <a href="mods.html" class="nav-item active">📦 模組百科</a>
@@ -246,6 +247,14 @@
         const isVisible = container.classList.toggle('hidden');
         this.innerText = !isVisible ? '🔼 隱藏額外模組' : '📦 點擊展開更多模組 (包含輔助庫與其餘 200+ 個模組)';
     });
+
+    function toggleNavMenu() {
+        const links = document.getElementById('nav-links');
+        const btn = document.querySelector('.nav-toggle');
+        if (!links || !btn) return;
+        const open = links.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
 
     loadAllMods();
 </script>

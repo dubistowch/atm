@@ -108,10 +108,27 @@
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-brand">尋星之夢 <span>ATMon</span></a>
-      <div class="nav-links">
+
+      <button class="nav-toggle" type="button" aria-label="開啟選單" aria-expanded="false" onclick="toggleNavMenu()">
+        ☰
+      </button>
+
+      <div class="nav-links" id="nav-links">
         <a href="index.html" class="nav-item active">📖 冒險指南</a>
         <a href="controls.html" class="nav-item">⌨️ 按鍵對照</a>
         <a href="mods.html" class="nav-item">📦 模組百科</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-item nav-dropdown-btn" type="button" onclick="toggleNavDropdown()" aria-expanded="false" id="nav-dropdown-btn">
+            🗂️ 文章分類
+          </button>
+          <div class="nav-dropdown-menu" id="nav-dropdown-menu">
+            <a class="nav-dropdown-item" href="index.html" onclick="applyTypeAndClose('all'); return false;">全部文章</a>
+            <a class="nav-dropdown-item" href="index.html?type=questlines" onclick="applyTypeAndClose('questlines'); return false;">🧭 主線任務</a>
+            <a class="nav-dropdown-item" href="index.html?type=mod" onclick="applyTypeAndClose('mod'); return false;">📦 模組教學</a>
+            <a class="nav-dropdown-item" href="index.html?type=extra" onclick="applyTypeAndClose('extra'); return false;">🧪 進階教學</a>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -199,13 +216,19 @@
         
         const urlParams = new URLSearchParams(window.location.search);
         const guideId = urlParams.get('guide');
+        const typeParam = urlParams.get('type');
+
+        if (typeParam) {
+          // Allow deep links like index.html?type=questlines
+          currentType = typeParam;
+        }
 
         renderSidebar(); // Pre-render sidebar
 
         if (guideId) {
           showGuide(guideId);
         } else {
-          renderList(allGuides);
+          filterArticles(); // will render with current filters
         }
 
         document.getElementById('search-input').addEventListener('input', (e) => {
@@ -226,11 +249,51 @@
     function filterType(t) {
       currentType = t;
 
-      // Update select UI (for back/forward navigation or programmatic calls)
+      // Update select UI (legacy filter area)
       const sel = document.getElementById('type-select');
       if (sel && sel.value !== t) sel.value = t;
 
+      // Update URL (so sharing keeps the same view)
+      const url = new URL(window.location);
+      if (t && t !== 'all') url.searchParams.set('type', t);
+      else url.searchParams.delete('type');
+      history.replaceState(null, '', url);
+
       filterArticles();
+    }
+
+    function toggleNavMenu() {
+      const links = document.getElementById('nav-links');
+      const btn = document.querySelector('.nav-toggle');
+      if (!links || !btn) return;
+      const open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    function toggleNavDropdown() {
+      const menu = document.getElementById('nav-dropdown-menu');
+      const btn = document.getElementById('nav-dropdown-btn');
+      if (!menu || !btn) return;
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    function closeNavUI() {
+      const links = document.getElementById('nav-links');
+      const toggleBtn = document.querySelector('.nav-toggle');
+      const menu = document.getElementById('nav-dropdown-menu');
+      const ddBtn = document.getElementById('nav-dropdown-btn');
+
+      if (menu) menu.classList.remove('open');
+      if (ddBtn) ddBtn.setAttribute('aria-expanded', 'false');
+
+      if (links) links.classList.remove('open');
+      if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    function applyTypeAndClose(t) {
+      filterType(t);
+      closeNavUI();
     }
 
     function toggleAdvancedFilters() {
