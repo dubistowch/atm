@@ -135,7 +135,11 @@
         <button class="filter-btn" onclick="filterType('extra')">🧪 進階教學</button>
       </div>
 
-      <div class="filter-bar" id="category-filters">
+      <div class="filter-bar" id="category-toggle-bar">
+        <button class="filter-btn" onclick="toggleAdvancedFilters()" id="advanced-filter-btn">⚙️ 進階篩選（分類）</button>
+      </div>
+
+      <div class="filter-bar hidden" id="category-filters">
         <button class="filter-btn active" onclick="filterCategory('all')">全部分類</button>
         <button class="filter-btn" onclick="filterCategory('tech')">⚙️ 科技</button>
         <button class="filter-btn" onclick="filterCategory('magic')">✨ 魔法</button>
@@ -220,6 +224,14 @@
       currentType = t;
       setActiveButtons('type-filters', event.target);
       filterArticles();
+    }
+
+    function toggleAdvancedFilters() {
+      const panel = document.getElementById('category-filters');
+      const btn = document.getElementById('advanced-filter-btn');
+      if (!panel) return;
+      const isHidden = panel.classList.toggle('hidden');
+      if (btn) btn.innerText = isHidden ? '⚙️ 進階篩選（分類）' : '▾ 進階篩選（分類）';
     }
 
     function filterCategory(cat) {

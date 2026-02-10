@@ -86,5 +86,11 @@
 ---
 
 ## 資料來源
-- 壓縮檔內章節定義（quests）：`ftbquests/quests/chapters/mainquestline_part_1.snbt`
-- 壓縮檔內中文語系（zh_cn）：`ftbquests/quests/lang/zh_cn/chapters/mainquestline_part_1.snbt`
+
+本文內容來自 FTB Quests 任務章節與中文任務文本（由壓縮檔內的 SNBT 檔整理；為了閱讀性，這裡只列「章節代號/任務名」，不貼長路徑）。
+
+- 章節（chapters）：
+  - `mainquestline_part_1`：主線第一章
+- 中文任務文本（zh_cn）：
+  - `mainquestline_part_1`
+

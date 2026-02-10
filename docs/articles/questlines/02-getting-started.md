@@ -85,5 +85,11 @@
 ---
 
 ## 資料來源
-- 壓縮檔內章節定義（quests）：`ftbquests/quests/chapters/getting_started.snbt`
-- 壓縮檔內中文語系（zh_cn）：`ftbquests/quests/lang/zh_cn/chapters/getting_started.snbt`
+
+本文內容來自 FTB Quests 任務章節與中文任務文本（由壓縮檔內的 SNBT 檔整理；為了閱讀性，這裡只列「章節代號/任務名」，不貼長路徑）。
+
+- 章節（chapters）：
+  - `getting_started`：開荒起手式
+- 中文任務文本（zh_cn）：
+  - `getting_started`
+

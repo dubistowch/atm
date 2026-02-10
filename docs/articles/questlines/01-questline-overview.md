@@ -107,21 +107,25 @@
 ---
 
 ## 資料來源
-- 壓縮檔內章節定義（quests）：
-  - `ftbquests/quests/chapters/welcome.snbt`
-  - `ftbquests/quests/chapters/intro.snbt`
-  - `ftbquests/quests/chapters/getting_started.snbt`
-  - `ftbquests/quests/chapters/mainquestline_part_1.snbt`
-  - `ftbquests/quests/chapters/chapter_2_the_star.snbt`
-  - `ftbquests/quests/chapters/achapter_2r_6the_atm_star.snbt`
-  - `ftbquests/quests/chapters/catch_em_all.snbt`
-  - `ftbquests/quests/chapters/the_pika_star_009BBEA41077ED01.snbt`
-- 壓縮檔內中文語系（zh_cn）：
-  - `ftbquests/quests/lang/zh_cn/chapters/welcome.snbt`
-  - `ftbquests/quests/lang/zh_cn/chapters/getting_started.snbt`
-  - `ftbquests/quests/lang/zh_cn/chapters/mainquestline_part_1.snbt`
-  - `ftbquests/quests/lang/zh_cn/chapters/chapter_2_the_star.snbt`
-  - `ftbquests/quests/lang/zh_cn/chapters/achapter_2r_6the_atm_star.snbt`
-  - `ftbquests/quests/lang/zh_cn/chapters/catch_em_all.snbt`
 
-> 註：`intro` 與 `the_pika_star_009BBEA41077ED01` 在本壓縮檔中未提供對應的 `zh_cn` 章節語言檔，因此本文僅做「用途/路線解讀」。
+本文內容來自 FTB Quests 任務章節與中文任務文本（由壓縮檔內的 SNBT 檔整理；為了閱讀性，這裡只列「章節代號/任務名」，不貼長路徑）。
+
+- 章節（chapters）：
+  - `achapter_2r_6the_atm_star`：ATM 之星（材料/路線）
+  - `catch_em_all`：抓怪與圖鑑
+  - `chapter_2_the_star`：星之路徑
+  - `getting_started`：開荒起手式
+  - `intro`：前言
+  - `mainquestline_part_1`：主線第一章
+  - `the_pika_star_009BBEA41077ED01`：皮卡之星（章節代號）
+  - `welcome`：歡迎與系統
+- 中文任務文本（zh_cn）：
+  - `achapter_2r_6the_atm_star`
+  - `catch_em_all`
+  - `chapter_2_the_star`
+  - `getting_started`
+  - `intro`：本包 zip 未提供對應 zh_cn 章節語言檔
+  - `mainquestline_part_1`
+  - `the_pika_star_009BBEA41077ED01`：本包 zip 未提供對應 zh_cn 章節語言檔
+  - `welcome`
+
