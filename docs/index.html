@@ -324,6 +324,11 @@
       }
 
       return [...guides].sort((a, b) => {
+        // Pinned always first
+        const pa = a.pinned ? 0 : 1;
+        const pb = b.pinned ? 0 : 1;
+        if (pa !== pb) return pa - pb;
+
         const ca = categoryOrder[a.category] ?? 99;
         const cb = categoryOrder[b.category] ?? 99;
         if (ca !== cb) return ca - cb;
@@ -388,13 +393,15 @@
         return;
       }
 
-      // Grouping for clarity: main questlines first, then mods, then extras
+      // Grouping for clarity
+      const newbies = guides.filter(g => g.type === 'guide');
       const questlines = guides.filter(g => (g.id || '').startsWith('questlines/'));
       const mods = guides.filter(g => g.type === 'mod' && !(g.id || '').startsWith('questlines/'));
       const extras = guides.filter(g => g.type === 'extra');
-      const others = guides.filter(g => !questlines.includes(g) && !mods.includes(g) && !extras.includes(g));
+      const others = guides.filter(g => !newbies.includes(g) && !questlines.includes(g) && !mods.includes(g) && !extras.includes(g));
 
       const groups = [
+        { title: '新手入門', subtitle: '先學這些：回家、死回、傳送、隊伍、領地…', items: newbies },
         { title: '主線任務', subtitle: '照著走就能推進整合包主目標', items: questlines },
         { title: '模組教學', subtitle: '每個模組一篇，快速上手與玩法重點', items: mods },
         { title: '進階教學', subtitle: '手把手流程：自動化、終端、噴射背包…', items: extras },

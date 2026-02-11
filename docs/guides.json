@@ -261,10 +261,11 @@
   },
   {
     "id": "25-server-basics-commands",
-    "title": "新手必學：伺服器常用指令（回家/死回/傳送）",
-    "category": "utility",
+    "title": "新手先學：伺服器常用指令（回家/死回/傳送/對戰）",
+    "category": "adventure",
     "type": "guide",
-    "description": "/back /home /sethome /spawn /rtp /tpa /tpahere：多人服最常用的生存指令一次整理。"
+    "description": "/back /home /sethome /spawn /rtp /tpa：新手最常用。另含 /ftbteams /ftbchunks 與 /challenge 對戰指令。",
+    "pinned": true
   },
   {
     "id": "26-cobblemon-challenge",
@@ -272,5 +273,12 @@
     "category": "adventure",
     "type": "mod",
     "description": "用 /challenge、/challengedouble 跟其他玩家對戰：等級統一、幾打幾、要不要隊伍預覽。"
+  },
+  {
+    "id": "27-server-plugins",
+    "title": "本服插件清單：新增功能與指令總覽",
+    "category": "utility",
+    "type": "guide",
+    "description": "伺服器額外加裝的插件/模組清單（例如 Cobblemon Challenge 對戰指令）。"
   }
 ]

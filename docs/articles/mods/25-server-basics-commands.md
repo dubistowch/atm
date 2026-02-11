@@ -172,8 +172,11 @@
 
 ---
 
-## 相關模組參考
+## 延伸閱讀（想深入再看）
 - Cobblemon Challenge（對戰指令來源）：<https://modrinth.com/mod/cobblemon-challenge>
+- 伺服器玩家對戰 /challenge 詳解：<https://dubistowch.github.io/atm/index.html?guide=26-cobblemon-challenge>
+- FTB Teams 團隊手冊：<https://dubistowch.github.io/atm/index.html?guide=23-ftb-teams>
+- FTB Chunks 領地宣告：<https://dubistowch.github.io/atm/index.html?guide=24-ftb-chunks>
 
 ## 資料來源
 - 本文依常見伺服器插件指令習慣整理；實際可用指令/參數以伺服器 `/help` 與 Tab 提示為準。

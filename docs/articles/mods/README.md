@@ -29,6 +29,7 @@
 24. [FTB Chunks](./24-ftb-chunks.md)
 25. [伺服器常用指令（回家/死回/傳送）](./25-server-basics-commands.md)
 26. [Cobblemon Challenge（玩家對戰 /challenge）](./26-cobblemon-challenge.md)
+27. [伺服器插件/模組清單](./27-server-plugins.md)
 
 ## 進階教學
 - [Cobblemon：交易村民教學（取得／刷新／交易思路）](./extra/cobblemon-villager-trading.md)
