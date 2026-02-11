@@ -57,28 +57,14 @@
       font-weight: 600;
     }
 
-    .filter-bar {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
-
-    .filter-btn {
-      padding: 8px 16px;
-      background: var(--panel-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 20px;
+    .sidebar-section {
+      margin-top: 16px;
+      margin-bottom: 6px;
+      font-size: 12px;
+      font-weight: 900;
       color: var(--text-dim);
-      cursor: pointer;
-      font-size: 14px;
-      transition: all 0.2s;
-    }
-
-    .filter-btn:hover, .filter-btn.active {
-      background: var(--accent-primary);
-      color: #000;
-      border-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     /* Override for article view */
@@ -445,6 +431,10 @@
             ? `<img src="${guide.icon}" style="width:30px; height:30px; object-fit:contain;">`
             : (categoryIcons[guide.category] || '📄');
 
+          const tagLabel = (guide.id || '').startsWith('questlines/')
+            ? '主線任務'
+            : (guide.type === 'mod' ? '模組教學' : (guide.type === 'extra' ? '進階教學' : '新手入門'));
+
           item.innerHTML = `
             <div class="article-icon">${iconHtml}</div>
             <div class="article-content">
@@ -452,7 +442,7 @@
               <p class="article-desc">${guide.description || '點擊閱讀詳細教學內容。'}</p>
             </div>
             <div class="article-meta">
-              <span class="article-tag">${guide.type === 'mod' ? '模組教學' : (guide.type === 'extra' ? '進階教學' : '主線任務')}</span>
+              <span class="article-tag">${tagLabel}</span>
               <span class="article-open">點此閱讀 →</span>
             </div>
           `;
@@ -467,18 +457,39 @@
     function renderSidebar() {
       const container = document.getElementById('sidebar-links');
       container.innerHTML = '';
-      allGuides.forEach(guide => {
-        const link = document.createElement('a');
-        link.href = `?guide=${guide.id}`;
-        link.className = 'sidebar-link';
-        link.id = `sidebar-${guide.id}`;
-        link.innerText = guide.title;
-        link.onclick = (e) => {
-          e.preventDefault();
-          history.pushState(null, '', `?guide=${guide.id}`);
-          showGuide(guide.id);
-        };
-        container.appendChild(link);
+
+      const sorted = sortGuides(allGuides);
+      const questlines = sorted.filter(g => (g.id || '').startsWith('questlines/'));
+      const newbies = sorted.filter(g => g.type === 'guide' && !(g.id || '').startsWith('questlines/'));
+      const mods = sorted.filter(g => g.type === 'mod' && !(g.id || '').startsWith('questlines/'));
+      const extras = sorted.filter(g => g.type === 'extra');
+
+      const groups = [
+        { title: '新手入門', items: newbies },
+        { title: '主線任務', items: questlines },
+        { title: '模組教學', items: mods },
+        { title: '進階教學', items: extras },
+      ].filter(g => g.items.length > 0);
+
+      groups.forEach(gr => {
+        const h = document.createElement('div');
+        h.className = 'sidebar-section';
+        h.innerText = gr.title;
+        container.appendChild(h);
+
+        gr.items.forEach(guide => {
+          const link = document.createElement('a');
+          link.href = `?guide=${guide.id}`;
+          link.className = 'sidebar-link';
+          link.id = `sidebar-${guide.id}`;
+          link.innerText = guide.title;
+          link.onclick = (e) => {
+            e.preventDefault();
+            history.pushState(null, '', `?guide=${guide.id}`);
+            showGuide(guide.id);
+          };
+          container.appendChild(link);
+        });
       });
     }
 
@@ -559,8 +570,32 @@
       return { tocHtml: tocHtml, contentHtml: doc.body.innerHTML };
     }
 
+    function buildPrevNext(currentId) {
+      const isQuest = (currentId || '').startsWith('questlines/');
+      let pool = [];
+      if (isQuest) pool = sortGuides(allGuides.filter(g => (g.id || '').startsWith('questlines/')));
+      else {
+        const cur = allGuides.find(g => g.id === currentId);
+        const t = cur?.type;
+        if (t) pool = sortGuides(allGuides.filter(g => g.type === t && !(g.id || '').startsWith('questlines/')));
+      }
+      const idx = pool.findIndex(g => g.id === currentId);
+      const prev = (idx > 0) ? pool[idx - 1] : null;
+      const next = (idx >= 0 && idx < pool.length - 1) ? pool[idx + 1] : null;
+
+      const btn = (g, label) => g ? `<a class="prevnext-btn" href="?guide=${g.id}" onclick="event.preventDefault(); history.pushState(null,'', '?guide=${g.id}'); showGuide('${g.id}');">${escapeHtml(label)}：${escapeHtml(g.title)}</a>` : `<span class="prevnext-btn disabled">${escapeHtml(label)}：無</span>`;
+
+      return `
+        <div class="prevnext">
+          ${btn(prev, '上一篇')}
+          ${btn(next, '下一篇')}
+        </div>
+      `;
+    }
+
     function buildArticleFooter(currentId) {
       const groups = [
+        { title: '🧑‍🚀 新手入門', items: allGuides.filter(g => g.type === 'guide' && !(g.id || '').startsWith('questlines/')) },
         { title: '🧭 主線任務', items: allGuides.filter(g => (g.id || '').startsWith('questlines/')) },
         { title: '📦 模組教學', items: allGuides.filter(g => g.type === 'mod' && !(g.id || '').startsWith('questlines/')) },
         { title: '🧪 進階教學', items: allGuides.filter(g => g.type === 'extra') },
@@ -571,20 +606,23 @@
           const active = g.id === currentId ? ' active' : '';
           return `<a class="footer-link${active}" href="?guide=${g.id}" onclick="event.preventDefault(); history.pushState(null,'', '?guide=${g.id}'); showGuide('${g.id}');">${escapeHtml(g.title)}</a>`;
         }).join('');
+
+        // On mobile, use <details> for better readability
         return `
-          <div class="footer-group">
-            <div class="footer-group-title">${escapeHtml(gr.title)}</div>
+          <details class="footer-group" ${gr.items.some(x => x.id === currentId) ? 'open' : ''}>
+            <summary class="footer-group-title">${escapeHtml(gr.title)}</summary>
             <div class="footer-links">${items}</div>
-          </div>
+          </details>
         `;
       }).join('');
 
       return `
         <div class="article-footer">
           <div class="footer-top">
-            <div class="footer-title">想接著看哪篇？</div>
+            <div class="footer-title">查看更多文章</div>
             <a class="footer-back" href="#" onclick="event.preventDefault(); window.scrollTo({top:0, behavior:'smooth'});">回到頂部 ↑</a>
           </div>
+          ${buildPrevNext(currentId)}
           ${linksHtml}
         </div>
       `;
