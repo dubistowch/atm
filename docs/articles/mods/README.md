@@ -37,3 +37,4 @@
 - [Cobblemon：精靈球自動化／精靈球機器製作教學](./extra/cobblemon-pokeball-automation.md)
 - [Iron Jetpacks：噴射背包製作與升級路線教學](./extra/iron-jetpacks-progression.md)
 - [AE2：終端機與自動合成入門](./extra/ae2-terminals-and-autocrafting.md)
+- [ATM10：杏果（Apricorn）農場（前期 / 中期 / 後期）](./extra/apricorn-farms.md)
