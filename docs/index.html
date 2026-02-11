@@ -134,7 +134,7 @@
     </div>
   </nav>
 
-  <a class="report-btn" href="https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8" target="_blank" rel="noopener noreferrer" title="回報錯誤">🐛 回報錯誤</a>
+  <a class="report-btn" id="report-btn" href="https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8" target="_blank" rel="noopener noreferrer" title="回報錯誤">🐛 回報錯誤</a>
 
   <div class="container">
     <!-- List View -->
@@ -622,7 +622,25 @@
       }
     };
 
+    function updateReportBtn() {
+      const a = document.getElementById('report-btn');
+      if (!a) return;
+
+      const base = 'https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8';
+      const u = new URL(base);
+
+      // Prefill fields (n8n form supports querystring prefills)
+      u.searchParams.set('url', window.location.href);
+
+      // Also include guide id if currently viewing an article
+      const guideId = new URLSearchParams(window.location.search).get('guide');
+      if (guideId) u.searchParams.set('guide', guideId);
+
+      a.href = u.toString();
+    }
+
     init();
+    updateReportBtn();
   </script>
 </body>
 </html>
