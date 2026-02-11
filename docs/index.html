@@ -162,22 +162,19 @@
             </select>
           </div>
 
-          <div class="toolbar-item toolbar-advanced" id="category-toggle-bar">
-            <button class="filter-btn" onclick="toggleAdvancedFilters()" id="advanced-filter-btn">⚙️ 進階篩選</button>
+          <div class="toolbar-item toolbar-category hidden" id="category-bar">
+            <label class="filter-label" for="category-select">分類</label>
+            <select id="category-select" class="filter-select" onchange="filterCategory(this.value)">
+              <option value="all">全部分類</option>
+              <option value="tech">⚙️ 科技</option>
+              <option value="magic">✨ 魔法</option>
+              <option value="adventure">🌍 冒險</option>
+              <option value="utility">🎒 實用</option>
+            </select>
           </div>
         </div>
       </div>
 
-      <div class="advanced-panel hidden" id="category-filters">
-        <div class="advanced-label">分類</div>
-        <div class="advanced-chips">
-          <button class="filter-btn active" onclick="filterCategory('all')">全部分類</button>
-          <button class="filter-btn" onclick="filterCategory('tech')">⚙️ 科技</button>
-          <button class="filter-btn" onclick="filterCategory('magic')">✨ 魔法</button>
-          <button class="filter-btn" onclick="filterCategory('adventure')">🌍 冒險</button>
-          <button class="filter-btn" onclick="filterCategory('utility')">🎒 實用</button>
-        </div>
-      </div>
 
       <div class="article-list" id="article-grid">
         <!-- Articles will be generated here -->
@@ -234,6 +231,7 @@
           // Allow deep links like index.html?type=questlines
           currentType = typeParam;
         }
+        updateCategoryUI();
 
         renderSidebar(); // Pre-render sidebar
 
@@ -271,6 +269,7 @@
       else url.searchParams.delete('type');
       history.replaceState(null, '', url);
 
+      updateCategoryUI();
       filterArticles();
       updateReportBtn();
     }
@@ -309,17 +308,27 @@
       closeNavUI();
     }
 
-    function toggleAdvancedFilters() {
-      const panel = document.getElementById('category-filters');
-      const btn = document.getElementById('advanced-filter-btn');
-      if (!panel) return;
-      const isHidden = panel.classList.toggle('hidden');
-      if (btn) btn.innerText = isHidden ? '⚙️ 進階篩選（分類）' : '▾ 進階篩選（分類）';
+    function updateCategoryUI() {
+      const bar = document.getElementById('category-bar');
+      if (!bar) return;
+
+      // Only show category filter when viewing mod articles
+      const shouldShow = (currentType === 'mod');
+      bar.classList.toggle('hidden', !shouldShow);
+
+      if (!shouldShow) {
+        currentCategory = 'all';
+        const sel = document.getElementById('category-select');
+        if (sel) sel.value = 'all';
+      }
     }
 
     function filterCategory(cat) {
       currentCategory = cat;
-      setActiveButtons('category-filters', event.target);
+
+      const sel = document.getElementById('category-select');
+      if (sel && sel.value !== cat) sel.value = cat;
+
       filterArticles();
     }
 

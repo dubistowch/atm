@@ -31,12 +31,7 @@
     </div>
 
     <div class="chat-toolbar">
-      <div class="chat-hint">提示：點「🐛 回報錯誤」可提交問題；這裡會把已處理/待處理事項整理成紀錄。</div>
-      <div class="chat-filters">
-        <button class="filter-btn active" onclick="setStatusFilter('all')">全部</button>
-        <button class="filter-btn" onclick="setStatusFilter('open')">未處理</button>
-        <button class="filter-btn" onclick="setStatusFilter('fixed')">已修正</button>
-      </div>
+      <div class="chat-hint">這裡只顯示「已完成」的勘誤紀錄；如果你發現問題，請點右下角「🐛 回報錯誤」。</div>
     </div>
 
     <div id="errata-list" class="chat-list">
@@ -46,22 +41,12 @@
 
   <script>
     let allItems = [];
-    let statusFilter = 'all';
 
     function escapeHtml(s) {
       return (s || '').replace(/[&<>\"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
     }
 
-    function setActiveButtons(containerEl, activeEl) {
-      containerEl.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      if (activeEl) activeEl.classList.add('active');
-    }
-
-    function setStatusFilter(v) {
-      statusFilter = v;
-      setActiveButtons(document.querySelector('.chat-filters'), event.target);
-      render();
-    }
+    // No status filtering: everything shown here is treated as completed/fixed.
 
     function fmtTime(iso) {
       try {
@@ -71,22 +56,9 @@
         return iso || '';
       }
     }
-
-    function badge(status) {
-      const s = (status || 'open').toLowerCase();
-      const map = {
-        open: { text: '未處理', cls: 'status-open' },
-        fixed: { text: '已修正', cls: 'status-fixed' },
-        wip: { text: '處理中', cls: 'status-wip' },
-      };
-      const b = map[s] || { text: escapeHtml(status || 'open'), cls: 'status-open' };
-      return `<span class="status-badge ${b.cls}">${b.text}</span>`;
-    }
-
     function render() {
       const root = document.getElementById('errata-list');
       const items = allItems
-        .filter(it => statusFilter === 'all' || (it.status || 'open').toLowerCase() === statusFilter)
         .sort((a,b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
 
       if (items.length === 0) {
@@ -100,8 +72,7 @@
           <div class="chat-card">
             <div class="chat-meta">
               <div class="chat-meta-left">
-                ${badge(it.status)}
-                <span class="chat-time">${escapeHtml(fmtTime(it.createdAt))}</span>
+                                <span class="chat-time">${escapeHtml(fmtTime(it.createdAt))}</span>
               </div>
               <div class="chat-meta-right">
                 ${page}
