@@ -125,6 +125,7 @@
           </button>
           <div class="nav-dropdown-menu" id="nav-dropdown-menu">
             <a class="nav-dropdown-item" href="index.html" onclick="applyTypeAndClose('all'); return false;">全部文章</a>
+            <a class="nav-dropdown-item" href="index.html?type=guide" onclick="applyTypeAndClose('guide'); return false;">🧑‍🚀 新手入門</a>
             <a class="nav-dropdown-item" href="index.html?type=questlines" onclick="applyTypeAndClose('questlines'); return false;">🧭 主線任務</a>
             <a class="nav-dropdown-item" href="index.html?type=mod" onclick="applyTypeAndClose('mod'); return false;">📦 模組教學</a>
             <a class="nav-dropdown-item" href="index.html?type=extra" onclick="applyTypeAndClose('extra'); return false;">🧪 進階教學</a>
@@ -154,6 +155,7 @@
             <label class="filter-label" for="type-select">文章種類</label>
             <select id="type-select" class="filter-select" onchange="filterType(this.value)">
               <option value="all">全部</option>
+              <option value="guide">🧑‍🚀 新手</option>
               <option value="questlines">🧭 主線</option>
               <option value="mod">📦 模組</option>
               <option value="extra">🧪 進階</option>
@@ -357,6 +359,7 @@
     function matchesTypeFilter(g) {
       if (currentType === 'all') return true;
       if (currentType === 'questlines') return (g.id || '').startsWith('questlines/');
+      if (currentType === 'guide') return g.type === 'guide' && !(g.id || '').startsWith('questlines/');
       return g.type === currentType;
     }
 
@@ -619,7 +622,6 @@
     function buildModBannerHtml(m) {
       if (!m) return '';
       const displayIcon = (m.icon && m.icon.trim() !== '') ? m.icon : 'https://cdn.modrinth.com/data/zV5r3pPn/ff7010d4ec0275609866c8b0f603b25e25949c08_96.webp';
-      const guideUrl = m.guideId ? `?guide=${encodeURIComponent(m.guideId)}` : '#';
       return `
         <div class="mod-banner" style="margin: 16px 0 22px;">
           <div class="mod-row" style="border-radius: 16px; border: 1px solid var(--border-color);">
@@ -627,7 +629,7 @@
             <div>
               <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
                 <a href="${m.url || '#'}" target="_blank" class="mod-name-zh">${escapeHtml(m.zh || m.name)}</a>
-                <a href="${guideUrl}" class="btn" style="padding:6px 10px; font-size:12px;">📖 這篇在講它</a>
+                <a href="mods.html" class="btn" style="padding:6px 10px; font-size:12px;">📦 模組百科</a>
               </div>
               <span class="mod-name-en">${escapeHtml(m.name || '')}</span>
             </div>
@@ -680,7 +682,7 @@
         if (modHit) {
           const bannerHtml = buildModBannerHtml(modHit);
           const toc = root.querySelector('.toc');
-          if (toc) toc.insertAdjacentHTML('afterend', bannerHtml);
+          if (toc) toc.insertAdjacentHTML('beforebegin', bannerHtml);
           else root.insertAdjacentHTML('afterbegin', bannerHtml);
         }
 
