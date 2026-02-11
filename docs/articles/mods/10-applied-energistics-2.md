@@ -1,95 +1,88 @@
-# Applied Energistics 2 新手教學與玩法筆記
+# Applied Energistics 2（AE2）｜玩家向新手上路（A）
 
-## 簡介
-Applied Energistics 2（AE2）是整合包中最常見的「數位倉儲 + 自動合成」核心模組。它用 ME 網路把物品收納、搜尋、分類、物流與自動合成都整合在一起：你不用再面對成排箱子，只要打開終端機搜尋物品，甚至能一鍵下單自動合成。
+## 30 秒看懂
+AE2 是把「收納 + 搜尋 + 自動合成」做成一套 **ME 網路** 的模組：你把物品塞進系統後，就像開一個超強搜尋欄——要什麼打字拿什麼；常用材料甚至可以「下單」讓它自己合成。只要你玩到中期開始量產零件，AE2 幾乎等於把整個整合包的體驗提升一個檔次。
 
-## 模組特色
-- **ME 網路**：把儲存、輸入輸出與合成串成一個系統。
-- **終端機體驗**：快速搜尋、取放、排序，整理效率極高。
-- **自動合成**：樣板 + 合成 CPU + 組裝機，讓常用配方變成「下單就做」。
-- **可擴充**：容量與網路規模可逐步升級。
-- **整合性高**：能串接各種機器與產線，成為整包自動化中樞。
-- 官方玩家指南完整，查資料很方便。
+> 這篇以「你要怎麼做出第一套能用的 ME 倉庫」為主。名稱/配方/鍵位可能因版本與整合包不同：**一律以 JEI/REI + 你遊戲內 Controls 為準**。
 
-## 按鍵操作
-AE2 多數操作在 GUI 內完成，通常沒有「必背固定快捷鍵」。
+---
 
-- 打開「選項 → 控制設定」，搜尋：
-  - `Applied Energistics`
-  - `AE2`
-  - `ME`
-  - `Terminal`（若整合包有無線終端等附加內容）
+## 開始前：先用 Controls 搜尋，確定有沒有額外終端/無線鍵位
+1. `ESC` → **選項** → **控制設定 (Controls)**
+2. 搜尋：`Applied Energistics`、`AE2`、`ME`、`Terminal`
 
-## 遊戲內設定與調整
-1) **終端機內的操作習慣（最影響體驗）**
-- 練熟：搜尋、模糊搜尋、常用篩選/排序（依版本 UI）。
-- 建議先把「常用材料」固定丟進 ME 系統，立刻就會覺得爽。
+AE2 本體多數操作都在 GUI 裡完成，通常不需要背一堆快捷鍵；但整合包若有「無線終端」或附加模組，可能會多一些快捷鍵，先確認最省事。
 
-2) **網路是否穩定：先看「供電」與「連線」**
-- AE2 很多問題都長得像「我找不到東西」，實際上是：
-  - 網路斷線
-  - 電力不足
-  - 儲存滿了
-- 解法通常也在遊戲內就能排：
-  - 檢查控制器/電源/線路是否連通
-  - 檢查儲存元件容量
+---
 
-![AE2 子網路（Sub-networks）概念示意圖](https://appliedenergistics.org/_next/static/media/subnetworks.adf0ceb6.png)
+## 從 JEI/REI 開始：你要做的「第一套可用倉庫」清單
+打開 JEI/REI，先把下面這幾個物品的配方點一輪，搞清楚你缺的是哪條材料線：
 
-*圖：官方網站對「子網路（sub-networks）」的示意。重點是把網路功能分段（例如：主幹倉儲 vs. 機器端輸入輸出），讓佈線與擴建更可控、也更不容易把整個網路搞到斷線。*
+- **ME Drive（磁碟機）**：放 Storage Cell 用
+- **Storage Cell（儲存元件）**：真正裝物品的「硬碟」
+- **ME Terminal / ME Crafting Terminal（終端 / 合成終端）**：你用來搜尋、取放物品的介面
+- **Energy Acceptor（能量接收器）**（或整合包提供的等價供電方式）
+- **Cables（線材）**：把上面全部連成網路
 
-3) **先做倉儲，再做自動合成（最不容易爆炸）**
-- 新手常見順序：
-  1) ME 基礎倉儲（終端 + 磁碟機 + 儲存元件）
-  2) 常用零件量產
-  3) 再逐步導入自動合成
+玩家向建議：
+- 先做 **ME Crafting Terminal**（合成終端）會更舒服；它能用網路裡的材料自動補格子。
 
-4) **Mod 設定畫面（若有）**
-- 依整合包與版本可能不同：
-  - `ESC` → **Mods** → Applied Energistics 2 → `Config/設定`（若有）
-  - 找不到也正常；玩家通常不需要改。
+---
 
-> 補充（只留短註）：通道/能耗/世界生成等平衡多在 config；一般玩家以整合包預設為準。
+## 走最穩的路線：第一套 ME 系統怎麼擺（不含自動合成）
+依官方 Players Guide 的 Getting Started 建議，最基本 ME 系統就是「供電 + 線 + Drive + Terminal」：
 
-## 如何獲得模組道具
-以「入門到系統成形」的路線整理（配方以 JEI/REI 為準）：
+1) 先把 **Energy Acceptor** 接上你現有的能源（看整合包用什麼電）
+2) 用 **ME Cable** 把能量接收器連到：
+   - **ME Drive**（裝 Storage Cell）
+   - **ME Terminal / Crafting Terminal**（你要操作的介面）
+3) 把 **Storage Cell** 插進 **ME Drive**
+4) 打開終端，丟幾組常用材料進去測試（圓石、木材、鐵、紅石之類）
 
-- **前期素材**
-  - 石英相關材料（常用於線路與零件；實際名稱依版本/整合包）。
+如果你打開終端「什麼都看不到 / 顯示離線」：先直接跳到下面的「常見踩雷」。
 
-- **第一套 ME 倉儲**
-  - ME Drive（磁碟機）+ Storage Cell（儲存元件）
-  - ME Terminal（終端機）
+---
 
-- **擴建與自動合成**
-  - Pattern 類方塊（樣板相關）
-  - 分子組裝/合成 CPU 類方塊（依版本命名）
+## 終端機（Terminal）你一定會用到的 UI/操作
+官方 Guide 的 Terminals 章節有幾個超實用的點，熟了體感差很多：
 
-代表性物品：
-- ME Controller（控制器，網路規模大時常用）
-- ME Drive（磁碟機）
-- Storage Cell（儲存元件）
-- ME Terminal（終端機）
-- Pattern Provider/Assembler 類（自動合成核心）
+### 你最常用的滑鼠/按鍵習慣
+- **左鍵**拿一整疊、**右鍵**拿半疊（終端列表裡點物品）
+- **按住 Shift** 可以「凍結列表」：東西進出庫時，列表不會一直跳來跳去（很救命）
+- 如果某物品可自動合成：
+  - 你綁定的 **Pick Block（通常是滑鼠中鍵）** 會跳出下單介面，可輸入數量
 
-## 好玩的點在哪
-- **整理癖的終極解法**：從「箱子地獄」變成「搜尋就拿到」。
-- **自動合成帶來的自由時間**：你不再手工搓零件，而是把時間花在蓋工廠、探索與推進目標。
-- **把整合包做成一個系統**：農場/機器/礦處理/掉落，最後全部回到同一個倉庫與合成中心。
+### 終端常見按鈕在哪
+- 左側：排序/篩選（依名稱、模組、數量；看「已儲存/可合成」等）
+- 右側：通常有 View Cell 等插槽（用來過濾顯示）
+- 右上角（官方提到的「槌子」圖示）：常用來開自動合成狀態/CPU 狀態（版本介面可能略不同）
 
-## 相關連結
-- 官方網站：<https://appliedenergistics.org/>
-- 官方玩家指南（Players Guide）：<https://guide.appliedenergistics.org/>
-- GitHub：<https://github.com/AppliedEnergistics/Applied-Energistics-2>
-- Discord：<https://discord.gg/Zd6t9ka7ne>
-- 巴哈姆特（站內搜尋）：<https://forum.gamer.com.tw/search.php?kw=AE2>
+### 放置終端時最容易做錯的一件事
+官方 Guide 特別提醒：**終端是線材的「子零件」**，有正反面。
+- 放反時你會看到「終端在那，但根本沒連上網路」的尷尬狀況。
+- 你如果怎麼接線都不通，第一個就先懷疑：**終端是不是放反了**。
 
-## 安裝與前置（可略讀）
-- AE2 在整合包中常是「中樞模組」，通常會與能源、物流與任務線深度綁定。
-- 若你是管理員：通道限制、能耗、生成等多在 config；修改前先備份。
+---
 
-## 資料來源
-- <https://modrinth.com/mod/ae2>
-- <https://appliedenergistics.org/>
-- <https://appliedenergistics.org/_next/static/media/subnetworks.adf0ceb6.png>
-- <https://guide.appliedenergistics.org/>
+## 常見踩雷（AE2 最常見的「看起來壞了」其實都在這）
+- **終端放反 / 沒接到同一條網路**：看起來像有擺好，其實沒連上。
+- **供電不足**：網路會離線或部分機器不工作；先確認能量接收器真的有吃到電。
+- **Storage Cell 不是放在 Drive/ME Chest**：你有做出硬碟，但沒插進去，當然什麼都存不了。
+- **儲存元件不是「容量」問題，而是「類型數」也會滿**：你如果丟進去一堆雜物，可能很快就「還有空間但放不進去」。
+- **Shift 點合成終端輸出要小心**：官方在 Crafting Terminal 也提醒過，Shift-Click 可能讓你一次做太多或把材料吃光。
+
+---
+
+## 下一步你可以做什麼（想更強再看）
+- **自動合成（Autocrafting）**：樣板（Pattern）+ 組裝（Assembler）+ Crafting CPU，讓「下單就做」成為日常。
+- **更完整的終端配置**：Pattern Encoding Terminal（編樣板）、Pattern Access Terminal（遠端管理 Provider 的樣板）。
+
+---
+
+## 資料來源（官方/權威）
+- AE2 官方網站：<https://appliedenergistics.org/>
+- AE2 官方 Players Guide（1.20.1 版索引）：<https://guide.appliedenergistics.org/1.20.1/index>
+- Players Guide｜Getting Started：<https://guide.appliedenergistics.org/1.20.1/getting-started>
+- Players Guide｜Terminals：<https://guide.appliedenergistics.org/1.20.1/items-blocks-machines/terminals>
+- Modrinth（AE2）：<https://modrinth.com/mod/ae2>
+- GitHub（Applied Energistics 2）：<https://github.com/AppliedEnergistics/Applied-Energistics-2>
