@@ -144,22 +144,26 @@
         <p class="page-subtitle">探索模組世界的生存法則</p>
       </div>
 
-      <div class="search-container">
-        <input type="text" id="search-input" class="search-input" placeholder="搜尋教學文章標題或內容...">
-      </div>
+      <div class="list-toolbar">
+        <div class="toolbar-row">
+          <div class="toolbar-item toolbar-search">
+            <input type="text" id="search-input" class="search-input" placeholder="搜尋文章（標題/簡介）…">
+          </div>
 
-      <div class="filter-bar" id="type-filters">
-        <label class="filter-label" for="type-select">文章種類</label>
-        <select id="type-select" class="filter-select" onchange="filterType(this.value)">
-          <option value="all">全部文章</option>
-          <option value="questlines">🧭 主線任務</option>
-          <option value="mod">📦 模組教學</option>
-          <option value="extra">🧪 進階教學</option>
-        </select>
-      </div>
+          <div class="toolbar-item toolbar-type" id="type-filters">
+            <label class="filter-label" for="type-select">文章種類</label>
+            <select id="type-select" class="filter-select" onchange="filterType(this.value)">
+              <option value="all">全部</option>
+              <option value="questlines">🧭 主線</option>
+              <option value="mod">📦 模組</option>
+              <option value="extra">🧪 進階</option>
+            </select>
+          </div>
 
-      <div class="filter-bar" id="category-toggle-bar">
-        <button class="filter-btn" onclick="toggleAdvancedFilters()" id="advanced-filter-btn">⚙️ 進階篩選（分類）</button>
+          <div class="toolbar-item toolbar-advanced" id="category-toggle-bar">
+            <button class="filter-btn" onclick="toggleAdvancedFilters()" id="advanced-filter-btn">⚙️ 進階篩選</button>
+          </div>
+        </div>
       </div>
 
       <div class="filter-bar hidden" id="category-filters">
