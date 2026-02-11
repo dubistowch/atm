@@ -109,7 +109,11 @@
             </div>
 
             <div class="chat-bubble chat-user">
-              <div class="chat-name">${escapeHtml(it.user?.name || '玩家')}</div>
+              <div class="chat-name">
+                ${it.user?.minecraft ? `<img class=\"mc-head\" alt=\"\" src=\"https://minotar.net/avatar/${encodeURIComponent(it.user.minecraft)}/32.png\">` : ''}
+                ${escapeHtml(it.user?.name || '玩家')}
+                ${it.user?.minecraft ? `<span class=\"mc-ign\">(${escapeHtml(it.user.minecraft)})</span>` : ''}
+              </div>
               <div class="chat-msg">${escapeHtml(it.user?.message || '')}</div>
             </div>
 

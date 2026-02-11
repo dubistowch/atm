@@ -703,6 +703,22 @@ body {
   font-weight: 900;
   color: var(--text-dim);
   margin-bottom: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mc-head {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+}
+
+.mc-ign {
+  color: var(--text-dim);
+  font-weight: 800;
 }
 
 .chat-msg {

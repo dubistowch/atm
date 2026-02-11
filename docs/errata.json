@@ -6,6 +6,7 @@
     "status": "fixed",
     "user": {
       "name": "玩家",
+      "minecraft": "Steve",
       "message": "進階背包看不懂怎麼獲得、怎麼使用。"
     },
     "ai": {
