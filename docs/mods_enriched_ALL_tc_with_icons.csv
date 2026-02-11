@@ -1,4 +1,4 @@
-mod_name,en_url,version,authors,jar,zh_name_tc,icon_url,zh_desc_tc,category
+mod_name,en_url,version,authors,jar,zh_name_tc,icon_url,zh_desc_tc,category,guide_id
 3d-Skin-Layers,https://modrinth.com/mod/3dskinlayers,1.10.1,tr7zw,skinlayers3d-neoforge-1.10.1-mc1.21.1.jar,3D 皮膚圖層,https://cdn.modrinth.com/data/zV5r3pPn/ff7010d4ec0275609866c8b0f603b25e25949c08_96.webp,將玩家皮膚的第二層渲染為可立體顯示的 3D 圖層，提升角色外觀細節。,音效與視覺
 AE2 Import Export Card,https://www.curseforge.com/projects/982512,1.21.1-1.4.3,Ultramega,ae2importexportcard-1.21.1-1.4.3.jar,AE2 匯入匯出卡,,為 AE2 增加匯入/匯出卡等功能，方便在網路與機器/容器之間搬運物品。,科技
 AE2 JEI Integration,https://www.curseforge.com/projects/1074338,1.2.0,"Tamaized,mezz",ae2jeiintegration-1.2.0.jar,AE2 × JEI 整合,,改善 AE2 與 JEI 的配方/查詢整合，讓自動合成與配方瀏覽更順手。,兼容與整合

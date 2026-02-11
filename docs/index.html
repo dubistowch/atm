@@ -571,6 +571,72 @@
       `;
     }
 
+    let _modsCache = null;
+
+    function parseModsCsv(text) {
+      const lines = (text || '').split('\n');
+      const out = [];
+      for (let i = 1; i < lines.length; i++) {
+        if (!lines[i].trim()) continue;
+        const row = [];
+        let current = '';
+        let inQuotes = false;
+        for (let char of lines[i]) {
+          if (char === '"') inQuotes = !inQuotes;
+          else if (char === ',' && !inQuotes) {
+            row.push(current.trim());
+            current = '';
+          } else current += char;
+        }
+        row.push(current.trim());
+        if (row.length < 9) continue;
+        out.push({
+          name: row[0], url: row[1], version: row[2], author: row[3],
+          file: row[4], zh: row[5], icon: row[6], desc: row[7],
+          cat: row[8] || '其他',
+          guideId: row[9] || ''
+        });
+      }
+      return out;
+    }
+
+    async function getModsData() {
+      if (_modsCache) return _modsCache;
+      try {
+        const res = await fetch('./mods_enriched_ALL_tc_with_icons.csv');
+        const text = await res.text();
+        _modsCache = parseModsCsv(text);
+      } catch (e) {
+        _modsCache = [];
+      }
+      return _modsCache;
+    }
+
+    function buildModBannerHtml(m) {
+      if (!m) return '';
+      const displayIcon = (m.icon && m.icon.trim() !== '') ? m.icon : 'https://cdn.modrinth.com/data/zV5r3pPn/ff7010d4ec0275609866c8b0f603b25e25949c08_96.webp';
+      const guideUrl = m.guideId ? `?guide=${encodeURIComponent(m.guideId)}` : '#';
+      return `
+        <div class="mod-banner" style="margin: 16px 0 22px;">
+          <div class="mod-row" style="border-radius: 16px; border: 1px solid var(--border-color);">
+            <img src="${displayIcon}" loading="lazy" onerror="this.src='${displayIcon}';">
+            <div>
+              <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                <a href="${m.url || '#'}" target="_blank" class="mod-name-zh">${escapeHtml(m.zh || m.name)}</a>
+                <a href="${guideUrl}" class="btn" style="padding:6px 10px; font-size:12px;">📖 這篇在講它</a>
+              </div>
+              <span class="mod-name-en">${escapeHtml(m.name || '')}</span>
+            </div>
+            <div class="mod-desc">${escapeHtml(m.desc || '暫無詳細介紹。')}</div>
+            <div class="mod-meta-info">
+              <span class="mod-author">By ${escapeHtml(m.author || '未知')}</span>
+              <span class="mod-version">Ver: ${escapeHtml(m.version || '最新')}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
     async function showGuide(id) {
       const listView = document.getElementById('list-view');
       const contentView = document.getElementById('content-view');
@@ -604,13 +670,26 @@
         const root = document.getElementById('markdown-content');
         root.innerHTML = contentHtml + footer;
 
+        // If this guide corresponds to a mod in mods百科, insert a banner matching mods.html style
+        const mods = await getModsData();
+        const modHit = mods.find(m => m.guideId === id);
+        if (modHit) {
+          const bannerHtml = buildModBannerHtml(modHit);
+          const toc = root.querySelector('.toc');
+          if (toc) toc.insertAdjacentHTML('afterend', bannerHtml);
+          else root.insertAdjacentHTML('afterbegin', bannerHtml);
+        }
+
         // Smooth scroll for TOC links
         root.querySelectorAll('.toc a[href^="#"]').forEach(a => {
           a.addEventListener('click', (e) => {
             const href = a.getAttribute('href');
             if (!href || href === '#') return;
             const id = href.slice(1);
-            const target = document.getElementById(id);
+            let target = document.getElementById(id);
+            if (!target && window.CSS && CSS.escape) {
+              target = document.querySelector('#' + CSS.escape(id));
+            }
             if (!target) return;
             e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });

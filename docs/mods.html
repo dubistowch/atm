@@ -153,7 +153,8 @@
             result.push({
                 name: row[0], url: row[1], version: row[2], author: row[3],
                 file: row[4], zh: row[5], icon: row[6], desc: row[7],
-                cat: row[8] || "其他"
+                cat: row[8] || "其他",
+                guideId: row[9] || ''
             });
         }
         return result;
@@ -223,7 +224,10 @@
                 <div class="mod-row">
                     <img src="${displayIcon}" loading="lazy" onerror="this.src='${defaultIcon}';">
                     <div>
-                        <a href="${m.url || '#'}" target="_blank" class="mod-name-zh">${m.zh || m.name}</a>
+                        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                            <a href="${m.url || '#'}" target="_blank" class="mod-name-zh">${m.zh || m.name}</a>
+                            ${m.guideId ? `<a href="index.html?guide=${encodeURIComponent(m.guideId)}" class="btn" style="padding:6px 10px; font-size:12px;">📖 教學</a>` : ''}
+                        </div>
                         <span class="mod-name-en">${m.name}</span>
                     </div>
                     <div class="mod-desc">${m.desc || '暫無詳細介紹。'}</div>
