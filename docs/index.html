@@ -413,8 +413,8 @@
       }
 
       // Grouping for clarity
-      const newbies = guides.filter(g => g.type === 'guide');
       const questlines = guides.filter(g => (g.id || '').startsWith('questlines/'));
+      const newbies = guides.filter(g => g.type === 'guide' && !(g.id || '').startsWith('questlines/'));
       const mods = guides.filter(g => g.type === 'mod' && !(g.id || '').startsWith('questlines/'));
       const extras = guides.filter(g => g.type === 'extra');
       const others = guides.filter(g => !newbies.includes(g) && !questlines.includes(g) && !mods.includes(g) && !extras.includes(g));
