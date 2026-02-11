@@ -386,6 +386,7 @@
       if (!a) return;
       const base = 'https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8';
       const u = new URL(base);
+      u.searchParams.set('網址', window.location.href);
       u.searchParams.set('url', window.location.href);
       a.href = u.toString();
     }

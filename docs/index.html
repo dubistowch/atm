@@ -630,6 +630,9 @@
       const u = new URL(base);
 
       // Prefill fields (n8n form supports querystring prefills)
+      // n8n form field name: 網址
+      u.searchParams.set('網址', window.location.href);
+      // keep a fallback key in case the form config changes
       u.searchParams.set('url', window.location.href);
 
       // Also include guide id if currently viewing an article
