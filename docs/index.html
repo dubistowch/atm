@@ -168,12 +168,15 @@
         </div>
       </div>
 
-      <div class="filter-bar hidden" id="category-filters">
-        <button class="filter-btn active" onclick="filterCategory('all')">全部分類</button>
-        <button class="filter-btn" onclick="filterCategory('tech')">⚙️ 科技</button>
-        <button class="filter-btn" onclick="filterCategory('magic')">✨ 魔法</button>
-        <button class="filter-btn" onclick="filterCategory('adventure')">🌍 冒險</button>
-        <button class="filter-btn" onclick="filterCategory('utility')">🎒 實用</button>
+      <div class="advanced-panel hidden" id="category-filters">
+        <div class="advanced-label">分類</div>
+        <div class="advanced-chips">
+          <button class="filter-btn active" onclick="filterCategory('all')">全部分類</button>
+          <button class="filter-btn" onclick="filterCategory('tech')">⚙️ 科技</button>
+          <button class="filter-btn" onclick="filterCategory('magic')">✨ 魔法</button>
+          <button class="filter-btn" onclick="filterCategory('adventure')">🌍 冒險</button>
+          <button class="filter-btn" onclick="filterCategory('utility')">🎒 實用</button>
+        </div>
       </div>
 
       <div class="article-list" id="article-grid">
