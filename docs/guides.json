@@ -281,5 +281,12 @@
     "type": "guide",
     "pinned": true,
     "description": "R 看配方、U 看用途、@ 用模組名搜尋；整合包玩家的隨身攻略工具。"
+  },
+  {
+    "id": "extra/apricorn-farms",
+    "title": "杏果量產全攻略：前期到後期自動化（Apricorn Farms）",
+    "category": "adventure",
+    "type": "extra",
+    "description": "整理 ATM10 杏果農場：Botany Pot 保底 → Clicker 牆起飛 → Ars 終局上千/秒。"
   }
 ]
