@@ -473,10 +473,13 @@
         .replace(/\-+/g, '-');
     }
 
-    function buildTOCFromHtml(html) {
+    function buildTOCFromHtml(html, guideId) {
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, 'text/html');
-      const headings = Array.from(doc.querySelectorAll('h2, h3'));
+
+      // Default: include h2+h3. For the server commands guide, keep TOC first level only (h2).
+      const selector = (guideId === '25-server-basics-commands') ? 'h2' : 'h2, h3';
+      const headings = Array.from(doc.querySelectorAll(selector));
 
       if (headings.length < 2) {
         return { tocHtml: '', contentHtml: doc.body.innerHTML };
@@ -583,7 +586,7 @@
         const text = await response.text();
         
         const rawHtml = marked.parse(text);
-        const { contentHtml } = buildTOCFromHtml(rawHtml);
+        const { contentHtml } = buildTOCFromHtml(rawHtml, id);
 
         // Add a bottom navigation list for easier hopping (especially on mobile)
         const footer = buildArticleFooter(id);

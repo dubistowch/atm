@@ -265,5 +265,12 @@
     "category": "utility",
     "type": "guide",
     "description": "/back /home /sethome /spawn /rtp /tpa /tpahere：多人服最常用的生存指令一次整理。"
+  },
+  {
+    "id": "26-cobblemon-challenge",
+    "title": "伺服器玩家對戰：/challenge 指令（Cobblemon Challenge）",
+    "category": "adventure",
+    "type": "mod",
+    "description": "用 /challenge、/challengedouble 跟其他玩家對戰：等級統一、幾打幾、要不要隊伍預覽。"
   }
 ]

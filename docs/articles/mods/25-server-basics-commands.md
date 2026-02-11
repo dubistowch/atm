@@ -138,6 +138,25 @@
 
 ---
 
+## 10) `/challenge`：跟其他玩家對戰（需要對戰模組/插件）
+
+> 這些指令通常來自 **Cobblemon Challenge**（伺服器端模組）。如果你輸入後顯示 unknown command，代表伺服器沒裝或沒開。
+
+### 使用方式（常見）
+- 基本：`/challenge <對方ID> level 50 nopreview`
+  - `level 50`：把雙方隊伍等級拉到固定等級（常用 50）
+  - `nopreview`：不展示隊伍（如果你們想「盲打」）
+
+### 幾打幾
+- `/challenge <對方ID> 1v1` ～ `6v6`：選擇單打幾打幾
+
+---
+
+## 11) `/challengedouble`：雙打對戰
+- `/challengedouble <對方ID> 2v2` ～ `6v6`：選擇雙打的規模
+
+---
+
 ## 建議你順便記住的 3 個「補充指令」
 因為你一定會用到：
 - `/tpaccept`：接受傳送請求
@@ -152,6 +171,9 @@
 - 出門探險前：背包放好「食物、火把、方塊」；死了至少能回收
 
 ---
+
+## 相關模組參考
+- Cobblemon Challenge（對戰指令來源）：<https://modrinth.com/mod/cobblemon-challenge>
 
 ## 資料來源
 - 本文依常見伺服器插件指令習慣整理；實際可用指令/參數以伺服器 `/help` 與 Tab 提示為準。
