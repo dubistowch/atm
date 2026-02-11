@@ -1,4 +1,4 @@
-# Jade 新手教學與玩法筆記
+# Jade（資訊 HUD）新手必裝：看方塊資訊、找模組來源、除錯機器狀態
 
 ## 簡介
 Jade 是方塊/實體資訊顯示模組（WAILA/HWYLA 類）：你把準星指向方塊或生物時，畫面上會即時顯示名稱、所屬模組，以及（若有整合）容器內容摘要、機器能量/流體/進度、村民職業等資訊。
@@ -63,6 +63,7 @@ Jade 通常是純 HUD/UI 模組，不以新增可合成道具為主。
 - Jade 常有額外插件/整合模組（用來顯示更多機器資訊）；整合包通常會一併處理。
 - 若你是管理員：可用設定控制顯示項目與權限（例如伺服器是否允許顯示容器內容），依版本而定。
 
-## 資料來源
-- <https://modrinth.com/mod/jade>
-- <https://cdn.modrinth.com/data/nvQzSEkH/images/0bf8da81675d890d2bccba0ed0f51a0fabef5267.png>
+## 資料來源（文件）
+- Modrinth：<https://modrinth.com/mod/jade>
+- Jade Docs：<https://jademc.readthedocs.io/en/latest/>
+- GitHub：<https://github.com/Snownee/Jade>

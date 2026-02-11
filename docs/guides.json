@@ -273,5 +273,13 @@
     "category": "adventure",
     "type": "mod",
     "description": "用 /challenge、/challengedouble 跟其他玩家對戰：等級統一、幾打幾、要不要隊伍預覽。"
+  },
+  {
+    "id": "27-just-enough-items",
+    "title": "JEI 新手必學：查配方/查用途/搜尋技巧",
+    "category": "utility",
+    "type": "guide",
+    "pinned": true,
+    "description": "R 看配方、U 看用途、@ 用模組名搜尋；整合包玩家的隨身攻略工具。"
   }
 ]
