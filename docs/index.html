@@ -501,6 +501,9 @@
         if (!title) return;
 
         let slug = slugifyHeading(title) || 'section';
+        // CSS selectors like #1-xxx are invalid; ensure ids never start with a digit.
+        if (/^\d/.test(slug)) slug = `s-${slug}`;
+
         const n = (used.get(slug) || 0) + 1;
         used.set(slug, n);
         if (n > 1) slug = `${slug}-${n}`;
@@ -606,7 +609,8 @@
           a.addEventListener('click', (e) => {
             const href = a.getAttribute('href');
             if (!href || href === '#') return;
-            const target = root.querySelector(href);
+            const id = href.slice(1);
+            const target = document.getElementById(id);
             if (!target) return;
             e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
