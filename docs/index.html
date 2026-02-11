@@ -598,7 +598,10 @@
             if (!target) return;
             e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            history.replaceState(null, '', href);
+            // Preserve existing querystring (e.g. ?guide=...) and only update the hash
+            const url = new URL(window.location.href);
+            url.hash = href;
+            history.replaceState(null, '', url);
           });
         });
 
