@@ -134,7 +134,7 @@
     </div>
   </nav>
 
-  <a class="report-btn" id="report-btn" href="https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8" target="_blank" rel="noopener noreferrer" title="回報錯誤">🐛 回報錯誤</a>
+  <a class="report-btn" id="report-btn" href="#" onclick="openReportForm(event)" title="回報錯誤">🐛 回報錯誤</a>
 
   <div class="container">
     <!-- List View -->
@@ -263,6 +263,7 @@
       history.replaceState(null, '', url);
 
       filterArticles();
+      updateReportBtn();
     }
 
     function toggleNavMenu() {
@@ -411,6 +412,7 @@
             e.preventDefault();
             history.pushState(null, '', `?guide=${guide.id}`);
             showGuide(guide.id);
+            updateReportBtn();
           };
 
           const iconHtml = guide.icon 
@@ -623,26 +625,37 @@
         document.getElementById('list-view').classList.remove('hidden');
         document.getElementById('content-view').classList.add('hidden');
       }
+      updateReportBtn();
     };
 
-    function updateReportBtn() {
-      const a = document.getElementById('report-btn');
-      if (!a) return;
-
+    function buildReportUrl() {
       const base = 'https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8';
       const u = new URL(base);
 
       // Prefill fields (n8n form supports querystring prefills)
-      // n8n form field name: 網址
-      u.searchParams.set('網址', window.location.href);
+      const pageUrl = window.location.href;
+      u.searchParams.set('網址', pageUrl);
       // keep a fallback key in case the form config changes
-      u.searchParams.set('url', window.location.href);
+      u.searchParams.set('url', pageUrl);
 
       // Also include guide id if currently viewing an article
       const guideId = new URLSearchParams(window.location.search).get('guide');
       if (guideId) u.searchParams.set('guide', guideId);
 
-      a.href = u.toString();
+      return u.toString();
+    }
+
+    function openReportForm(e) {
+      if (e) e.preventDefault();
+      const url = buildReportUrl();
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    function updateReportBtn() {
+      // Keep href updated for long-press / copy link, but always generate again on click
+      const a = document.getElementById('report-btn');
+      if (!a) return;
+      a.href = buildReportUrl();
     }
 
     init();

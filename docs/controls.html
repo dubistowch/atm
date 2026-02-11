@@ -153,7 +153,7 @@
     </div>
   </nav>
 
-  <a class="report-btn" id="report-btn" href="https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8" target="_blank" rel="noopener noreferrer" title="回報錯誤">🐛 回報錯誤</a>
+  <a class="report-btn" id="report-btn" href="#" onclick="openReportForm(event)" title="回報錯誤">🐛 回報錯誤</a>
 
   <div class="container">
     <div class="page-header">
@@ -381,14 +381,24 @@
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     }
 
+    function buildReportUrl() {
+      const base = 'https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8';
+      const u = new URL(base);
+      const pageUrl = window.location.href;
+      u.searchParams.set('網址', pageUrl);
+      u.searchParams.set('url', pageUrl);
+      return u.toString();
+    }
+
+    function openReportForm(e) {
+      if (e) e.preventDefault();
+      window.open(buildReportUrl(), '_blank', 'noopener,noreferrer');
+    }
+
     function updateReportBtn() {
       const a = document.getElementById('report-btn');
       if (!a) return;
-      const base = 'https://n8n.dubi.app/form/6e15be41-ae88-4e0d-9241-09d3d418e2f8';
-      const u = new URL(base);
-      u.searchParams.set('網址', window.location.href);
-      u.searchParams.set('url', window.location.href);
-      a.href = u.toString();
+      a.href = buildReportUrl();
     }
 
     init();
