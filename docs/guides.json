@@ -288,5 +288,12 @@
     "category": "adventure",
     "type": "extra",
     "description": "整理 ATM10 杏果農場：Botany Pot 保底 → Clicker 牆起飛 → Ars 終局上千/秒。"
+  },
+  {
+    "id": "28-roots-classic",
+    "title": "古典根源魔法：Roots Classic 入門（前 30 分鐘）",
+    "category": "magic",
+    "type": "mod",
+    "description": "Runic Tablet 怎麼用、法術粉末與法杖怎麼起步：把 Roots Classic 的第一套流程跑起來。"
   }
 ]
