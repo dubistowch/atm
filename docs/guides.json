@@ -295,5 +295,12 @@
     "category": "magic",
     "type": "mod",
     "description": "Runic Tablet 怎麼用、法術粉末與法杖怎麼起步：把 Roots Classic 的第一套流程跑起來。"
+  },
+  {
+    "id": "29-ender-io",
+    "title": "終界工業：Ender IO 管線與機器入門（前 30 分鐘）",
+    "category": "tech",
+    "type": "mod",
+    "description": "先把電送進機器，再學會 Conduits 的輸入/輸出與過濾：Ender IO 最短上手流程。"
   }
 ]

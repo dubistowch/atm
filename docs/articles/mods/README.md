@@ -31,6 +31,7 @@
 26. [Cobblemon Challenge（玩家對戰 /challenge）](./26-cobblemon-challenge.md)
 27. [Just Enough Items（JEI）](./27-just-enough-items.md)
 28. [Roots Classic](./28-roots-classic.md)
+29. [Ender IO](./29-ender-io.md)
 
 ## 進階教學
 - [Cobblemon：交易村民教學（取得／刷新／交易思路）](./extra/cobblemon-villager-trading.md)
