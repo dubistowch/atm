@@ -302,5 +302,19 @@
     "category": "tech",
     "type": "mod",
     "description": "先把電送進機器，再學會 Conduits 的輸入/輸出與過濾：Ender IO 最短上手流程。"
+  },
+  {
+    "id": "30-immersive-engineering",
+    "title": "沉浸工程：IE 第一組發電與多方塊機器入門",
+    "category": "tech",
+    "type": "mod",
+    "description": "先做工程師手冊，再把電線/電容/第一台機器跑起來：沉浸工程最短上手流程。"
+  },
+  {
+    "id": "31-ars-roots-compare",
+    "title": "新生魔藝 vs 根源魔法：差異與整合玩法",
+    "category": "magic",
+    "type": "guide",
+    "description": "Ars Nouveau 與 Roots Classic 怎麼選、怎麼互補：自動化/素材/儀式的實用搭配。"
   }
 ]
