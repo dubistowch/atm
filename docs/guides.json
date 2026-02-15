@@ -95,10 +95,10 @@
   },
   {
     "id": "13-sophisticated-backpacks",
-    "title": "進階背包 (Sophisticated Backpacks)",
+    "title": "Sophisticated Backpacks｜可升級背包新手 30 分鐘上手",
     "category": "utility",
     "type": "mod",
-    "description": "可升級的背包系統。增加容量、自動拾取、磁鐵功能，甚至內建合成台與熔爐。",
+    "description": "背包 UI 速讀、容量/功能升級優先順序、Pickup/Filter/Refill 設定與常見卡關排查（按鍵請以 Controls 搜尋為準）。",
     "icon": "https://cdn.modrinth.com/data/TyCTlI4b/e31c7e2f8769d317339e25b2a8d1b40fbf312729_96.webp"
   },
   {
@@ -111,10 +111,10 @@
   },
   {
     "id": "15-easy-villagers",
-    "title": "簡單村民 (Easy Villagers)",
+    "title": "Easy Villagers｜把村民收進口袋的交易/繁殖/鐵農場",
     "category": "utility",
     "type": "mod",
-    "description": "簡化村民交易與繁殖。將村民放入方塊中，自動化交易、轉職與生產鐵魔像。",
+    "description": "抓村民變物品、Trader/Auto Trader、Breeder/Incubator、Converter 折扣與單方塊鐵農場：最短上手流程 + 卡關排雷。",
     "icon": "https://cdn.modrinth.com/data/Kaov2qgi/ceb583c0f27eaca42f6dfbe79ddec5e6142f1766_96.webp"
   },
   {
@@ -316,5 +316,13 @@
     "category": "magic",
     "type": "guide",
     "description": "Ars Nouveau 與 Roots Classic 怎麼選、怎麼互補：自動化/素材/儀式的實用搭配。"
+  },
+  {
+    "id": "32-ftb-quests",
+    "title": "任務書別只會點：FTB Quests 開啟、追蹤、交付、領獎與卡關排查",
+    "category": "utility",
+    "type": "mod",
+    "description": "新手向任務書教學：如何打開任務書、釘選/追蹤任務、Submit 交付物品、Claim 領獎、理解 Detect/Submit 條件，並整理多人服不同步與偵測不到的排查流程。",
+    "pinned": true
   }
 ]

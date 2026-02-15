@@ -34,6 +34,7 @@
 29. [Ender IO](./29-ender-io.md)
 30. [Immersive Engineering](./30-immersive-engineering.md)
 31. [新生魔藝 vs 根源魔法（整合玩法）](./31-ars-roots-compare.md)
+32. [FTB Quests](./32-ftb-quests.md)
 
 ## 進階教學
 - [Cobblemon：交易村民教學（取得／刷新／交易思路）](./extra/cobblemon-villager-trading.md)
