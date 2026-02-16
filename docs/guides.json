@@ -324,5 +324,12 @@
     "type": "mod",
     "description": "新手向任務書教學：如何打開任務書、釘選/追蹤任務、Submit 交付物品、Claim 領獎、理解 Detect/Submit 條件，並整理多人服不同步與偵測不到的排查流程。",
     "pinned": true
+  },
+  {
+    "id": "questlines/06-quest-chapter-index",
+    "title": "任務章節一覽：FTB Quests 任務書有哪些模組章節？",
+    "category": "adventure",
+    "type": "guide",
+    "description": "從繁中任務檔整理任務書章節清單：快速查這包任務線涵蓋哪些模組與主題。"
   }
 ]
