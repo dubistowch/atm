@@ -58,6 +58,47 @@ IE 的加工通常是多方塊，你先挑一台「你現在最缺的」：
 
 ---
 
+## 任務書照做：3 個新手最常用的 IE 多方塊（照圖擺、照步驟啟動）
+
+整合包的 FTB Quests 其實把 IE 的多方塊「怎麼擺」寫得很清楚。下面我挑 3 個**最常用、而且新手最常卡**的，多做一次你就會熟。
+
+> 圖片都是「資訊型」的擺放示意，來源是任務書內的 questpics（不是 logo）。
+
+### 1) 粗製高爐（Crude Blast Furnace）＝最早的鋼錠來源
+任務書重點：
+- 把 **鐵錠** + **木炭/焦炭**丟進去燒鋼
+- 燃料時間：木炭比較短、焦炭比較穩（實際以你包內說明為準）
+- 需要一個 3×3×3 的結構，最後用錘子在正面啟動
+
+![粗製高爐 步驟 1](./assets/questpics/immersive/immersive_crude1.png)
+![粗製高爐 步驟 2](./assets/questpics/immersive/immersive_crude2.png)
+![粗製高爐 步驟 3](./assets/questpics/immersive/immersive_crude3.png)
+![粗製高爐 完成](./assets/questpics/immersive/immersive_crude.png)
+
+### 2) 擠壓機（Squeezer）＝種子榨油/特定粉末處理
+任務書重點：
+- 用來從作物種子榨出油（例如植物燃油線）
+- 也會拿來做一些粉末/材料的關鍵中繼（以任務與 JEI 為準）
+- 結構完成後，用錘子對指定方塊啟動
+
+![擠壓機 步驟 1](./assets/questpics/immersive/immersive_squeezer1.png)
+![擠壓機 步驟 2](./assets/questpics/immersive/immersive_squeezer2.png)
+![擠壓機 步驟 3](./assets/questpics/immersive/immersive_squeezer3.png)
+![擠壓機 完成](./assets/questpics/immersive/immersive_squeezer.png)
+
+### 3) 裝配器（Assembler）＝把小零件量產起來
+任務書重點：
+- 這台機器很多操作在 GUI 裡設定（可以放多個配方、依序執行）
+- 你可以用輸送帶/管線輸入輸出（依你包內物流線）
+- 結構完成後，照任務書提示用工程師錘啟動
+
+![裝配器 步驟 1](./assets/questpics/immersive/immersive_assembler1.png)
+![裝配器 步驟 2](./assets/questpics/immersive/immersive_assemble2.png)
+![裝配器 步驟 3](./assets/questpics/immersive/immersive_assembler3.png)
+![裝配器 完成](./assets/questpics/immersive/immersive_assembler.png)
+
+---
+
 ## 常見卡關與排查
 
 ### Q1：我有電線，但接不起來

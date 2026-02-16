@@ -331,5 +331,19 @@
     "category": "adventure",
     "type": "guide",
     "description": "從繁中任務檔整理任務書章節清單：快速查這包任務線涵蓋哪些模組與主題。"
+  },
+  {
+    "id": "33-pneumaticcraft",
+    "title": "氣動工藝：PneumaticCraft 壓力系統入門",
+    "category": "tech",
+    "type": "mod",
+    "description": "先做壓力管道，再做壓力室：用任務書步驟把壓力系統跑起來，附常見卡關排查。"
+  },
+  {
+    "id": "questlines/07-pika-star",
+    "title": "皮卡之星：怎麼查配方、怎麼拆材料線",
+    "category": "adventure",
+    "type": "guide",
+    "description": "任務書「皮卡之星」章節目前只有目標物品；本篇教你用 JEI/REI 查配方並拆成可執行的產線清單。"
   }
 ]
