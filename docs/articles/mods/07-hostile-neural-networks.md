@@ -67,6 +67,20 @@ HNN 主要以方塊/機器 GUI 操作為主，通常不依賴固定鍵位。
 - **小規模起步最舒服**：先讓它穩定供應 1～2 種核心材料，再擴到更多模型。
 - **接進倉庫後像開外掛**：掉落自動進系統、缺料時再回頭擴產，不用每天追著怪跑。
 
+## 任務書對應（FTB Quests）
+
+任務書章節：`hostile_neural_networks`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 模擬死亡
+- 生成戰利品
+- 升級資料模型
+- 歡迎來到深度怪物學習!
+- 學習生物
+- 建模生物
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`
+
 ## 相關連結
 - GitHub：<https://github.com/Shadows-of-Fire/Hostile-Neural-Networks>
 - CurseForge：<https://www.curseforge.com/minecraft/mc-mods/hostile-neural-networks>

@@ -88,3 +88,21 @@ FTB Quests（氣動工藝章）裡其實列了很多「壓力從哪裡來」的�
 ## 資料來源（文件 / 任務檔）
 - 任務書繁中：`ftbquests/quests/lang/zh_tw/chapters/pneumaticcraft.snbt`
 - PneumaticCraft（CurseForge）：<https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized>
+
+## 任務書對應（FTB Quests）
+
+任務書章節：`pneumaticcraft`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 液化石油氣
+- 酵母
+- Amadron平臺
+- 防爆措施？
+- 柴油
+- 電容器
+- 物流
+- 煤油
+- 簡單升級元件
+- 用紫外線充電
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`

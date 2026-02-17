@@ -128,3 +128,21 @@ AE2 本體多數操作都在 GUI 裡完成，通常不需要背一堆快捷鍵�
 - Players Guide｜Terminals：<https://guide.appliedenergistics.org/1.20.1/items-blocks-machines/terminals>
 - Modrinth（AE2）：<https://modrinth.com/mod/ae2>
 - GitHub（Applied Energistics 2）：<https://github.com/AppliedEnergistics/Applied-Energistics-2>
+
+## 任務書對應（FTB Quests）
+
+任務書章節：`applied_energistics_2`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 空間輸入輸出
+- 染色器
+- 量子網路橋
+- 16M儲存元件
+- 批次物品儲存
+- 處理器
+- 無線終端
+- P2P通道
+- 紅石控制型ME系統
+- 石英扳手
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`

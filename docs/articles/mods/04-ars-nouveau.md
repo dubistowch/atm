@@ -102,6 +102,24 @@ FTB Quests（新生魔藝章）有幾個非常關鍵的步驟提示，適合拿�
 - Modrinth：<https://modrinth.com/mod/ars-nouveau>
 - GitHub（wiki 原始碼）：<https://github.com/Sarenor/arsnouveau-wiki>
 
+## 任務書對應（FTB Quests）
+
+任務書章節：`ars_nouveau`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 折扣戒指
+- 奧術基座
+- 召喚幫手!
+- 附魔裝置
+- 魔源水晶
+- 法師之花種子
+- 魔源石
+- 法術書
+- 護符
+- 魔力
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`
+
 ## 資料來源
 - <https://www.arsnouveau.wiki/>
 - <https://modrinth.com/mod/ars-nouveau>

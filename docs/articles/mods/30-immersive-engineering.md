@@ -129,3 +129,21 @@ IE 的加工通常是多方塊，你先挑一台「你現在最缺的」：
 - README（提到模組定位與下載）：<https://raw.githubusercontent.com/BluSunrize/ImmersiveEngineering/master/README.md>
 
 > IE 最完整的玩家說明通常在遊戲內的 Engineer’s Manual；本篇以「新手起步流程」整理。
+
+## 任務書對應（FTB Quests）
+
+任務書章節：`immersive_engineering`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 轉輪藍圖
+- 粗製高爐
+- 重型盾牌
+- 擠壓機
+- 工程師工具箱
+- 電線卷
+- 普通子彈
+- 保暖物品
+- 精煉廠
+- 分級電壓
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`

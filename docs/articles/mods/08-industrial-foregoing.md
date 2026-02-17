@@ -73,6 +73,24 @@ IF 主要在機器 GUI 裡操作，通常沒有必備快捷鍵。
 - **基地會越來越像工廠**：樹場、農田、怪物線各自獨立，最後全部回到倉庫系統。
 - **玩法很彈性**：不用一次做全套；挑瓶頸補上就能大幅加速整包進度。
 
+## 任務書對應（FTB Quests）
+
+任務書章節：`industrial_foregoing`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 其他傳送帶升級件
+- 進階機械框架
+- 粉紅史萊姆 \\ 肉湯
+- 乳膠和塑膠？嗯？
+- 模擬水培床
+- 方塊
+- 傳送帶插入 \\ 提取
+- 乳膠
+- 物品 \\ 流體傳輸
+- 簡易 機器框架
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`
+
 ## 相關連結
 - GitHub：<https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing>
 - Modrinth：<https://modrinth.com/mod/industrial-foregoing>

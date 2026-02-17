@@ -109,6 +109,24 @@
 - Modrinth：<https://modrinth.com/mod/mekanism>
 - GitHub：<https://github.com/mekanism/Mekanism>
 
+## 任務書對應（FTB Quests）
+
+任務書章節：`mekanism`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 消音 升級模組
+- 碎片,到礦簇,到礦粉,到錠
+- 機器升級
+- 辭典
+- 終極級
+- 熱力發電機
+- 紅黃綠青 與顏料
+- 粉碎 植物 以獲得 生物燃料
+- 富集倉
+- 等級 安裝器
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`
+
 ## 資料來源
 - <https://wiki.aidancbrady.com/wiki/Mekanism>
 - <https://wiki.aidancbrady.com/wiki/Digital_Miner>

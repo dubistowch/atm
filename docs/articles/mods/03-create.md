@@ -93,6 +93,24 @@
 - Modrinth：<https://modrinth.com/mod/create>
 - 社群 Wiki（內容較多但非官方）：<https://create.fandom.com/wiki/Create_Mod_Wiki>
 
+## 任務書對應（FTB Quests）
+
+任務書章節：`create`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 動力犁
+- 動力軸承
+- 智慧流體管道
+- 礦車裝配機
+- 豎直十字齒輪箱
+- 物品倉庫
+- 安山合金
+- 裝飾你的列車
+- 扳手
+- 機械泵
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`
+
 ## 資料來源
 - <https://github.com/Creators-of-Create/Create>
 - <https://github.com/Creators-of-Create/Create/wiki>

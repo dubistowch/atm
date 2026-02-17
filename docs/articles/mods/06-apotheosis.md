@@ -67,6 +67,24 @@ Apotheosis 多數內容綁在「原版系統」上，取得方式也更像「去
 - **附魔變成養成**：你會開始追求「挖礦套」「戰鬥套」「移動套」這種功能分工。
 - **中後期的刷裝循環很耐玩**：打更強的怪 → 拿更好的裝 → 再去挑戰更難的內容。
 
+## 任務書對應（FTB Quests）
+
+任務書章節：`apothic_enchanting`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 製作 紫水晶母巖
+- 迴響深暗書架
+- 地獄書架
+- 永恆能量
+- 分解寶典
+- 龍息末地書架
+- 灌注龍息
+- 末地書架
+- 晶化海晶書架
+- 神化附魔
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`
+
 ## 相關連結
 - GitHub：<https://github.com/Shadows-of-Fire/Apotheosis>
 - CurseForge：<https://www.curseforge.com/minecraft/mc-mods/apotheosis>

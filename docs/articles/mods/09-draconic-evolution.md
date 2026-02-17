@@ -60,6 +60,24 @@ DE 的快捷鍵很容易因版本與整合包而不同（也常跟其他 HUD/裝
 - **把它當作整合包的終局目標之一**：材料鏈長、需求大，適合當長線工程。
 - **提醒：別太早把難度玩壞**：如果你還想保留探索/打王的挑戰感，可以先訂好「做到哪一階就停」。
 
+## 任務書對應（FTB Quests）
+
+任務書章節：`draconic_evolution`（建議在任務書搜尋此章節名或關鍵字）
+
+本章常見任務節點（節錄）：
+- 這很艱難,你需要做好準備
+- 混沌胸甲
+- 飛龍自動進食模組
+- 混沌傷害模組
+- 神龍箭矢速度模組
+- 第8級
+- 混沌鍬
+- 神龍箭矢穿透模組
+- More Pylons {optional)
+- 混沌護盾回覆模組
+
+> 來源：`minecraft/config/ftbquests/quests/lang/zh_tw/chapters/`
+
 ## 相關連結
 - GitHub：<https://github.com/Draconic-Inc/Draconic-Evolution>
 - Modrinth：<https://modrinth.com/mod/draconic-evolution>
