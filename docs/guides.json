@@ -345,5 +345,13 @@
     "category": "adventure",
     "type": "guide",
     "description": "任務書「皮卡之星」章節目前只有目標物品；本篇教你用 JEI/REI 查配方並拆成可執行的產線清單。"
+  },
+  {
+    "id": "questlines/00-quest-tree-roadmap",
+    "title": "任務樹路線圖：一眼看懂主線怎麼走",
+    "category": "adventure",
+    "type": "guide",
+    "pinned": true,
+    "description": "把 FTB Quests 任務樹整理成四段主線 + 支線入口：你現在在哪、下一步該往哪個章節走。"
   }
 ]
