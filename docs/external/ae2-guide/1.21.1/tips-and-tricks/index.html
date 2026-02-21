@@ -2,24 +2,16 @@
 <!-- -->移除 Optifine</li><li>
 <!-- -->带有缩放与注释显示/隐藏按钮的指南场景可以旋转并缩放查看</li><li>
 <!-- -->让网络保持树状结构，避免形成环路</li><li>
-<!-- -->Full-block <a href="../ae2-mechanics/devices">devices</a> in groups of 8 or less unless you deeply understand how <a href="../ae2-mechanics/channels">channels</a>
-route through a network</li><li>
-<!-- -->Pick a wood and stick with it for all your <a href="../items-blocks-machines/patterns">patterns</a>. Yes, enabling substitutions
-in patterns sometimes works, but using the same wood type everywhere greatly reduces hassle.</li><li>
-<!-- -->Arrange your <a href="../items-blocks-machines/patterns">patterns</a> vertically in the <span><span class="ItemLink_itemTooltip__V__Y8">ME Pattern Access Terminal</span></span>/
-distribute your patterns between your <a href="../items-blocks-machines/pattern_provider">providers</a> so that recipes can be performed in parallel.</li><li>
-<!-- -->Add an <a href="../items-blocks-machines/energy_cells">energy cell</a> so that your network can handle power spikes.</li><li>
-<!-- -->You can use water in the <span><span class="ItemLink_itemTooltip__V__Y8">Matter Condenser</span></span></li><li>
-<!-- -->The best way to keep your network clean is to not put random mob loot like swords and armor in. Each unique combination of
-enchantment and durability is another <a href="../ae2-mechanics/bytes-and-types">type</a>.</li><li>
-<!-- -->An &quot;item entering system&quot; event must occur when returning the result of a <a href="../items-blocks-machines/patterns">processing pattern</a>,
-like through an <span><span class="ItemLink_itemTooltip__V__Y8">ME Import Bus</span></span>, <span><span class="ItemLink_itemTooltip__V__Y8">ME Interface</span></span>, or <span><span class="ItemLink_itemTooltip__V__Y8">ME Pattern Provider</span></span> return slot,
-you can&#x27;t just pipe the result into a chest with a <span><span class="ItemLink_itemTooltip__V__Y8">ME Storage Bus</span></span> on it.</li><li>
-<!-- -->Don&#x27;t forget that can rotate and zoom into guidebook scenes that have the zoom and annotation hide/show buttons</li><li>
-<!-- -->The <span><span class="ItemLink_itemTooltip__V__Y8">ME Pattern Provider</span></span> will only push complete recipe batches and only through a single side. This is useful
-for making sure machines don&#x27;t get partial batches, but sometimes you want the ingredients to go to multiple places.
-You can achieve this using an <span><span class="ItemLink_itemTooltip__V__Y8">ME Interface</span></span>, either as a <a href="../example-setups/pipe-subnet">&quot;pipe&quot; subnet</a> or using
-its ability to hold multiple different item stacks, fluids, chemicals, etc. all at once, to use it as a sort of intermediate chest/tank.</li><li>
+<!-- -->除非你非常了解 <a href="../ae2-mechanics/channels">通道</a> 如何在網路中路由，否則全方塊 <a href="../ae2-mechanics/devices">裝置</a> 請以 8 個或更少為一組</li><li>
+<!-- -->為你所有的 <a href="../items-blocks-machines/patterns">樣板</a> 選定一種木材並全程使用同一種。是的，在樣板中啟用替代有時候可行，但整套系統都用同一種木材會省下大量麻煩。</li><li>
+<!-- -->把你的 <a href="../items-blocks-machines/patterns">樣板</a> 在 <span><span class="ItemLink_itemTooltip__V__Y8">ME 樣板存取終端</span></span> 內以垂直方式排列，並/或將樣板分散放到不同的 <a href="../items-blocks-machines/pattern_provider">樣板供應器</a>，讓配方可以並行處理。</li><li>
+<!-- -->加上一個 <a href="../items-blocks-machines/energy_cells">能量儲存元件</a>，讓你的網路能夠承受瞬間的耗電尖峰。</li><li>
+<!-- -->你可以在 <span><span class="ItemLink_itemTooltip__V__Y8">物質凝縮器</span></span> 中使用水。</li><li>
+<!-- -->讓網路保持乾淨的最佳方式，就是不要把隨機怪物掉落物（例如劍與盔甲）塞進去。每一種不同的附魔與耐久度組合，都會變成另一個 <a href="../ae2-mechanics/bytes-and-types">類型</a>。</li><li>
+<!-- -->在回收 <a href="../items-blocks-machines/patterns">處理樣板</a> 的輸出結果時，必須觸發一次「物品進入系統」事件，例如透過 <span><span class="ItemLink_itemTooltip__V__Y8">ME 輸入匯流排</span></span>、<span><span class="ItemLink_itemTooltip__V__Y8">ME 介面</span></span>，或 <span><span class="ItemLink_itemTooltip__V__Y8">ME 樣板供應器</span></span> 的回收槽位；你不能只是把結果用管道導進一個箱子，然後在箱子上裝 <span><span class="ItemLink_itemTooltip__V__Y8">ME 儲存匯流排</span></span>。</li><li>
+<!-- -->別忘了：有「縮放」與「注釋顯示/隱藏」按鈕的指南場景，可以旋轉並縮放查看。</li><li>
+<!-- --><span><span class="ItemLink_itemTooltip__V__Y8">ME 樣板供應器</span></span> 只會以「完整的一批配方」為單位，且只會從單一側面推出物品。這對於確保機器不會收到不完整的半批材料很有用，但有時你會希望材料能分流到多個地方。
+你可以改用 <span><span class="ItemLink_itemTooltip__V__Y8">ME 介面</span></span> 來達成：可以把它當作 <a href="../example-setups/pipe-subnet">「管道」子網</a>，或利用它能同時容納多種物品堆疊、流體、化學品等的特性，把它當成中繼用的箱子/儲槽。</li><li>
 <!-- -->带有缩放与注释显示/隐藏按钮的指南场景可以旋转并缩放查看</li></ul></article><div class="layout_versionPicker___85qR">Minecraft <!-- -->1.21.1<!-- --> [<a href="https://guide.appliedenergistics.org/">change</a>]</div></main></div><script src="../_next/static/chunks/webpack-4fa742e74aee190a.js" crossorigin="" async=""></script><script>/* AE2 mirror nav fix */
 (()=>{
   const burger = document.querySelector('.layout_navbarBurger__n6Bj0');
